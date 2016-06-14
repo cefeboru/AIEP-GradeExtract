@@ -31,6 +31,8 @@ import blackboard.ws.coursemembership.CourseMembershipWSStub.MembershipFilter;
 import blackboard.ws.gradebook.GradebookWSStub;
 import blackboard.ws.gradebook.GradebookWSStub.ColumnFilter;
 import blackboard.ws.gradebook.GradebookWSStub.ColumnVO;
+import blackboard.ws.gradebook.GradebookWSStub.GradebookTypeVO;
+import blackboard.ws.gradebook.GradebookWSStub.GetGradebookTypes;
 import blackboard.ws.gradebook.GradebookWSStub.GetGradebookColumns;
 import blackboard.ws.gradebook.GradebookWSStub.GetGrades;
 import blackboard.ws.gradebook.GradebookWSStub.InitializeGradebookWS;
@@ -289,14 +291,17 @@ public class WebServiceClient {
       if ( getSessionId() == null ) {
         throw new IllegalStateException( "Attempted login without a session.  Must initialize() client first." );
       }
-      ContextWSStub.LoginTool loginArgs = new ContextWSStub.LoginTool();
-      loginArgs.setPassword( _toolPassword );
-      loginArgs.setClientVendorId( getVendorId() );
-      loginArgs.setClientProgramId( getProgramId() );
-      loginArgs.setLoginExtraInfo( "" );
-      loginArgs.setExpectedLifeSeconds( _expectedLifeSeconds );
 
-      ContextWSStub.LoginToolResponse loginResult = _contextWS.loginTool( loginArgs );
+      ContextWSStub.Login loginAsUserArgs = new ContextWSStub.Login();
+
+      loginAsUserArgs.setUserid("ExtractGradeApp");
+      loginAsUserArgs.setPassword("AIEP2016");
+      loginAsUserArgs.setClientVendorId( getVendorId() );
+      loginAsUserArgs.setClientProgramId( getProgramId() );
+      loginAsUserArgs.setLoginExtraInfo( "" );
+      loginAsUserArgs.setExpectedLifeSeconds( _expectedLifeSeconds );
+
+      ContextWSStub.LoginResponse loginResult = _contextWS.login( loginAsUserArgs );
       
       // Set the extended session life seconds (if provided)
       if ( _extendSessionLifeSeconds > 0 ) {
@@ -338,7 +343,9 @@ public class WebServiceClient {
     {
       GetCourse getCourseParam = new GetCourse();
       CourseWSStub.CourseFilter filter = new CourseWSStub.CourseFilter();
-      filter.setFilterType( 0 ); // 0 = All Courses
+      //filter.setFilterType( 0 ); // 0 = All Courses
+      //TODO CHANGE TO 0
+      filter.setFilterType( 0 );
       getCourseParam.setFilter( filter );
       CourseVO[] results = _courseWS.getCourse( getCourseParam ).get_return();
       if( null == results ) {
@@ -361,6 +368,20 @@ public class WebServiceClient {
       filter.setSearchOperator( searchOperator );
       filter.setSearchKey( searchKey );
       filter.setSearchValue( searchValue );
+      getCourseParam.setFilter( filter );
+      CourseVO[] results = _courseWS.getCourse( getCourseParam ).get_return();
+      if( null == results ) {
+        results = new CourseVO[0];
+      }
+      return results;
+    }
+
+    public CourseVO[] getCoursesById(String [] ids ) throws RemoteException
+    {
+      GetCourse getCourseParam = new GetCourse();
+      CourseWSStub.CourseFilter filter = new CourseWSStub.CourseFilter();
+      filter.setFilterType( 3 ); // 5 = search
+      filter.setIds(ids);
       getCourseParam.setFilter( filter );
       CourseVO[] results = _courseWS.getCourse( getCourseParam ).get_return();
       if( null == results ) {
@@ -596,6 +617,8 @@ public class WebServiceClient {
       }
       return columns;
     }
+
+
 
     /* internal method to set appropriate configuration on ws client */
     private void setWebserviceClientOptions( Options op )

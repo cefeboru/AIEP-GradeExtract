@@ -37,7 +37,7 @@
     <taskdef name="codegen" classname="org.apache.axis2.tool.ant.AntCodegenTask" classpathref="project.class.path" />
     <!-- http://axis.apache.org/axis2/java/core/tools/CodegenToolReference.html -->
     <codegen wsdlfilename="${ws.baseurl}/Context.WS?wsdl"          output="${srcws.dir}" databindingName="adb" syncOnly="true">
-      <!-- <classpath location="${src.dir}" /> -->
+       <classpath location="${src.dir}" />
     </codegen>
     <codegen wsdlfilename="${ws.baseurl}/Course.WS?wsdl"           output="${srcws.dir}" databindingName="adb" syncOnly="true"  />
     <codegen wsdlfilename="${ws.baseurl}/CourseMembership.WS?wsdl" output="${srcws.dir}" databindingName="adb" syncOnly="true"  />
@@ -87,7 +87,7 @@
          If NOT set on the command line, this property declaration sets the
          property to an empty string.
     -->
-    <property name="courseId" value="amarillo-101" />
+    <property name="courseId" value="test_course2" />
 
     <java classname="blackboard.ws.client.SampleExtractApp" fork="true" maxmemory="1024m">
       <arg value="${basedir}/application.properties"/>

@@ -10,7 +10,6 @@ import blackboard.ws.course.CourseWSStub.CourseVO;
 import blackboard.ws.coursemembership.CourseMembershipWSStub.CourseMembershipVO;
 import blackboard.ws.gradebook.GradebookWSStub.ColumnVO;
 import blackboard.ws.gradebook.GradebookWSStub.ScoreVO;
-import blackboard.ws.gradebook.GradebookWSStub.GradebookTypeVO;
 import blackboard.ws.user.UserWSStub.UserVO;
 
 public class GradeExtractApp
@@ -145,13 +144,15 @@ public class GradeExtractApp
     _LOG.info( "Loading courses..." );
     if( null == _courseIdContains || _courseIdContains.trim().length() == 0 ) {
       // Load all the available courses in the system.
-      
-        courses = wsClient.getAllCourses();
+        //courses = new CourseVO[] {wsClient.getCourseById("17702")};
+        courses = wsClient.getAllCourses(); 
+
     }
     else {
       // load by criteria.
       //courses = wsClient.getCoursesBySearch( "CourseId", "Contains", _courseIdContains );
-      courses = wsClient.getCoursesBySearch( "CourseId", "Contains", "AAG");
+      System.out.println("Course Contains: " + _courseIdContains);
+      courses = wsClient.getCoursesBySearch( "CourseId", "Contains", _courseIdContains);
     }
     _LOG.info( "Total number of courses: " + courses.length );
 
@@ -326,8 +327,6 @@ public class GradeExtractApp
         // Lookup the score for this membership and column.
         ScoreVO score = lookupScore( column, member, scores );
 
-        GradebookTypeVO[] types = wsClient.getGradebookTypesByCoursePkId(course.getId());
-        _LOG.info( types[0].getTitle() );
         printRow( course, column, user, member, score, dataOut );
 
       }// end for users
@@ -398,59 +397,59 @@ public class GradeExtractApp
   {
     out.print( header ? "COURSE_ID"        : course.getCourseId() );
     out.print( _delimiter );
-    //out.print( header ? "COURSE_BATCHUID"  : course.getBatchUid() );
-    //out.print( _delimiter );
-    //out.print( header ? "COURSE_PKID"      : course.getId() );
-    //out.print( _delimiter );
+    out.print( header ? "COURSE_BATCHUID"  : course.getBatchUid() );
+    out.print( _delimiter );
+    out.print( header ? "COURSE_PKID"      : course.getId() );
+    out.print( _delimiter );
     out.print( header ? "COURSE_TITLE"     : course.getName() );
     out.print( _delimiter );
-    //out.print( header ? "COURSE_TYPE"      : course.getCourseServiceLevel() );
-    //out.print( _delimiter );
+    out.print( header ? "COURSE_TYPE"      : course.getCourseServiceLevel() );
+    out.print( _delimiter );
     out.print( header ? "COURSE_AVAILABLE" : course.getAvailable() );
     out.print( _delimiter );
 
     out.print( header ? "COLUMN_NAME"            : column.getColumnDisplayName() );
     out.print( _delimiter );
-    //out.print( header ? "COLUMN_PKID"            : column.getId() );
-    //out.print( _delimiter );
-    //out.print( header ? "IS_EXTERNAL_GRADE"      : (column.getExternalGrade() ? "Y" : "N") );
-    //out.print( _delimiter );
-    //out.print( header ? "COLUMN_IS_DELETED"      : (column.getDeleted() ? "Y" : "N") );
-    //out.print( _delimiter );
-    //out.print( header ? "COLUMN_PKID"            : column.getPosition() );
-    //out.print( _delimiter );
+    out.print( header ? "COLUMN_PKID"            : column.getId() );
+    out.print( _delimiter );
+    out.print( header ? "IS_EXTERNAL_GRADE"      : (column.getExternalGrade() ? "Y" : "N") );
+    out.print( _delimiter );
+    out.print( header ? "COLUMN_IS_DELETED"      : (column.getDeleted() ? "Y" : "N") );
+    out.print( _delimiter );
+    out.print( header ? "COLUMN_PKID"            : column.getPosition() );
+    out.print( _delimiter );
     out.print( header ? "COLUMN_MODEL"           : column.getAggregationModel() );
     out.print( _delimiter );
     out.print( header ? "COLUMN_CALC_TYPE"       : column.getCalculationType() );
     out.print( _delimiter );
-    //out.print( header ? "COLUMN_DUE_DATE"        : column.getDueDate() );
-    //out.print( _delimiter );
-    //out.print( header ? "COLUMN_MULTI_ATTEMPTS"  : column.getMultipleAttempts() );
-    //out.print( _delimiter );
+    out.print( header ? "COLUMN_DUE_DATE"        : column.getDueDate() );
+    out.print( _delimiter );
+    out.print( header ? "COLUMN_MULTI_ATTEMPTS"  : column.getMultipleAttempts() );
+    out.print( _delimiter );
     out.print( header ? "COLUMN_POINTS_POSSIBLE" : column.getPossible() );
     out.print( _delimiter );
-    //out.print( header ? "COLUMN_IS_SCORABLE"     : (column.getScorable() ? "Y" : "N") );
-    //out.print( _delimiter );
-    //out.print( header ? "COLUMN_IS_VISIBLE"      : (column.getVisible() ? "Y" : "N") );
-    //out.print( _delimiter );
+    out.print( header ? "COLUMN_IS_SCORABLE"     : (column.getScorable() ? "Y" : "N") );
+    out.print( _delimiter );
+    out.print( header ? "COLUMN_IS_VISIBLE"      : (column.getVisible() ? "Y" : "N") );
+    out.print( _delimiter );
 
     out.print( header ? "USER_ID"           : user.getName() );
     out.print( _delimiter );
-    //out.print( header ? "USER_BATCHUID"     : user.getUserBatchUid() );
-    //out.print( _delimiter );
+    out.print( header ? "USER_BATCHUID"     : user.getUserBatchUid() );
+    out.print( _delimiter );
     out.print( header ? "USER_PKID"         : user.getId() );
     out.print( _delimiter );
-    //out.print( header ? "USER_IS_AVAILABLE" : (user.getIsAvailable() ? "Y" : "N") );
-    //out.print( _delimiter );
+    out.print( header ? "USER_IS_AVAILABLE" : (user.getIsAvailable() ? "Y" : "N") );
+    out.print( _delimiter );
     out.print( header ? "USER_STUDENT_ID"   : user.getStudentId() );
     out.print( _delimiter );
 
-    //out.print( header ? "ENR_PKID"         : member.getId() );
-    //out.print( _delimiter );
-    //out.print( header ? "ENR_IS_AVAILABLE" : (member.getAvailable() ? "Y" : "N") );
-    //out.print( _delimiter );
-    //out.print( header ? "ENR_DATE"         : toDate(member.getEnrollmentDate()) );
-    //out.print( _delimiter );
+    out.print( header ? "ENR_PKID"         : member.getId() );
+    out.print( _delimiter );
+    out.print( header ? "ENR_IS_AVAILABLE" : (member.getAvailable() ? "Y" : "N") );
+    out.print( _delimiter );
+    out.print( header ? "ENR_DATE"         : toDate(member.getEnrollmentDate()) );
+    out.print( _delimiter );
 
     out.print( header ? "GRADE_DISPLAYED"    : (null == score ? "" : score.getSchemaGradeValue()) );
     out.print( _delimiter );
@@ -458,13 +457,12 @@ public class GradeExtractApp
     out.print( _delimiter );
     out.print( header ? "GRADE_ID"           : (null == score ? "" : score.getId()) );
     out.print( _delimiter );
-    //out.print( header ? "GRADE_MANUAL"       : (null == score ? "" : score.getManualGrade()) );
-    //out.print( _delimiter );
-    //out.print( header ? "GRADE_SCORE_MANUAL" : (null == score ? "" : score.getManualScore()) );
-   // out.print( _delimiter );
-    out.print( header ? "GRADE_STATUS"       : (null == score ? "" : score.getStatus()) );
+    out.print( header ? "GRADE_MANUAL"       : (null == score ? "" : score.getManualGrade()) );
     out.print( _delimiter );
-    out.print( header ? "GRADEBOOK_TYPEID" : column.getGradebookTypeId() );
+    out.print( header ? "GRADE_SCORE_MANUAL" : (null == score ? "" : score.getManualScore()) );
+    out.print( _delimiter );
+    out.print( header ? "GRADE_STATUS"       : (null == score ? "" : score.getStatus()) );
+
     out.println();
   }
 

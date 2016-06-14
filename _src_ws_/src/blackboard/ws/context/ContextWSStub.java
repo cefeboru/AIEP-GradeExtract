@@ -274,7 +274,7 @@
      */
     public ContextWSStub(org.apache.axis2.context.ConfigurationContext configurationContext) throws org.apache.axis2.AxisFault {
         
-                    this(configurationContext,"http://b2showcase.blackboard.com:8080/webapps/ws/services/Context.WS" );
+                    this(configurationContext,"http://aieptest.blackboard.com:8080//webapps/services/Context.WS" );
                 
     }
 
@@ -283,7 +283,7 @@
      */
     public ContextWSStub() throws org.apache.axis2.AxisFault {
         
-                    this("http://b2showcase.blackboard.com:8080/webapps/ws/services/Context.WS" );
+                    this("http://aieptest.blackboard.com:8080//webapps/services/Context.WS" );
                 
     }
 
@@ -2138,7 +2138,7 @@
         }
         return false;
     }
-     //http://b2showcase.blackboard.com:8080/webapps/ws/services/Context.WS
+     //http://aieptest.blackboard.com:8080//webapps/services/Context.WS
         public static class LoginTicket
         implements org.apache.axis2.databinding.ADBBean{
         

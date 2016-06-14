@@ -298,7 +298,7 @@
      */
     public UserWSStub(org.apache.axis2.context.ConfigurationContext configurationContext) throws org.apache.axis2.AxisFault {
         
-                    this(configurationContext,"http://b2showcase.blackboard.com:8080/webapps/ws/services/User.WS" );
+                    this(configurationContext,"http://aieptest.blackboard.com:8080//webapps/services/User.WS" );
                 
     }
 
@@ -307,7 +307,7 @@
      */
     public UserWSStub() throws org.apache.axis2.AxisFault {
         
-                    this("http://b2showcase.blackboard.com:8080/webapps/ws/services/User.WS" );
+                    this("http://aieptest.blackboard.com:8080//webapps/services/User.WS" );
                 
     }
 
@@ -2426,14 +2426,14 @@
         }
         return false;
     }
-     //http://b2showcase.blackboard.com:8080/webapps/ws/services/User.WS
+     //http://aieptest.blackboard.com:8080//webapps/services/User.WS
         public static class GetObserveeResponse
         implements org.apache.axis2.databinding.ADBBean{
         
                 public static final javax.xml.namespace.QName MY_QNAME = new javax.xml.namespace.QName(
                 "http://user.ws.blackboard",
                 "getObserveeResponse",
-                "ns11");
+                "ns15");
 
             
 
@@ -2609,7 +2609,7 @@
 
         private static java.lang.String generatePrefix(java.lang.String namespace) {
             if(namespace.equals("http://user.ws.blackboard")){
-                return "ns11";
+                return "ns15";
             }
             return org.apache.axis2.databinding.utils.BeanUtil.getUniquePrefix();
         }
@@ -2977,7 +2977,7 @@
                 public static final javax.xml.namespace.QName MY_QNAME = new javax.xml.namespace.QName(
                 "http://user.ws.blackboard",
                 "getInstitutionRoles",
-                "ns11");
+                "ns15");
 
             
 
@@ -3164,7 +3164,7 @@
 
         private static java.lang.String generatePrefix(java.lang.String namespace) {
             if(namespace.equals("http://user.ws.blackboard")){
-                return "ns11";
+                return "ns15";
             }
             return org.apache.axis2.databinding.utils.BeanUtil.getUniquePrefix();
         }
@@ -3535,7 +3535,7 @@
                 public static final javax.xml.namespace.QName MY_QNAME = new javax.xml.namespace.QName(
                 "http://user.ws.blackboard",
                 "changeUserBatchUid",
-                "ns11");
+                "ns15");
 
             
 
@@ -3725,7 +3725,7 @@
 
         private static java.lang.String generatePrefix(java.lang.String namespace) {
             if(namespace.equals("http://user.ws.blackboard")){
-                return "ns11";
+                return "ns15";
             }
             return org.apache.axis2.databinding.utils.BeanUtil.getUniquePrefix();
         }
@@ -4076,7 +4076,7 @@
                 public static final javax.xml.namespace.QName MY_QNAME = new javax.xml.namespace.QName(
                 "http://user.ws.blackboard",
                 "deleteAddressBookEntryResponse",
-                "ns11");
+                "ns15");
 
             
 
@@ -4263,7 +4263,7 @@
 
         private static java.lang.String generatePrefix(java.lang.String namespace) {
             if(namespace.equals("http://user.ws.blackboard")){
-                return "ns11";
+                return "ns15";
             }
             return org.apache.axis2.databinding.utils.BeanUtil.getUniquePrefix();
         }
@@ -5076,7 +5076,7 @@
                 public static final javax.xml.namespace.QName MY_QNAME = new javax.xml.namespace.QName(
                 "http://user.ws.blackboard",
                 "getSystemRolesResponse",
-                "ns11");
+                "ns15");
 
             
 
@@ -5263,7 +5263,7 @@
 
         private static java.lang.String generatePrefix(java.lang.String namespace) {
             if(namespace.equals("http://user.ws.blackboard")){
-                return "ns11";
+                return "ns15";
             }
             return org.apache.axis2.databinding.utils.BeanUtil.getUniquePrefix();
         }
@@ -5633,7 +5633,7 @@
         /* This type was generated from the piece of schema that had
                 name = UserRoleVO
                 Namespace URI = http://user.ws.blackboard/xsd
-                Namespace Prefix = ns10
+                Namespace Prefix = ns14
                 */
             
 
@@ -6000,7 +6000,7 @@
 
         private static java.lang.String generatePrefix(java.lang.String namespace) {
             if(namespace.equals("http://user.ws.blackboard/xsd")){
-                return "ns10";
+                return "ns14";
             }
             return org.apache.axis2.databinding.utils.BeanUtil.getUniquePrefix();
         }
@@ -6473,7 +6473,7 @@
                 public static final javax.xml.namespace.QName MY_QNAME = new javax.xml.namespace.QName(
                 "http://user.ws.blackboard",
                 "getServerVersionResponse",
-                "ns11");
+                "ns15");
 
             
 
@@ -6597,7 +6597,7 @@
 
         private static java.lang.String generatePrefix(java.lang.String namespace) {
             if(namespace.equals("http://user.ws.blackboard")){
-                return "ns11";
+                return "ns15";
             }
             return org.apache.axis2.databinding.utils.BeanUtil.getUniquePrefix();
         }
@@ -6911,7 +6911,7 @@
                 public static final javax.xml.namespace.QName MY_QNAME = new javax.xml.namespace.QName(
                 "http://user.ws.blackboard",
                 "saveObserverAssociation",
-                "ns11");
+                "ns15");
 
             
 
@@ -7087,7 +7087,7 @@
 
         private static java.lang.String generatePrefix(java.lang.String namespace) {
             if(namespace.equals("http://user.ws.blackboard")){
-                return "ns11";
+                return "ns15";
             }
             return org.apache.axis2.databinding.utils.BeanUtil.getUniquePrefix();
         }
@@ -7454,7 +7454,7 @@
         /* This type was generated from the piece of schema that had
                 name = UserExtendedInfoVO
                 Namespace URI = http://user.ws.blackboard/xsd
-                Namespace Prefix = ns10
+                Namespace Prefix = ns14
                 */
             
 
@@ -8901,7 +8901,7 @@
 
         private static java.lang.String generatePrefix(java.lang.String namespace) {
             if(namespace.equals("http://user.ws.blackboard/xsd")){
-                return "ns10";
+                return "ns14";
             }
             return org.apache.axis2.databinding.utils.BeanUtil.getUniquePrefix();
         }
@@ -9986,7 +9986,7 @@
                 public static final javax.xml.namespace.QName MY_QNAME = new javax.xml.namespace.QName(
                 "http://user.ws.blackboard",
                 "saveUserResponse",
-                "ns11");
+                "ns15");
 
             
 
@@ -10173,7 +10173,7 @@
 
         private static java.lang.String generatePrefix(java.lang.String namespace) {
             if(namespace.equals("http://user.ws.blackboard")){
-                return "ns11";
+                return "ns15";
             }
             return org.apache.axis2.databinding.utils.BeanUtil.getUniquePrefix();
         }
@@ -10544,7 +10544,7 @@
                 public static final javax.xml.namespace.QName MY_QNAME = new javax.xml.namespace.QName(
                 "http://user.ws.blackboard",
                 "getUserInstitutionRoles",
-                "ns11");
+                "ns15");
 
             
 
@@ -10731,7 +10731,7 @@
 
         private static java.lang.String generatePrefix(java.lang.String namespace) {
             if(namespace.equals("http://user.ws.blackboard")){
-                return "ns11";
+                return "ns15";
             }
             return org.apache.axis2.databinding.utils.BeanUtil.getUniquePrefix();
         }
@@ -11102,7 +11102,7 @@
                 public static final javax.xml.namespace.QName MY_QNAME = new javax.xml.namespace.QName(
                 "http://user.ws.blackboard",
                 "changeUserDataSourceIdResponse",
-                "ns11");
+                "ns15");
 
             
 
@@ -11230,7 +11230,7 @@
 
         private static java.lang.String generatePrefix(java.lang.String namespace) {
             if(namespace.equals("http://user.ws.blackboard")){
-                return "ns11";
+                return "ns15";
             }
             return org.apache.axis2.databinding.utils.BeanUtil.getUniquePrefix();
         }
@@ -11542,7 +11542,7 @@
         /* This type was generated from the piece of schema that had
                 name = PortalRoleVO
                 Namespace URI = http://user.ws.blackboard/xsd
-                Namespace Prefix = ns10
+                Namespace Prefix = ns14
                 */
             
 
@@ -11969,7 +11969,7 @@
 
         private static java.lang.String generatePrefix(java.lang.String namespace) {
             if(namespace.equals("http://user.ws.blackboard/xsd")){
-                return "ns10";
+                return "ns14";
             }
             return org.apache.axis2.databinding.utils.BeanUtil.getUniquePrefix();
         }
@@ -12476,7 +12476,7 @@
                 public static final javax.xml.namespace.QName MY_QNAME = new javax.xml.namespace.QName(
                 "http://user.ws.blackboard",
                 "deleteUserByInstitutionRole",
-                "ns11");
+                "ns15");
 
             
 
@@ -12663,7 +12663,7 @@
 
         private static java.lang.String generatePrefix(java.lang.String namespace) {
             if(namespace.equals("http://user.ws.blackboard")){
-                return "ns11";
+                return "ns15";
             }
             return org.apache.axis2.databinding.utils.BeanUtil.getUniquePrefix();
         }
@@ -13034,7 +13034,7 @@
                 public static final javax.xml.namespace.QName MY_QNAME = new javax.xml.namespace.QName(
                 "http://user.ws.blackboard",
                 "getUserResponse",
-                "ns11");
+                "ns15");
 
             
 
@@ -13210,7 +13210,7 @@
 
         private static java.lang.String generatePrefix(java.lang.String namespace) {
             if(namespace.equals("http://user.ws.blackboard")){
-                return "ns11";
+                return "ns15";
             }
             return org.apache.axis2.databinding.utils.BeanUtil.getUniquePrefix();
         }
@@ -13578,7 +13578,7 @@
                 public static final javax.xml.namespace.QName MY_QNAME = new javax.xml.namespace.QName(
                 "http://user.ws.blackboard",
                 "saveAddressBookEntry",
-                "ns11");
+                "ns15");
 
             
 
@@ -13754,7 +13754,7 @@
 
         private static java.lang.String generatePrefix(java.lang.String namespace) {
             if(namespace.equals("http://user.ws.blackboard")){
-                return "ns11";
+                return "ns15";
             }
             return org.apache.axis2.databinding.utils.BeanUtil.getUniquePrefix();
         }
@@ -14122,7 +14122,7 @@
                 public static final javax.xml.namespace.QName MY_QNAME = new javax.xml.namespace.QName(
                 "http://user.ws.blackboard",
                 "deleteUser",
-                "ns11");
+                "ns15");
 
             
 
@@ -14309,7 +14309,7 @@
 
         private static java.lang.String generatePrefix(java.lang.String namespace) {
             if(namespace.equals("http://user.ws.blackboard")){
-                return "ns11";
+                return "ns15";
             }
             return org.apache.axis2.databinding.utils.BeanUtil.getUniquePrefix();
         }
@@ -14680,7 +14680,7 @@
                 public static final javax.xml.namespace.QName MY_QNAME = new javax.xml.namespace.QName(
                 "http://user.ws.blackboard",
                 "initializeUserWS",
-                "ns11");
+                "ns15");
 
             
 
@@ -14808,7 +14808,7 @@
 
         private static java.lang.String generatePrefix(java.lang.String namespace) {
             if(namespace.equals("http://user.ws.blackboard")){
-                return "ns11";
+                return "ns15";
             }
             return org.apache.axis2.databinding.utils.BeanUtil.getUniquePrefix();
         }
@@ -15212,7 +15212,7 @@
         /* This type was generated from the piece of schema that had
                 name = UserVO
                 Namespace URI = http://user.ws.blackboard/xsd
-                Namespace Prefix = ns10
+                Namespace Prefix = ns14
                 */
             
 
@@ -16340,7 +16340,7 @@
 
         private static java.lang.String generatePrefix(java.lang.String namespace) {
             if(namespace.equals("http://user.ws.blackboard/xsd")){
-                return "ns10";
+                return "ns14";
             }
             return org.apache.axis2.databinding.utils.BeanUtil.getUniquePrefix();
         }
@@ -17292,7 +17292,7 @@
                 public static final javax.xml.namespace.QName MY_QNAME = new javax.xml.namespace.QName(
                 "http://user.ws.blackboard",
                 "deleteObserverAssociationResponse",
-                "ns11");
+                "ns15");
 
             
 
@@ -17479,7 +17479,7 @@
 
         private static java.lang.String generatePrefix(java.lang.String namespace) {
             if(namespace.equals("http://user.ws.blackboard")){
-                return "ns11";
+                return "ns15";
             }
             return org.apache.axis2.databinding.utils.BeanUtil.getUniquePrefix();
         }
@@ -17850,7 +17850,7 @@
                 public static final javax.xml.namespace.QName MY_QNAME = new javax.xml.namespace.QName(
                 "http://user.ws.blackboard",
                 "getAddressBookEntry",
-                "ns11");
+                "ns15");
 
             
 
@@ -17974,7 +17974,7 @@
 
         private static java.lang.String generatePrefix(java.lang.String namespace) {
             if(namespace.equals("http://user.ws.blackboard")){
-                return "ns11";
+                return "ns15";
             }
             return org.apache.axis2.databinding.utils.BeanUtil.getUniquePrefix();
         }
@@ -18288,7 +18288,7 @@
                 public static final javax.xml.namespace.QName MY_QNAME = new javax.xml.namespace.QName(
                 "http://user.ws.blackboard",
                 "deleteObserverAssociation",
-                "ns11");
+                "ns15");
 
             
 
@@ -18464,7 +18464,7 @@
 
         private static java.lang.String generatePrefix(java.lang.String namespace) {
             if(namespace.equals("http://user.ws.blackboard")){
-                return "ns11";
+                return "ns15";
             }
             return org.apache.axis2.databinding.utils.BeanUtil.getUniquePrefix();
         }
@@ -18832,7 +18832,7 @@
                 public static final javax.xml.namespace.QName MY_QNAME = new javax.xml.namespace.QName(
                 "http://user.ws.blackboard",
                 "getAddressBookEntryResponse",
-                "ns11");
+                "ns15");
 
             
 
@@ -19008,7 +19008,7 @@
 
         private static java.lang.String generatePrefix(java.lang.String namespace) {
             if(namespace.equals("http://user.ws.blackboard")){
-                return "ns11";
+                return "ns15";
             }
             return org.apache.axis2.databinding.utils.BeanUtil.getUniquePrefix();
         }
@@ -19376,7 +19376,7 @@
                 public static final javax.xml.namespace.QName MY_QNAME = new javax.xml.namespace.QName(
                 "http://user.ws.blackboard",
                 "changeUserDataSourceId",
-                "ns11");
+                "ns15");
 
             
 
@@ -19566,7 +19566,7 @@
 
         private static java.lang.String generatePrefix(java.lang.String namespace) {
             if(namespace.equals("http://user.ws.blackboard")){
-                return "ns11";
+                return "ns15";
             }
             return org.apache.axis2.databinding.utils.BeanUtil.getUniquePrefix();
         }
@@ -19917,7 +19917,7 @@
                 public static final javax.xml.namespace.QName MY_QNAME = new javax.xml.namespace.QName(
                 "http://user.ws.blackboard",
                 "getServerVersion",
-                "ns11");
+                "ns15");
 
             
 
@@ -20041,7 +20041,7 @@
 
         private static java.lang.String generatePrefix(java.lang.String namespace) {
             if(namespace.equals("http://user.ws.blackboard")){
-                return "ns11";
+                return "ns15";
             }
             return org.apache.axis2.databinding.utils.BeanUtil.getUniquePrefix();
         }
@@ -20354,7 +20354,7 @@
         /* This type was generated from the piece of schema that had
                 name = ObserverAssociationVO
                 Namespace URI = http://user.ws.blackboard/xsd
-                Namespace Prefix = ns10
+                Namespace Prefix = ns14
                 */
             
 
@@ -20835,7 +20835,7 @@
 
         private static java.lang.String generatePrefix(java.lang.String namespace) {
             if(namespace.equals("http://user.ws.blackboard/xsd")){
-                return "ns10";
+                return "ns14";
             }
             return org.apache.axis2.databinding.utils.BeanUtil.getUniquePrefix();
         }
@@ -21415,7 +21415,7 @@
         /* This type was generated from the piece of schema that had
                 name = AddressBookEntryVO
                 Namespace URI = http://user.ws.blackboard/xsd
-                Namespace Prefix = ns10
+                Namespace Prefix = ns14
                 */
             
 
@@ -21836,7 +21836,7 @@
 
         private static java.lang.String generatePrefix(java.lang.String namespace) {
             if(namespace.equals("http://user.ws.blackboard/xsd")){
-                return "ns10";
+                return "ns14";
             }
             return org.apache.axis2.databinding.utils.BeanUtil.getUniquePrefix();
         }
@@ -22340,7 +22340,7 @@
                 public static final javax.xml.namespace.QName MY_QNAME = new javax.xml.namespace.QName(
                 "http://user.ws.blackboard",
                 "changeUserBatchUidResponse",
-                "ns11");
+                "ns15");
 
             
 
@@ -22468,7 +22468,7 @@
 
         private static java.lang.String generatePrefix(java.lang.String namespace) {
             if(namespace.equals("http://user.ws.blackboard")){
-                return "ns11";
+                return "ns15";
             }
             return org.apache.axis2.databinding.utils.BeanUtil.getUniquePrefix();
         }
@@ -22781,7 +22781,7 @@
                 public static final javax.xml.namespace.QName MY_QNAME = new javax.xml.namespace.QName(
                 "http://user.ws.blackboard",
                 "saveObserverAssociationResponse",
-                "ns11");
+                "ns15");
 
             
 
@@ -22968,7 +22968,7 @@
 
         private static java.lang.String generatePrefix(java.lang.String namespace) {
             if(namespace.equals("http://user.ws.blackboard")){
-                return "ns11";
+                return "ns15";
             }
             return org.apache.axis2.databinding.utils.BeanUtil.getUniquePrefix();
         }
@@ -23339,7 +23339,7 @@
                 public static final javax.xml.namespace.QName MY_QNAME = new javax.xml.namespace.QName(
                 "http://user.ws.blackboard",
                 "deleteAddressBookEntry",
-                "ns11");
+                "ns15");
 
             
 
@@ -23526,7 +23526,7 @@
 
         private static java.lang.String generatePrefix(java.lang.String namespace) {
             if(namespace.equals("http://user.ws.blackboard")){
-                return "ns11";
+                return "ns15";
             }
             return org.apache.axis2.databinding.utils.BeanUtil.getUniquePrefix();
         }
@@ -23897,7 +23897,7 @@
                 public static final javax.xml.namespace.QName MY_QNAME = new javax.xml.namespace.QName(
                 "http://user.ws.blackboard",
                 "saveUser",
-                "ns11");
+                "ns15");
 
             
 
@@ -24073,7 +24073,7 @@
 
         private static java.lang.String generatePrefix(java.lang.String namespace) {
             if(namespace.equals("http://user.ws.blackboard")){
-                return "ns11";
+                return "ns15";
             }
             return org.apache.axis2.databinding.utils.BeanUtil.getUniquePrefix();
         }
@@ -24441,7 +24441,7 @@
                 public static final javax.xml.namespace.QName MY_QNAME = new javax.xml.namespace.QName(
                 "http://user.ws.blackboard",
                 "deleteUserResponse",
-                "ns11");
+                "ns15");
 
             
 
@@ -24628,7 +24628,7 @@
 
         private static java.lang.String generatePrefix(java.lang.String namespace) {
             if(namespace.equals("http://user.ws.blackboard")){
-                return "ns11";
+                return "ns15";
             }
             return org.apache.axis2.databinding.utils.BeanUtil.getUniquePrefix();
         }
@@ -24999,7 +24999,7 @@
                 public static final javax.xml.namespace.QName MY_QNAME = new javax.xml.namespace.QName(
                 "http://user.ws.blackboard",
                 "getSystemRoles",
-                "ns11");
+                "ns15");
 
             
 
@@ -25186,7 +25186,7 @@
 
         private static java.lang.String generatePrefix(java.lang.String namespace) {
             if(namespace.equals("http://user.ws.blackboard")){
-                return "ns11";
+                return "ns15";
             }
             return org.apache.axis2.databinding.utils.BeanUtil.getUniquePrefix();
         }
@@ -25557,7 +25557,7 @@
                 public static final javax.xml.namespace.QName MY_QNAME = new javax.xml.namespace.QName(
                 "http://user.ws.blackboard",
                 "saveAddressBookEntryResponse",
-                "ns11");
+                "ns15");
 
             
 
@@ -25744,7 +25744,7 @@
 
         private static java.lang.String generatePrefix(java.lang.String namespace) {
             if(namespace.equals("http://user.ws.blackboard")){
-                return "ns11";
+                return "ns15";
             }
             return org.apache.axis2.databinding.utils.BeanUtil.getUniquePrefix();
         }
@@ -26115,7 +26115,7 @@
                 public static final javax.xml.namespace.QName MY_QNAME = new javax.xml.namespace.QName(
                 "http://user.ws.blackboard",
                 "getInstitutionRolesResponse",
-                "ns11");
+                "ns15");
 
             
 
@@ -26291,7 +26291,7 @@
 
         private static java.lang.String generatePrefix(java.lang.String namespace) {
             if(namespace.equals("http://user.ws.blackboard")){
-                return "ns11";
+                return "ns15";
             }
             return org.apache.axis2.databinding.utils.BeanUtil.getUniquePrefix();
         }
@@ -26659,7 +26659,7 @@
                 public static final javax.xml.namespace.QName MY_QNAME = new javax.xml.namespace.QName(
                 "http://user.ws.blackboard",
                 "getUserInstitutionRolesResponse",
-                "ns11");
+                "ns15");
 
             
 
@@ -26835,7 +26835,7 @@
 
         private static java.lang.String generatePrefix(java.lang.String namespace) {
             if(namespace.equals("http://user.ws.blackboard")){
-                return "ns11";
+                return "ns15";
             }
             return org.apache.axis2.databinding.utils.BeanUtil.getUniquePrefix();
         }
@@ -27203,7 +27203,7 @@
                 public static final javax.xml.namespace.QName MY_QNAME = new javax.xml.namespace.QName(
                 "http://user.ws.blackboard",
                 "getUser",
-                "ns11");
+                "ns15");
 
             
 
@@ -27327,7 +27327,7 @@
 
         private static java.lang.String generatePrefix(java.lang.String namespace) {
             if(namespace.equals("http://user.ws.blackboard")){
-                return "ns11";
+                return "ns15";
             }
             return org.apache.axis2.databinding.utils.BeanUtil.getUniquePrefix();
         }
@@ -27640,7 +27640,7 @@
         /* This type was generated from the piece of schema that had
                 name = UserFilter
                 Namespace URI = http://user.ws.blackboard/xsd
-                Namespace Prefix = ns10
+                Namespace Prefix = ns14
                 */
             
 
@@ -28645,7 +28645,7 @@
 
         private static java.lang.String generatePrefix(java.lang.String namespace) {
             if(namespace.equals("http://user.ws.blackboard/xsd")){
-                return "ns10";
+                return "ns14";
             }
             return org.apache.axis2.databinding.utils.BeanUtil.getUniquePrefix();
         }
@@ -29606,7 +29606,7 @@
                 public static final javax.xml.namespace.QName MY_QNAME = new javax.xml.namespace.QName(
                 "http://user.ws.blackboard",
                 "deleteUserByInstitutionRoleResponse",
-                "ns11");
+                "ns15");
 
             
 
@@ -29793,7 +29793,7 @@
 
         private static java.lang.String generatePrefix(java.lang.String namespace) {
             if(namespace.equals("http://user.ws.blackboard")){
-                return "ns11";
+                return "ns15";
             }
             return org.apache.axis2.databinding.utils.BeanUtil.getUniquePrefix();
         }
@@ -30164,7 +30164,7 @@
                 public static final javax.xml.namespace.QName MY_QNAME = new javax.xml.namespace.QName(
                 "http://user.ws.blackboard",
                 "initializeUserWSResponse",
-                "ns11");
+                "ns15");
 
             
 
@@ -30292,7 +30292,7 @@
 
         private static java.lang.String generatePrefix(java.lang.String namespace) {
             if(namespace.equals("http://user.ws.blackboard")){
-                return "ns11";
+                return "ns15";
             }
             return org.apache.axis2.databinding.utils.BeanUtil.getUniquePrefix();
         }
@@ -30605,7 +30605,7 @@
                 public static final javax.xml.namespace.QName MY_QNAME = new javax.xml.namespace.QName(
                 "http://user.ws.blackboard",
                 "getObservee",
-                "ns11");
+                "ns15");
 
             
 
@@ -30792,7 +30792,7 @@
 
         private static java.lang.String generatePrefix(java.lang.String namespace) {
             if(namespace.equals("http://user.ws.blackboard")){
-                return "ns11";
+                return "ns15";
             }
             return org.apache.axis2.databinding.utils.BeanUtil.getUniquePrefix();
         }
