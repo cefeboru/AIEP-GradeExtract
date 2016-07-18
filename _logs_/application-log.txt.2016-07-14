@@ -1,0 +1,597 @@
+2016-07-14 10:13:03 | INFO  | 118:blackboard.ws.client.GradeExtractApp               | EXTRACT STARTED : Thu Jul 14 10:13:03 CST 2016
+2016-07-14 10:13:03 | INFO  | 166:blackboard.ws.client.WebServiceClient              | Initializing...
+2016-07-14 10:13:03 | INFO  |  63:org.apache.axis2.deployment.ClusterBuilder         | Clustering has been disabled
+2016-07-14 10:13:03 | INFO  |1098:org.apache.axis2.deployment.DeploymentEngine       | No services directory was found under C:\Users\cbonilla\Documents\GitHub\AIEP-GradeExtract\lib\axis2-1.6.2\lib.
+2016-07-14 10:13:03 | INFO  |1109:org.apache.axis2.deployment.DeploymentEngine       | No modules directory was found under C:\Users\cbonilla\Documents\GitHub\AIEP-GradeExtract\lib\axis2-1.6.2\lib.
+2016-07-14 10:13:03 | INFO  |  82:org.apache.axis2.deployment.ModuleDeployer         | Deploying module: addressing-1.6.2 - file:/C:/Users/cbonilla/Documents/GitHub/AIEP-GradeExtract/lib/axis2-1.6.2/lib/addressing-1.6.2.mar
+2016-07-14 10:13:03 | INFO  |  82:org.apache.axis2.deployment.ModuleDeployer         | Deploying module: rampart-1.6.2 - file:/C:/Users/cbonilla/Documents/GitHub/AIEP-GradeExtract/lib/axis2-1.6.2/lib/rampart-1.6.2.mar
+2016-07-14 10:13:04 | INFO  | 210:blackboard.ws.client.WebServiceClient              | Checking versions...
+2016-07-14 10:13:05 | ERROR | 126:blackboard.ws.client.GradeExtractApp               | The server did not recognise the action which it received: 
+org.apache.axis2.AxisFault: The server did not recognise the action which it received: 
+	at org.apache.axis2.handlers.addressing.AddressingInFaultHandler.invoke(AddressingInFaultHandler.java:115)
+	at org.apache.axis2.engine.Phase.invokeHandler(Phase.java:340)
+	at org.apache.axis2.engine.Phase.invoke(Phase.java:313)
+	at org.apache.axis2.engine.AxisEngine.invoke(AxisEngine.java:262)
+	at org.apache.axis2.engine.AxisEngine.receive(AxisEngine.java:168)
+	at org.apache.axis2.description.OutInAxisOperationClient.handleResponse(OutInAxisOperation.java:364)
+	at org.apache.axis2.description.OutInAxisOperationClient.send(OutInAxisOperation.java:421)
+	at org.apache.axis2.description.OutInAxisOperationClient.executeImpl(OutInAxisOperation.java:229)
+	at org.apache.axis2.client.OperationClient.execute(OperationClient.java:165)
+	at blackboard.ws.context.ContextWSStub.getServerVersion(ContextWSStub.java:1679)
+	at blackboard.ws.client.WebServiceClient.initialize(WebServiceClient.java:213)
+	at blackboard.ws.client.GradeExtractApp.newWebServiceClient(GradeExtractApp.java:394)
+	at blackboard.ws.client.GradeExtractApp.doMain(GradeExtractApp.java:142)
+	at blackboard.ws.client.GradeExtractApp.main(GradeExtractApp.java:122)
+2016-07-14 10:13:05 | INFO  | 129:blackboard.ws.client.GradeExtractApp               | EXTRACT START TIME: Thu Jul 14 10:13:03 CST 2016
+2016-07-14 10:13:05 | INFO  | 130:blackboard.ws.client.GradeExtractApp               | EXTRACT COMPLETED : Thu Jul 14 10:13:05 CST 2016
+2016-07-14 10:13:05 | ERROR | 132:blackboard.ws.client.GradeExtractApp               | ERRORS(1):
+2016-07-14 10:13:05 | ERROR | 134:blackboard.ws.client.GradeExtractApp               |  - The server did not recognise the action which it received: 
+2016-07-14 16:02:34 | INFO  | 118:blackboard.ws.client.GradeExtractApp               | EXTRACT STARTED : Thu Jul 14 16:02:34 CST 2016
+2016-07-14 16:02:34 | INFO  | 166:blackboard.ws.client.WebServiceClient              | Initializing...
+2016-07-14 16:02:34 | INFO  |  63:org.apache.axis2.deployment.ClusterBuilder         | Clustering has been disabled
+2016-07-14 16:02:34 | INFO  |1098:org.apache.axis2.deployment.DeploymentEngine       | No services directory was found under C:\Users\cbonilla\Documents\GitHub\AIEP-GradeExtract\lib\axis2-1.6.2\lib.
+2016-07-14 16:02:34 | INFO  |1109:org.apache.axis2.deployment.DeploymentEngine       | No modules directory was found under C:\Users\cbonilla\Documents\GitHub\AIEP-GradeExtract\lib\axis2-1.6.2\lib.
+2016-07-14 16:02:34 | INFO  |  82:org.apache.axis2.deployment.ModuleDeployer         | Deploying module: addressing-1.6.2 - file:/C:/Users/cbonilla/Documents/GitHub/AIEP-GradeExtract/lib/axis2-1.6.2/lib/addressing-1.6.2.mar
+2016-07-14 16:02:34 | INFO  |  82:org.apache.axis2.deployment.ModuleDeployer         | Deploying module: rampart-1.6.2 - file:/C:/Users/cbonilla/Documents/GitHub/AIEP-GradeExtract/lib/axis2-1.6.2/lib/rampart-1.6.2.mar
+2016-07-14 16:02:34 | INFO  | 211:blackboard.ws.client.WebServiceClient              | Checking versions...
+2016-07-14 16:02:34 | ERROR |  80:org.apache.axis2.description.ClientUtils           | The system cannot infer the transport information from the aiep-ws.blackboard.com//webapps/ws/services/Context.WS URL.
+2016-07-14 16:02:34 | ERROR | 126:blackboard.ws.client.GradeExtractApp               | The system cannot infer the transport information from the aiep-ws.blackboard.com//webapps/ws/services/Context.WS URL.
+org.apache.axis2.AxisFault: The system cannot infer the transport information from the aiep-ws.blackboard.com//webapps/ws/services/Context.WS URL.
+	at org.apache.axis2.description.ClientUtils.inferOutTransport(ClientUtils.java:81)
+	at org.apache.axis2.client.OperationClient.prepareMessageContext(OperationClient.java:304)
+	at org.apache.axis2.description.OutInAxisOperationClient.executeImpl(OutInAxisOperation.java:180)
+	at org.apache.axis2.client.OperationClient.execute(OperationClient.java:165)
+	at blackboard.ws.context.ContextWSStub.getServerVersion(ContextWSStub.java:1679)
+	at blackboard.ws.client.WebServiceClient.initialize(WebServiceClient.java:214)
+	at blackboard.ws.client.GradeExtractApp.newWebServiceClient(GradeExtractApp.java:394)
+	at blackboard.ws.client.GradeExtractApp.doMain(GradeExtractApp.java:142)
+	at blackboard.ws.client.GradeExtractApp.main(GradeExtractApp.java:122)
+2016-07-14 16:02:34 | INFO  | 129:blackboard.ws.client.GradeExtractApp               | EXTRACT START TIME: Thu Jul 14 16:02:34 CST 2016
+2016-07-14 16:02:34 | INFO  | 130:blackboard.ws.client.GradeExtractApp               | EXTRACT COMPLETED : Thu Jul 14 16:02:34 CST 2016
+2016-07-14 16:02:34 | ERROR | 132:blackboard.ws.client.GradeExtractApp               | ERRORS(1):
+2016-07-14 16:02:34 | ERROR | 134:blackboard.ws.client.GradeExtractApp               |  - The system cannot infer the transport information from the aiep-ws.blackboard.com//webapps/ws/services/Context.WS URL.
+2016-07-14 16:03:14 | INFO  | 118:blackboard.ws.client.GradeExtractApp               | EXTRACT STARTED : Thu Jul 14 16:03:14 CST 2016
+2016-07-14 16:03:14 | INFO  | 166:blackboard.ws.client.WebServiceClient              | Initializing...
+2016-07-14 16:03:14 | INFO  |  63:org.apache.axis2.deployment.ClusterBuilder         | Clustering has been disabled
+2016-07-14 16:03:14 | INFO  |1098:org.apache.axis2.deployment.DeploymentEngine       | No services directory was found under C:\Users\cbonilla\Documents\GitHub\AIEP-GradeExtract\lib\axis2-1.6.2\lib.
+2016-07-14 16:03:14 | INFO  |1109:org.apache.axis2.deployment.DeploymentEngine       | No modules directory was found under C:\Users\cbonilla\Documents\GitHub\AIEP-GradeExtract\lib\axis2-1.6.2\lib.
+2016-07-14 16:03:15 | INFO  |  82:org.apache.axis2.deployment.ModuleDeployer         | Deploying module: addressing-1.6.2 - file:/C:/Users/cbonilla/Documents/GitHub/AIEP-GradeExtract/lib/axis2-1.6.2/lib/addressing-1.6.2.mar
+2016-07-14 16:03:15 | INFO  |  82:org.apache.axis2.deployment.ModuleDeployer         | Deploying module: rampart-1.6.2 - file:/C:/Users/cbonilla/Documents/GitHub/AIEP-GradeExtract/lib/axis2-1.6.2/lib/rampart-1.6.2.mar
+2016-07-14 16:03:15 | INFO  | 211:blackboard.ws.client.WebServiceClient              | Checking versions...
+2016-07-14 16:03:16 | ERROR | 126:blackboard.ws.client.GradeExtractApp               | The server did not recognise the action which it received: 
+org.apache.axis2.AxisFault: The server did not recognise the action which it received: 
+	at org.apache.axis2.handlers.addressing.AddressingInFaultHandler.invoke(AddressingInFaultHandler.java:115)
+	at org.apache.axis2.engine.Phase.invokeHandler(Phase.java:340)
+	at org.apache.axis2.engine.Phase.invoke(Phase.java:313)
+	at org.apache.axis2.engine.AxisEngine.invoke(AxisEngine.java:262)
+	at org.apache.axis2.engine.AxisEngine.receive(AxisEngine.java:168)
+	at org.apache.axis2.description.OutInAxisOperationClient.handleResponse(OutInAxisOperation.java:364)
+	at org.apache.axis2.description.OutInAxisOperationClient.send(OutInAxisOperation.java:421)
+	at org.apache.axis2.description.OutInAxisOperationClient.executeImpl(OutInAxisOperation.java:229)
+	at org.apache.axis2.client.OperationClient.execute(OperationClient.java:165)
+	at blackboard.ws.context.ContextWSStub.getServerVersion(ContextWSStub.java:1679)
+	at blackboard.ws.client.WebServiceClient.initialize(WebServiceClient.java:214)
+	at blackboard.ws.client.GradeExtractApp.newWebServiceClient(GradeExtractApp.java:394)
+	at blackboard.ws.client.GradeExtractApp.doMain(GradeExtractApp.java:142)
+	at blackboard.ws.client.GradeExtractApp.main(GradeExtractApp.java:122)
+2016-07-14 16:03:16 | INFO  | 129:blackboard.ws.client.GradeExtractApp               | EXTRACT START TIME: Thu Jul 14 16:03:14 CST 2016
+2016-07-14 16:03:16 | INFO  | 130:blackboard.ws.client.GradeExtractApp               | EXTRACT COMPLETED : Thu Jul 14 16:03:16 CST 2016
+2016-07-14 16:03:16 | ERROR | 132:blackboard.ws.client.GradeExtractApp               | ERRORS(1):
+2016-07-14 16:03:16 | ERROR | 134:blackboard.ws.client.GradeExtractApp               |  - The server did not recognise the action which it received: 
+2016-07-14 16:43:26 | INFO  | 118:blackboard.ws.client.GradeExtractApp               | EXTRACT STARTED : Thu Jul 14 16:43:26 CST 2016
+2016-07-14 16:43:26 | INFO  | 166:blackboard.ws.client.WebServiceClient              | Initializing...
+2016-07-14 16:43:27 | INFO  |  63:org.apache.axis2.deployment.ClusterBuilder         | Clustering has been disabled
+2016-07-14 16:43:27 | INFO  |1098:org.apache.axis2.deployment.DeploymentEngine       | No services directory was found under C:\Users\cbonilla\Documents\GitHub\AIEP-GradeExtract\lib\axis2-1.6.2\lib.
+2016-07-14 16:43:27 | INFO  |1109:org.apache.axis2.deployment.DeploymentEngine       | No modules directory was found under C:\Users\cbonilla\Documents\GitHub\AIEP-GradeExtract\lib\axis2-1.6.2\lib.
+2016-07-14 16:43:27 | INFO  |  82:org.apache.axis2.deployment.ModuleDeployer         | Deploying module: addressing-1.6.2 - file:/C:/Users/cbonilla/Documents/GitHub/AIEP-GradeExtract/lib/axis2-1.6.2/lib/addressing-1.6.2.mar
+2016-07-14 16:43:27 | INFO  |  82:org.apache.axis2.deployment.ModuleDeployer         | Deploying module: rampart-1.6.2 - file:/C:/Users/cbonilla/Documents/GitHub/AIEP-GradeExtract/lib/axis2-1.6.2/lib/rampart-1.6.2.mar
+2016-07-14 16:43:27 | INFO  | 211:blackboard.ws.client.WebServiceClient              | Checking versions...
+2016-07-14 16:43:28 | INFO  | 215:blackboard.ws.client.WebServiceClient              | Context server version: 2
+2016-07-14 16:43:28 | INFO  | 219:blackboard.ws.client.WebServiceClient              | User server version: 1
+2016-07-14 16:43:29 | INFO  | 223:blackboard.ws.client.WebServiceClient              | Util server version: 2
+2016-07-14 16:43:29 | INFO  | 229:blackboard.ws.client.WebServiceClient              | Initializing the session...
+2016-07-14 16:43:30 | INFO  | 232:blackboard.ws.client.WebServiceClient              | Session Id: 41db716aeff944fda625b59d24518c6a
+2016-07-14 16:43:30 | INFO  | 234:blackboard.ws.client.WebServiceClient              | Initializing Util Context...
+2016-07-14 16:43:30 | INFO  | 241:blackboard.ws.client.WebServiceClient              | Initializing User Context...
+2016-07-14 16:43:30 | INFO  | 248:blackboard.ws.client.WebServiceClient              | Initializing Course Context...
+2016-07-14 16:43:31 | INFO  | 255:blackboard.ws.client.WebServiceClient              | Initializing Course Membership Context...
+2016-07-14 16:43:31 | INFO  | 262:blackboard.ws.client.WebServiceClient              | Initializing Gradebook Context...
+2016-07-14 16:43:32 | INFO  | 270:blackboard.ws.client.WebServiceClient              | Registering Tool...
+2016-07-14 16:43:32 | WARN  | 283:blackboard.ws.client.WebServiceClient              | Errors/warnings registering tool: 
+2016-07-14 16:43:32 | WARN  | 286:blackboard.ws.client.WebServiceClient              |  - Cannot reregister an activated client
+2016-07-14 16:43:32 | INFO  | 291:blackboard.ws.client.WebServiceClient              | Initialization complete.
+2016-07-14 16:43:34 | INFO  | 146:blackboard.ws.client.GradeExtractApp               | Loading courses...
+2016-07-14 16:43:45 | INFO  | 159:blackboard.ws.client.GradeExtractApp               | Total number of courses: 967
+2016-07-14 16:43:45 | INFO  | 224:blackboard.ws.client.GradeExtractApp               | Course 1: BASE-AULA-COM114
+2016-07-14 16:43:46 | INFO  | 256:blackboard.ws.client.GradeExtractApp               |  Total student enrollments for course: 0
+2016-07-14 16:43:46 | INFO  | 258:blackboard.ws.client.GradeExtractApp               |  No students = no grades, skipping course.
+2016-07-14 16:43:46 | INFO  | 224:blackboard.ws.client.GradeExtractApp               | Course 2: BASE-COM114-ONLINE-9SEMANAS
+2016-07-14 16:43:47 | INFO  | 256:blackboard.ws.client.GradeExtractApp               |  Total student enrollments for course: 0
+2016-07-14 16:43:47 | INFO  | 258:blackboard.ws.client.GradeExtractApp               |  No students = no grades, skipping course.
+2016-07-14 16:43:47 | INFO  | 224:blackboard.ws.client.GradeExtractApp               | Course 3: BASE-COM114-ONLINE-BIMESTRAL
+2016-07-14 16:43:47 | INFO  | 256:blackboard.ws.client.GradeExtractApp               |  Total student enrollments for course: 0
+2016-07-14 16:43:47 | INFO  | 258:blackboard.ws.client.GradeExtractApp               |  No students = no grades, skipping course.
+2016-07-14 16:43:47 | INFO  | 224:blackboard.ws.client.GradeExtractApp               | Course 4: BASE-COM114-ONLINE-SEMESTRAL
+2016-07-14 16:43:47 | INFO  | 256:blackboard.ws.client.GradeExtractApp               |  Total student enrollments for course: 0
+2016-07-14 16:43:47 | INFO  | 258:blackboard.ws.client.GradeExtractApp               |  No students = no grades, skipping course.
+2016-07-14 16:43:47 | INFO  | 224:blackboard.ws.client.GradeExtractApp               | Course 5: BASE-COM114-PRESENCIAL-BIMESTRAL
+2016-07-14 16:43:47 | INFO  | 256:blackboard.ws.client.GradeExtractApp               |  Total student enrollments for course: 0
+2016-07-14 16:43:47 | INFO  | 258:blackboard.ws.client.GradeExtractApp               |  No students = no grades, skipping course.
+2016-07-14 16:43:47 | INFO  | 224:blackboard.ws.client.GradeExtractApp               | Course 6: BASE-COM114-SEMIPRESENCIAL-BIMESTRAL
+2016-07-14 16:43:48 | INFO  | 256:blackboard.ws.client.GradeExtractApp               |  Total student enrollments for course: 0
+2016-07-14 16:43:48 | INFO  | 258:blackboard.ws.client.GradeExtractApp               |  No students = no grades, skipping course.
+2016-07-14 16:43:48 | INFO  | 224:blackboard.ws.client.GradeExtractApp               | Course 7: COM114-1-2016-1-ONL
+2016-07-14 16:43:48 | INFO  | 256:blackboard.ws.client.GradeExtractApp               |  Total student enrollments for course: 43
+2016-07-14 16:43:49 | INFO  | 293:blackboard.ws.client.GradeExtractApp               |  Total columns to extract for course: 23
+2016-07-14 16:43:57 | INFO  | 319:blackboard.ws.client.GradeExtractApp               |  Total users for course: 38
+2016-07-14 16:43:57 | INFO  | 329:blackboard.ws.client.GradeExtractApp               |  Loading grades...
+2016-07-14 16:44:02 | INFO  | 331:blackboard.ws.client.GradeExtractApp               |  Total grades for course: 342
+2016-07-14 16:44:02 | ERROR | 231:blackboard.ws.client.GradeExtractApp               | Error processing course [COM114-1-2016-1-ONL]: null
+java.lang.NullPointerException
+	at blackboard.ws.client.GradeExtractApp.printRow(GradeExtractApp.java:434)
+	at blackboard.ws.client.GradeExtractApp.printRow(GradeExtractApp.java:415)
+	at blackboard.ws.client.GradeExtractApp.doCourse(GradeExtractApp.java:352)
+	at blackboard.ws.client.GradeExtractApp.doMain(GradeExtractApp.java:226)
+	at blackboard.ws.client.GradeExtractApp.main(GradeExtractApp.java:122)
+2016-07-14 16:44:02 | INFO  | 224:blackboard.ws.client.GradeExtractApp               | Course 8: COM114-100-2016-1-ONL
+2016-07-14 16:44:02 | INFO  | 256:blackboard.ws.client.GradeExtractApp               |  Total student enrollments for course: 41
+2016-07-14 16:44:03 | INFO  | 293:blackboard.ws.client.GradeExtractApp               |  Total columns to extract for course: 20
+2016-07-14 16:44:09 | INFO  | 319:blackboard.ws.client.GradeExtractApp               |  Total users for course: 38
+2016-07-14 16:44:09 | INFO  | 329:blackboard.ws.client.GradeExtractApp               |  Loading grades...
+2016-07-14 16:44:15 | INFO  | 331:blackboard.ws.client.GradeExtractApp               |  Total grades for course: 334
+2016-07-14 16:44:15 | ERROR | 231:blackboard.ws.client.GradeExtractApp               | Error processing course [COM114-100-2016-1-ONL]: null
+java.lang.NullPointerException
+	at blackboard.ws.client.GradeExtractApp.printRow(GradeExtractApp.java:434)
+	at blackboard.ws.client.GradeExtractApp.printRow(GradeExtractApp.java:415)
+	at blackboard.ws.client.GradeExtractApp.doCourse(GradeExtractApp.java:352)
+	at blackboard.ws.client.GradeExtractApp.doMain(GradeExtractApp.java:226)
+	at blackboard.ws.client.GradeExtractApp.main(GradeExtractApp.java:122)
+2016-07-14 16:44:15 | INFO  | 224:blackboard.ws.client.GradeExtractApp               | Course 9: COM114-1000-2016-1-ONL
+2016-07-14 16:44:16 | INFO  | 256:blackboard.ws.client.GradeExtractApp               |  Total student enrollments for course: 47
+2016-07-14 16:44:16 | INFO  | 293:blackboard.ws.client.GradeExtractApp               |  Total columns to extract for course: 23
+2016-07-14 16:44:24 | INFO  | 319:blackboard.ws.client.GradeExtractApp               |  Total users for course: 44
+2016-07-14 16:44:24 | INFO  | 329:blackboard.ws.client.GradeExtractApp               |  Loading grades...
+2016-07-14 16:44:35 | INFO  | 331:blackboard.ws.client.GradeExtractApp               |  Total grades for course: 720
+2016-07-14 16:44:35 | ERROR | 231:blackboard.ws.client.GradeExtractApp               | Error processing course [COM114-1000-2016-1-ONL]: null
+java.lang.NullPointerException
+	at blackboard.ws.client.GradeExtractApp.printRow(GradeExtractApp.java:434)
+	at blackboard.ws.client.GradeExtractApp.printRow(GradeExtractApp.java:415)
+	at blackboard.ws.client.GradeExtractApp.doCourse(GradeExtractApp.java:352)
+	at blackboard.ws.client.GradeExtractApp.doMain(GradeExtractApp.java:226)
+	at blackboard.ws.client.GradeExtractApp.main(GradeExtractApp.java:122)
+2016-07-14 16:44:35 | INFO  | 224:blackboard.ws.client.GradeExtractApp               | Course 10: COM114-1001-2016-1-ONL
+2016-07-14 16:44:36 | INFO  | 256:blackboard.ws.client.GradeExtractApp               |  Total student enrollments for course: 46
+2016-07-14 16:44:36 | INFO  | 293:blackboard.ws.client.GradeExtractApp               |  Total columns to extract for course: 23
+2016-07-14 16:44:43 | INFO  | 319:blackboard.ws.client.GradeExtractApp               |  Total users for course: 35
+2016-07-14 16:44:43 | INFO  | 329:blackboard.ws.client.GradeExtractApp               |  Loading grades...
+2016-07-14 16:44:50 | INFO  | 331:blackboard.ws.client.GradeExtractApp               |  Total grades for course: 437
+2016-07-14 16:44:50 | ERROR | 231:blackboard.ws.client.GradeExtractApp               | Error processing course [COM114-1001-2016-1-ONL]: null
+java.lang.NullPointerException
+	at blackboard.ws.client.GradeExtractApp.printRow(GradeExtractApp.java:434)
+	at blackboard.ws.client.GradeExtractApp.printRow(GradeExtractApp.java:415)
+	at blackboard.ws.client.GradeExtractApp.doCourse(GradeExtractApp.java:352)
+	at blackboard.ws.client.GradeExtractApp.doMain(GradeExtractApp.java:226)
+	at blackboard.ws.client.GradeExtractApp.main(GradeExtractApp.java:122)
+2016-07-14 16:44:50 | INFO  | 212:blackboard.ws.client.GradeExtractApp               | Batch wait size [10] reached, sleeping for [2000] milliseconds before next batch.
+2016-07-14 16:44:52 | INFO  | 224:blackboard.ws.client.GradeExtractApp               | Course 11: COM114-1002-2016-1-ONL
+2016-07-14 16:44:52 | INFO  | 256:blackboard.ws.client.GradeExtractApp               |  Total student enrollments for course: 32
+2016-07-14 16:44:53 | INFO  | 293:blackboard.ws.client.GradeExtractApp               |  Total columns to extract for course: 23
+2016-07-14 16:45:01 | INFO  | 319:blackboard.ws.client.GradeExtractApp               |  Total users for course: 32
+2016-07-14 16:45:01 | INFO  | 329:blackboard.ws.client.GradeExtractApp               |  Loading grades...
+2016-07-14 16:45:09 | INFO  | 331:blackboard.ws.client.GradeExtractApp               |  Total grades for course: 443
+2016-07-14 16:45:09 | ERROR | 231:blackboard.ws.client.GradeExtractApp               | Error processing course [COM114-1002-2016-1-ONL]: null
+java.lang.NullPointerException
+	at blackboard.ws.client.GradeExtractApp.printRow(GradeExtractApp.java:434)
+	at blackboard.ws.client.GradeExtractApp.printRow(GradeExtractApp.java:415)
+	at blackboard.ws.client.GradeExtractApp.doCourse(GradeExtractApp.java:352)
+	at blackboard.ws.client.GradeExtractApp.doMain(GradeExtractApp.java:226)
+	at blackboard.ws.client.GradeExtractApp.main(GradeExtractApp.java:122)
+2016-07-14 16:45:09 | INFO  | 224:blackboard.ws.client.GradeExtractApp               | Course 12: COM114-1003-2016-1-ONL
+2016-07-14 16:45:10 | INFO  | 256:blackboard.ws.client.GradeExtractApp               |  Total student enrollments for course: 47
+2016-07-14 16:45:11 | INFO  | 293:blackboard.ws.client.GradeExtractApp               |  Total columns to extract for course: 23
+2016-07-14 16:45:18 | INFO  | 319:blackboard.ws.client.GradeExtractApp               |  Total users for course: 41
+2016-07-14 16:45:18 | INFO  | 329:blackboard.ws.client.GradeExtractApp               |  Loading grades...
+2016-07-14 16:45:26 | INFO  | 331:blackboard.ws.client.GradeExtractApp               |  Total grades for course: 600
+2016-07-14 16:45:26 | ERROR | 231:blackboard.ws.client.GradeExtractApp               | Error processing course [COM114-1003-2016-1-ONL]: null
+java.lang.NullPointerException
+	at blackboard.ws.client.GradeExtractApp.printRow(GradeExtractApp.java:434)
+	at blackboard.ws.client.GradeExtractApp.printRow(GradeExtractApp.java:415)
+	at blackboard.ws.client.GradeExtractApp.doCourse(GradeExtractApp.java:352)
+	at blackboard.ws.client.GradeExtractApp.doMain(GradeExtractApp.java:226)
+	at blackboard.ws.client.GradeExtractApp.main(GradeExtractApp.java:122)
+2016-07-14 16:45:26 | INFO  | 224:blackboard.ws.client.GradeExtractApp               | Course 13: COM114-1005-2016-1-ONL
+2016-07-14 16:45:26 | INFO  | 256:blackboard.ws.client.GradeExtractApp               |  Total student enrollments for course: 33
+2016-07-14 16:45:27 | INFO  | 293:blackboard.ws.client.GradeExtractApp               |  Total columns to extract for course: 23
+2016-07-14 16:45:35 | INFO  | 319:blackboard.ws.client.GradeExtractApp               |  Total users for course: 30
+2016-07-14 16:45:35 | INFO  | 329:blackboard.ws.client.GradeExtractApp               |  Loading grades...
+2016-07-14 16:45:44 | INFO  | 331:blackboard.ws.client.GradeExtractApp               |  Total grades for course: 534
+2016-07-14 16:45:44 | ERROR | 231:blackboard.ws.client.GradeExtractApp               | Error processing course [COM114-1005-2016-1-ONL]: null
+java.lang.NullPointerException
+	at blackboard.ws.client.GradeExtractApp.printRow(GradeExtractApp.java:434)
+	at blackboard.ws.client.GradeExtractApp.printRow(GradeExtractApp.java:415)
+	at blackboard.ws.client.GradeExtractApp.doCourse(GradeExtractApp.java:352)
+	at blackboard.ws.client.GradeExtractApp.doMain(GradeExtractApp.java:226)
+	at blackboard.ws.client.GradeExtractApp.main(GradeExtractApp.java:122)
+2016-07-14 16:45:44 | INFO  | 224:blackboard.ws.client.GradeExtractApp               | Course 14: COM114-1006-2016-1-ONL
+2016-07-14 16:45:44 | INFO  | 256:blackboard.ws.client.GradeExtractApp               |  Total student enrollments for course: 33
+2016-07-14 16:45:45 | INFO  | 293:blackboard.ws.client.GradeExtractApp               |  Total columns to extract for course: 23
+2016-07-14 16:45:51 | INFO  | 319:blackboard.ws.client.GradeExtractApp               |  Total users for course: 32
+2016-07-14 16:45:51 | INFO  | 329:blackboard.ws.client.GradeExtractApp               |  Loading grades...
+2016-07-14 16:45:59 | INFO  | 331:blackboard.ws.client.GradeExtractApp               |  Total grades for course: 448
+2016-07-14 16:45:59 | ERROR | 231:blackboard.ws.client.GradeExtractApp               | Error processing course [COM114-1006-2016-1-ONL]: null
+java.lang.NullPointerException
+	at blackboard.ws.client.GradeExtractApp.printRow(GradeExtractApp.java:434)
+	at blackboard.ws.client.GradeExtractApp.printRow(GradeExtractApp.java:415)
+	at blackboard.ws.client.GradeExtractApp.doCourse(GradeExtractApp.java:352)
+	at blackboard.ws.client.GradeExtractApp.doMain(GradeExtractApp.java:226)
+	at blackboard.ws.client.GradeExtractApp.main(GradeExtractApp.java:122)
+2016-07-14 16:45:59 | INFO  | 224:blackboard.ws.client.GradeExtractApp               | Course 15: COM114-1007-2016-1-ONL
+2016-07-14 16:45:59 | INFO  | 256:blackboard.ws.client.GradeExtractApp               |  Total student enrollments for course: 37
+2016-07-14 16:46:00 | INFO  | 293:blackboard.ws.client.GradeExtractApp               |  Total columns to extract for course: 23
+2016-07-14 16:46:06 | INFO  | 319:blackboard.ws.client.GradeExtractApp               |  Total users for course: 39
+2016-07-14 16:46:06 | INFO  | 329:blackboard.ws.client.GradeExtractApp               |  Loading grades...
+2016-07-14 16:46:14 | INFO  | 331:blackboard.ws.client.GradeExtractApp               |  Total grades for course: 484
+2016-07-14 16:46:14 | ERROR | 231:blackboard.ws.client.GradeExtractApp               | Error processing course [COM114-1007-2016-1-ONL]: null
+java.lang.NullPointerException
+	at blackboard.ws.client.GradeExtractApp.printRow(GradeExtractApp.java:434)
+	at blackboard.ws.client.GradeExtractApp.printRow(GradeExtractApp.java:415)
+	at blackboard.ws.client.GradeExtractApp.doCourse(GradeExtractApp.java:352)
+	at blackboard.ws.client.GradeExtractApp.doMain(GradeExtractApp.java:226)
+	at blackboard.ws.client.GradeExtractApp.main(GradeExtractApp.java:122)
+2016-07-14 16:46:14 | INFO  | 224:blackboard.ws.client.GradeExtractApp               | Course 16: COM114-1008-2016-1-ONL
+2016-07-14 16:46:14 | INFO  | 256:blackboard.ws.client.GradeExtractApp               |  Total student enrollments for course: 35
+2016-07-14 16:46:15 | INFO  | 293:blackboard.ws.client.GradeExtractApp               |  Total columns to extract for course: 23
+2016-07-14 16:46:22 | INFO  | 319:blackboard.ws.client.GradeExtractApp               |  Total users for course: 32
+2016-07-14 16:46:22 | INFO  | 329:blackboard.ws.client.GradeExtractApp               |  Loading grades...
+2016-07-14 16:46:27 | INFO  | 331:blackboard.ws.client.GradeExtractApp               |  Total grades for course: 427
+2016-07-14 16:46:27 | ERROR | 231:blackboard.ws.client.GradeExtractApp               | Error processing course [COM114-1008-2016-1-ONL]: null
+java.lang.NullPointerException
+	at blackboard.ws.client.GradeExtractApp.printRow(GradeExtractApp.java:434)
+	at blackboard.ws.client.GradeExtractApp.printRow(GradeExtractApp.java:415)
+	at blackboard.ws.client.GradeExtractApp.doCourse(GradeExtractApp.java:352)
+	at blackboard.ws.client.GradeExtractApp.doMain(GradeExtractApp.java:226)
+	at blackboard.ws.client.GradeExtractApp.main(GradeExtractApp.java:122)
+2016-07-14 16:46:27 | INFO  | 224:blackboard.ws.client.GradeExtractApp               | Course 17: COM114-1009-2016-1-ONL
+2016-07-14 16:46:27 | INFO  | 256:blackboard.ws.client.GradeExtractApp               |  Total student enrollments for course: 34
+2016-07-14 16:46:28 | INFO  | 293:blackboard.ws.client.GradeExtractApp               |  Total columns to extract for course: 18
+2016-07-14 16:46:34 | INFO  | 319:blackboard.ws.client.GradeExtractApp               |  Total users for course: 33
+2016-07-14 16:46:34 | INFO  | 329:blackboard.ws.client.GradeExtractApp               |  Loading grades...
+2016-07-14 16:46:38 | INFO  | 331:blackboard.ws.client.GradeExtractApp               |  Total grades for course: 337
+2016-07-14 16:46:38 | ERROR | 231:blackboard.ws.client.GradeExtractApp               | Error processing course [COM114-1009-2016-1-ONL]: null
+java.lang.NullPointerException
+	at blackboard.ws.client.GradeExtractApp.printRow(GradeExtractApp.java:434)
+	at blackboard.ws.client.GradeExtractApp.printRow(GradeExtractApp.java:415)
+	at blackboard.ws.client.GradeExtractApp.doCourse(GradeExtractApp.java:352)
+	at blackboard.ws.client.GradeExtractApp.doMain(GradeExtractApp.java:226)
+	at blackboard.ws.client.GradeExtractApp.main(GradeExtractApp.java:122)
+2016-07-14 16:46:38 | INFO  | 224:blackboard.ws.client.GradeExtractApp               | Course 18: COM114-101-2016-1-ONL
+2016-07-14 16:46:38 | INFO  | 256:blackboard.ws.client.GradeExtractApp               |  Total student enrollments for course: 42
+2016-07-14 16:46:39 | INFO  | 293:blackboard.ws.client.GradeExtractApp               |  Total columns to extract for course: 20
+2016-07-14 16:46:46 | INFO  | 319:blackboard.ws.client.GradeExtractApp               |  Total users for course: 39
+2016-07-14 16:46:46 | INFO  | 329:blackboard.ws.client.GradeExtractApp               |  Loading grades...
+2016-07-14 16:46:52 | INFO  | 331:blackboard.ws.client.GradeExtractApp               |  Total grades for course: 441
+2016-07-14 16:46:52 | ERROR | 231:blackboard.ws.client.GradeExtractApp               | Error processing course [COM114-101-2016-1-ONL]: null
+java.lang.NullPointerException
+	at blackboard.ws.client.GradeExtractApp.printRow(GradeExtractApp.java:434)
+	at blackboard.ws.client.GradeExtractApp.printRow(GradeExtractApp.java:415)
+	at blackboard.ws.client.GradeExtractApp.doCourse(GradeExtractApp.java:352)
+	at blackboard.ws.client.GradeExtractApp.doMain(GradeExtractApp.java:226)
+	at blackboard.ws.client.GradeExtractApp.main(GradeExtractApp.java:122)
+2016-07-14 16:46:52 | INFO  | 224:blackboard.ws.client.GradeExtractApp               | Course 19: COM114-1010-2016-1-ONL
+2016-07-14 16:46:53 | INFO  | 256:blackboard.ws.client.GradeExtractApp               |  Total student enrollments for course: 43
+2016-07-14 16:46:53 | INFO  | 293:blackboard.ws.client.GradeExtractApp               |  Total columns to extract for course: 20
+2016-07-14 16:47:00 | INFO  | 319:blackboard.ws.client.GradeExtractApp               |  Total users for course: 40
+2016-07-14 16:47:00 | INFO  | 329:blackboard.ws.client.GradeExtractApp               |  Loading grades...
+2016-07-14 16:47:07 | INFO  | 331:blackboard.ws.client.GradeExtractApp               |  Total grades for course: 492
+2016-07-14 16:47:07 | ERROR | 231:blackboard.ws.client.GradeExtractApp               | Error processing course [COM114-1010-2016-1-ONL]: null
+java.lang.NullPointerException
+	at blackboard.ws.client.GradeExtractApp.printRow(GradeExtractApp.java:434)
+	at blackboard.ws.client.GradeExtractApp.printRow(GradeExtractApp.java:415)
+	at blackboard.ws.client.GradeExtractApp.doCourse(GradeExtractApp.java:352)
+	at blackboard.ws.client.GradeExtractApp.doMain(GradeExtractApp.java:226)
+	at blackboard.ws.client.GradeExtractApp.main(GradeExtractApp.java:122)
+2016-07-14 16:47:07 | INFO  | 224:blackboard.ws.client.GradeExtractApp               | Course 20: COM114-1011-2016-1-ONL
+2016-07-14 16:47:07 | INFO  | 256:blackboard.ws.client.GradeExtractApp               |  Total student enrollments for course: 33
+2016-07-14 16:47:08 | INFO  | 293:blackboard.ws.client.GradeExtractApp               |  Total columns to extract for course: 18
+2016-07-14 16:47:13 | INFO  | 319:blackboard.ws.client.GradeExtractApp               |  Total users for course: 33
+2016-07-14 16:47:13 | INFO  | 329:blackboard.ws.client.GradeExtractApp               |  Loading grades...
+2016-07-14 16:47:18 | INFO  | 331:blackboard.ws.client.GradeExtractApp               |  Total grades for course: 351
+2016-07-14 16:47:18 | ERROR | 231:blackboard.ws.client.GradeExtractApp               | Error processing course [COM114-1011-2016-1-ONL]: null
+java.lang.NullPointerException
+	at blackboard.ws.client.GradeExtractApp.printRow(GradeExtractApp.java:434)
+	at blackboard.ws.client.GradeExtractApp.printRow(GradeExtractApp.java:415)
+	at blackboard.ws.client.GradeExtractApp.doCourse(GradeExtractApp.java:352)
+	at blackboard.ws.client.GradeExtractApp.doMain(GradeExtractApp.java:226)
+	at blackboard.ws.client.GradeExtractApp.main(GradeExtractApp.java:122)
+2016-07-14 16:47:18 | INFO  | 212:blackboard.ws.client.GradeExtractApp               | Batch wait size [10] reached, sleeping for [2000] milliseconds before next batch.
+2016-07-14 16:47:20 | INFO  | 224:blackboard.ws.client.GradeExtractApp               | Course 21: COM114-1012-2016-1-ONL
+2016-07-14 16:47:20 | INFO  | 256:blackboard.ws.client.GradeExtractApp               |  Total student enrollments for course: 47
+2016-07-14 16:47:21 | INFO  | 293:blackboard.ws.client.GradeExtractApp               |  Total columns to extract for course: 23
+2016-07-14 16:47:27 | INFO  | 319:blackboard.ws.client.GradeExtractApp               |  Total users for course: 46
+2016-07-14 16:47:27 | INFO  | 329:blackboard.ws.client.GradeExtractApp               |  Loading grades...
+2016-07-14 16:47:35 | INFO  | 331:blackboard.ws.client.GradeExtractApp               |  Total grades for course: 652
+2016-07-14 16:47:35 | ERROR | 231:blackboard.ws.client.GradeExtractApp               | Error processing course [COM114-1012-2016-1-ONL]: null
+java.lang.NullPointerException
+	at blackboard.ws.client.GradeExtractApp.printRow(GradeExtractApp.java:434)
+	at blackboard.ws.client.GradeExtractApp.printRow(GradeExtractApp.java:415)
+	at blackboard.ws.client.GradeExtractApp.doCourse(GradeExtractApp.java:352)
+	at blackboard.ws.client.GradeExtractApp.doMain(GradeExtractApp.java:226)
+	at blackboard.ws.client.GradeExtractApp.main(GradeExtractApp.java:122)
+2016-07-14 16:47:35 | INFO  | 224:blackboard.ws.client.GradeExtractApp               | Course 22: COM114-1013-2016-1-ONL
+2016-07-14 16:47:36 | INFO  | 256:blackboard.ws.client.GradeExtractApp               |  Total student enrollments for course: 48
+2016-07-14 16:47:36 | INFO  | 293:blackboard.ws.client.GradeExtractApp               |  Total columns to extract for course: 23
+2016-07-14 16:47:43 | INFO  | 319:blackboard.ws.client.GradeExtractApp               |  Total users for course: 46
+2016-07-14 16:47:43 | INFO  | 329:blackboard.ws.client.GradeExtractApp               |  Loading grades...
+2016-07-14 16:47:52 | INFO  | 331:blackboard.ws.client.GradeExtractApp               |  Total grades for course: 689
+2016-07-14 16:47:52 | ERROR | 231:blackboard.ws.client.GradeExtractApp               | Error processing course [COM114-1013-2016-1-ONL]: null
+java.lang.NullPointerException
+	at blackboard.ws.client.GradeExtractApp.printRow(GradeExtractApp.java:434)
+	at blackboard.ws.client.GradeExtractApp.printRow(GradeExtractApp.java:415)
+	at blackboard.ws.client.GradeExtractApp.doCourse(GradeExtractApp.java:352)
+	at blackboard.ws.client.GradeExtractApp.doMain(GradeExtractApp.java:226)
+	at blackboard.ws.client.GradeExtractApp.main(GradeExtractApp.java:122)
+2016-07-14 16:47:52 | INFO  | 224:blackboard.ws.client.GradeExtractApp               | Course 23: COM114-1014-2016-1-ONL
+2016-07-14 16:47:52 | INFO  | 256:blackboard.ws.client.GradeExtractApp               |  Total student enrollments for course: 47
+2016-07-14 16:47:53 | INFO  | 293:blackboard.ws.client.GradeExtractApp               |  Total columns to extract for course: 23
+2016-07-14 16:48:00 | INFO  | 319:blackboard.ws.client.GradeExtractApp               |  Total users for course: 43
+2016-07-14 16:48:00 | INFO  | 329:blackboard.ws.client.GradeExtractApp               |  Loading grades...
+2016-07-14 16:48:09 | INFO  | 331:blackboard.ws.client.GradeExtractApp               |  Total grades for course: 655
+2016-07-14 16:48:09 | ERROR | 231:blackboard.ws.client.GradeExtractApp               | Error processing course [COM114-1014-2016-1-ONL]: null
+java.lang.NullPointerException
+	at blackboard.ws.client.GradeExtractApp.printRow(GradeExtractApp.java:434)
+	at blackboard.ws.client.GradeExtractApp.printRow(GradeExtractApp.java:415)
+	at blackboard.ws.client.GradeExtractApp.doCourse(GradeExtractApp.java:352)
+	at blackboard.ws.client.GradeExtractApp.doMain(GradeExtractApp.java:226)
+	at blackboard.ws.client.GradeExtractApp.main(GradeExtractApp.java:122)
+2016-07-14 16:48:09 | INFO  | 224:blackboard.ws.client.GradeExtractApp               | Course 24: COM114-1015-2016-1-ONL
+2016-07-14 16:48:10 | INFO  | 256:blackboard.ws.client.GradeExtractApp               |  Total student enrollments for course: 46
+2016-07-14 16:48:10 | INFO  | 293:blackboard.ws.client.GradeExtractApp               |  Total columns to extract for course: 23
+2016-07-14 16:48:18 | INFO  | 319:blackboard.ws.client.GradeExtractApp               |  Total users for course: 44
+2016-07-14 16:48:18 | INFO  | 329:blackboard.ws.client.GradeExtractApp               |  Loading grades...
+2016-07-14 16:48:28 | INFO  | 331:blackboard.ws.client.GradeExtractApp               |  Total grades for course: 659
+2016-07-14 16:48:28 | ERROR | 231:blackboard.ws.client.GradeExtractApp               | Error processing course [COM114-1015-2016-1-ONL]: null
+java.lang.NullPointerException
+2016-07-14 16:48:28 | INFO  | 224:blackboard.ws.client.GradeExtractApp               | Course 25: COM114-102-2016-1-ONL
+2016-07-14 16:48:29 | INFO  | 256:blackboard.ws.client.GradeExtractApp               |  Total student enrollments for course: 52
+2016-07-14 16:48:29 | INFO  | 293:blackboard.ws.client.GradeExtractApp               |  Total columns to extract for course: 20
+2016-07-14 16:48:36 | INFO  | 319:blackboard.ws.client.GradeExtractApp               |  Total users for course: 40
+2016-07-14 16:48:36 | INFO  | 329:blackboard.ws.client.GradeExtractApp               |  Loading grades...
+2016-07-14 16:48:42 | INFO  | 331:blackboard.ws.client.GradeExtractApp               |  Total grades for course: 411
+2016-07-14 16:48:42 | ERROR | 231:blackboard.ws.client.GradeExtractApp               | Error processing course [COM114-102-2016-1-ONL]: null
+java.lang.NullPointerException
+2016-07-14 16:48:42 | INFO  | 224:blackboard.ws.client.GradeExtractApp               | Course 26: COM114-103-2016-1-ONL
+2016-07-14 16:48:43 | INFO  | 256:blackboard.ws.client.GradeExtractApp               |  Total student enrollments for course: 42
+2016-07-14 16:48:43 | INFO  | 293:blackboard.ws.client.GradeExtractApp               |  Total columns to extract for course: 20
+2016-07-14 16:48:52 | INFO  | 319:blackboard.ws.client.GradeExtractApp               |  Total users for course: 32
+2016-07-14 16:48:52 | INFO  | 329:blackboard.ws.client.GradeExtractApp               |  Loading grades...
+2016-07-14 16:48:55 | INFO  | 331:blackboard.ws.client.GradeExtractApp               |  Total grades for course: 317
+2016-07-14 16:48:55 | ERROR | 231:blackboard.ws.client.GradeExtractApp               | Error processing course [COM114-103-2016-1-ONL]: null
+java.lang.NullPointerException
+2016-07-14 16:48:55 | INFO  | 224:blackboard.ws.client.GradeExtractApp               | Course 27: COM114-104-2016-1-ONL
+2016-07-14 16:48:56 | INFO  | 256:blackboard.ws.client.GradeExtractApp               |  Total student enrollments for course: 40
+2016-07-14 16:48:57 | INFO  | 293:blackboard.ws.client.GradeExtractApp               |  Total columns to extract for course: 23
+2016-07-14 16:49:04 | INFO  | 319:blackboard.ws.client.GradeExtractApp               |  Total users for course: 35
+2016-07-14 16:49:04 | INFO  | 329:blackboard.ws.client.GradeExtractApp               |  Loading grades...
+2016-07-14 16:49:10 | INFO  | 331:blackboard.ws.client.GradeExtractApp               |  Total grades for course: 326
+2016-07-14 16:49:10 | ERROR | 231:blackboard.ws.client.GradeExtractApp               | Error processing course [COM114-104-2016-1-ONL]: null
+java.lang.NullPointerException
+2016-07-14 16:49:10 | INFO  | 224:blackboard.ws.client.GradeExtractApp               | Course 28: COM114-105-2016-1-ONL
+2016-07-14 16:49:10 | INFO  | 256:blackboard.ws.client.GradeExtractApp               |  Total student enrollments for course: 26
+2016-07-14 16:49:11 | INFO  | 293:blackboard.ws.client.GradeExtractApp               |  Total columns to extract for course: 22
+2016-07-14 16:49:17 | INFO  | 319:blackboard.ws.client.GradeExtractApp               |  Total users for course: 22
+2016-07-14 16:49:17 | INFO  | 329:blackboard.ws.client.GradeExtractApp               |  Loading grades...
+2016-07-14 16:49:19 | INFO  | 331:blackboard.ws.client.GradeExtractApp               |  Total grades for course: 120
+2016-07-14 16:49:19 | ERROR | 231:blackboard.ws.client.GradeExtractApp               | Error processing course [COM114-105-2016-1-ONL]: null
+java.lang.NullPointerException
+2016-07-14 16:49:19 | INFO  | 224:blackboard.ws.client.GradeExtractApp               | Course 29: COM114-106-2016-1-ONL
+2016-07-14 16:49:19 | INFO  | 256:blackboard.ws.client.GradeExtractApp               |  Total student enrollments for course: 39
+2016-07-14 16:49:21 | INFO  | 293:blackboard.ws.client.GradeExtractApp               |  Total columns to extract for course: 20
+2016-07-14 16:49:28 | INFO  | 319:blackboard.ws.client.GradeExtractApp               |  Total users for course: 36
+2016-07-14 16:49:28 | INFO  | 329:blackboard.ws.client.GradeExtractApp               |  Loading grades...
+2016-07-14 16:49:30 | INFO  | 331:blackboard.ws.client.GradeExtractApp               |  Total grades for course: 124
+2016-07-14 16:49:30 | ERROR | 231:blackboard.ws.client.GradeExtractApp               | Error processing course [COM114-106-2016-1-ONL]: null
+java.lang.NullPointerException
+2016-07-14 16:49:30 | INFO  | 224:blackboard.ws.client.GradeExtractApp               | Course 30: COM114-107-2016-1-ONL
+2016-07-14 16:49:31 | INFO  | 256:blackboard.ws.client.GradeExtractApp               |  Total student enrollments for course: 45
+2016-07-14 16:49:31 | INFO  | 293:blackboard.ws.client.GradeExtractApp               |  Total columns to extract for course: 20
+2016-07-14 16:49:36 | INFO  | 319:blackboard.ws.client.GradeExtractApp               |  Total users for course: 14
+2016-07-14 16:49:36 | INFO  | 329:blackboard.ws.client.GradeExtractApp               |  Loading grades...
+2016-07-14 16:49:37 | INFO  | 331:blackboard.ws.client.GradeExtractApp               |  Total grades for course: 35
+2016-07-14 16:49:37 | ERROR | 231:blackboard.ws.client.GradeExtractApp               | Error processing course [COM114-107-2016-1-ONL]: null
+java.lang.NullPointerException
+2016-07-14 16:49:37 | INFO  | 212:blackboard.ws.client.GradeExtractApp               | Batch wait size [10] reached, sleeping for [2000] milliseconds before next batch.
+2016-07-14 16:49:39 | INFO  | 224:blackboard.ws.client.GradeExtractApp               | Course 31: COM114-108-2016-1-ONL
+2016-07-14 16:49:40 | INFO  | 256:blackboard.ws.client.GradeExtractApp               |  Total student enrollments for course: 31
+2016-07-14 16:49:41 | INFO  | 293:blackboard.ws.client.GradeExtractApp               |  Total columns to extract for course: 19
+2016-07-14 16:49:48 | INFO  | 319:blackboard.ws.client.GradeExtractApp               |  Total users for course: 24
+2016-07-14 16:49:48 | INFO  | 329:blackboard.ws.client.GradeExtractApp               |  Loading grades...
+2016-07-14 16:49:52 | INFO  | 331:blackboard.ws.client.GradeExtractApp               |  Total grades for course: 234
+2016-07-14 16:49:52 | ERROR | 231:blackboard.ws.client.GradeExtractApp               | Error processing course [COM114-108-2016-1-ONL]: null
+java.lang.NullPointerException
+2016-07-14 16:49:52 | INFO  | 224:blackboard.ws.client.GradeExtractApp               | Course 32: COM114-11-2016-1-ONL
+2016-07-14 16:49:52 | INFO  | 256:blackboard.ws.client.GradeExtractApp               |  Total student enrollments for course: 9
+2016-07-14 16:49:52 | INFO  | 293:blackboard.ws.client.GradeExtractApp               |  Total columns to extract for course: 23
+2016-07-14 16:49:59 | INFO  | 319:blackboard.ws.client.GradeExtractApp               |  Total users for course: 10
+2016-07-14 16:49:59 | INFO  | 329:blackboard.ws.client.GradeExtractApp               |  Loading grades...
+2016-07-14 16:50:02 | INFO  | 331:blackboard.ws.client.GradeExtractApp               |  Total grades for course: 105
+2016-07-14 16:50:02 | ERROR | 231:blackboard.ws.client.GradeExtractApp               | Error processing course [COM114-11-2016-1-ONL]: null
+java.lang.NullPointerException
+2016-07-14 16:50:02 | INFO  | 224:blackboard.ws.client.GradeExtractApp               | Course 33: COM114-1100-2016-1-ONL
+2016-07-14 16:50:02 | INFO  | 256:blackboard.ws.client.GradeExtractApp               |  Total student enrollments for course: 28
+2016-07-14 16:50:03 | INFO  | 293:blackboard.ws.client.GradeExtractApp               |  Total columns to extract for course: 21
+2016-07-14 16:50:10 | INFO  | 319:blackboard.ws.client.GradeExtractApp               |  Total users for course: 27
+2016-07-14 16:50:10 | INFO  | 329:blackboard.ws.client.GradeExtractApp               |  Loading grades...
+2016-07-14 16:50:12 | INFO  | 331:blackboard.ws.client.GradeExtractApp               |  Total grades for course: 117
+2016-07-14 16:50:12 | INFO  | 224:blackboard.ws.client.GradeExtractApp               | Course 34: COM114-1101-2016-1-ONL
+2016-07-14 16:50:12 | INFO  | 256:blackboard.ws.client.GradeExtractApp               |  Total student enrollments for course: 42
+2016-07-14 16:50:13 | INFO  | 293:blackboard.ws.client.GradeExtractApp               |  Total columns to extract for course: 19
+2016-07-14 16:50:20 | INFO  | 319:blackboard.ws.client.GradeExtractApp               |  Total users for course: 42
+2016-07-14 16:50:20 | INFO  | 329:blackboard.ws.client.GradeExtractApp               |  Loading grades...
+2016-07-14 16:50:27 | INFO  | 331:blackboard.ws.client.GradeExtractApp               |  Total grades for course: 515
+2016-07-14 16:50:27 | ERROR | 231:blackboard.ws.client.GradeExtractApp               | Error processing course [COM114-1101-2016-1-ONL]: null
+java.lang.NullPointerException
+2016-07-14 16:50:27 | INFO  | 224:blackboard.ws.client.GradeExtractApp               | Course 35: COM114-1102-2016-1-ONL
+2016-07-14 16:50:28 | INFO  | 256:blackboard.ws.client.GradeExtractApp               |  Total student enrollments for course: 30
+2016-07-14 16:50:28 | INFO  | 293:blackboard.ws.client.GradeExtractApp               |  Total columns to extract for course: 19
+2016-07-14 16:50:34 | INFO  | 319:blackboard.ws.client.GradeExtractApp               |  Total users for course: 31
+2016-07-14 16:50:34 | INFO  | 329:blackboard.ws.client.GradeExtractApp               |  Loading grades...
+2016-07-14 16:50:34 | INFO  | 331:blackboard.ws.client.GradeExtractApp               |  Total grades for course: 46
+2016-07-14 16:50:34 | ERROR | 231:blackboard.ws.client.GradeExtractApp               | Error processing course [COM114-1102-2016-1-ONL]: null
+java.lang.NullPointerException
+2016-07-14 16:50:34 | INFO  | 224:blackboard.ws.client.GradeExtractApp               | Course 36: COM114-1103-2016-1-ONL
+2016-07-14 16:50:35 | INFO  | 256:blackboard.ws.client.GradeExtractApp               |  Total student enrollments for course: 31
+2016-07-14 16:50:35 | INFO  | 293:blackboard.ws.client.GradeExtractApp               |  Total columns to extract for course: 19
+2016-07-14 16:50:41 | INFO  | 319:blackboard.ws.client.GradeExtractApp               |  Total users for course: 32
+2016-07-14 16:50:41 | INFO  | 329:blackboard.ws.client.GradeExtractApp               |  Loading grades...
+2016-07-14 16:50:42 | INFO  | 331:blackboard.ws.client.GradeExtractApp               |  Total grades for course: 71
+2016-07-14 16:50:42 | ERROR | 231:blackboard.ws.client.GradeExtractApp               | Error processing course [COM114-1103-2016-1-ONL]: null
+java.lang.NullPointerException
+2016-07-14 16:50:42 | INFO  | 224:blackboard.ws.client.GradeExtractApp               | Course 37: COM114-1104-2016-1-ONL
+2016-07-14 16:50:42 | INFO  | 256:blackboard.ws.client.GradeExtractApp               |  Total student enrollments for course: 34
+2016-07-14 16:50:43 | INFO  | 293:blackboard.ws.client.GradeExtractApp               |  Total columns to extract for course: 18
+2016-07-14 16:50:49 | INFO  | 319:blackboard.ws.client.GradeExtractApp               |  Total users for course: 35
+2016-07-14 16:50:49 | INFO  | 329:blackboard.ws.client.GradeExtractApp               |  Loading grades...
+2016-07-14 16:50:54 | INFO  | 331:blackboard.ws.client.GradeExtractApp               |  Total grades for course: 371
+2016-07-14 16:50:54 | ERROR | 231:blackboard.ws.client.GradeExtractApp               | Error processing course [COM114-1104-2016-1-ONL]: null
+java.lang.NullPointerException
+2016-07-14 16:50:54 | INFO  | 224:blackboard.ws.client.GradeExtractApp               | Course 38: COM114-1105-2016-1-ONL
+2016-07-14 16:50:55 | INFO  | 256:blackboard.ws.client.GradeExtractApp               |  Total student enrollments for course: 53
+2016-07-14 16:50:55 | INFO  | 293:blackboard.ws.client.GradeExtractApp               |  Total columns to extract for course: 2
+2016-07-14 16:50:57 | INFO  | 319:blackboard.ws.client.GradeExtractApp               |  Total users for course: 51
+2016-07-14 16:50:57 | INFO  | 329:blackboard.ws.client.GradeExtractApp               |  Loading grades...
+2016-07-14 16:50:59 | INFO  | 331:blackboard.ws.client.GradeExtractApp               |  Total grades for course: 100
+2016-07-14 16:50:59 | INFO  | 224:blackboard.ws.client.GradeExtractApp               | Course 39: COM114-1106-2016-1-ONL
+2016-07-14 16:50:59 | INFO  | 256:blackboard.ws.client.GradeExtractApp               |  Total student enrollments for course: 45
+2016-07-14 16:51:00 | INFO  | 293:blackboard.ws.client.GradeExtractApp               |  Total columns to extract for course: 20
+2016-07-14 16:51:05 | INFO  | 319:blackboard.ws.client.GradeExtractApp               |  Total users for course: 45
+2016-07-14 16:51:05 | INFO  | 329:blackboard.ws.client.GradeExtractApp               |  Loading grades...
+2016-07-14 16:51:08 | INFO  | 331:blackboard.ws.client.GradeExtractApp               |  Total grades for course: 243
+2016-07-14 16:51:08 | ERROR | 231:blackboard.ws.client.GradeExtractApp               | Error processing course [COM114-1106-2016-1-ONL]: null
+java.lang.NullPointerException
+2016-07-14 16:51:08 | INFO  | 224:blackboard.ws.client.GradeExtractApp               | Course 40: COM114-1107-2016-1-ONL
+2016-07-14 16:51:09 | INFO  | 256:blackboard.ws.client.GradeExtractApp               |  Total student enrollments for course: 38
+2016-07-14 16:51:09 | INFO  | 293:blackboard.ws.client.GradeExtractApp               |  Total columns to extract for course: 18
+2016-07-14 16:51:15 | INFO  | 319:blackboard.ws.client.GradeExtractApp               |  Total users for course: 38
+2016-07-14 16:51:15 | INFO  | 329:blackboard.ws.client.GradeExtractApp               |  Loading grades...
+2016-07-14 16:51:20 | INFO  | 331:blackboard.ws.client.GradeExtractApp               |  Total grades for course: 349
+2016-07-14 16:51:20 | ERROR | 231:blackboard.ws.client.GradeExtractApp               | Error processing course [COM114-1107-2016-1-ONL]: null
+java.lang.NullPointerException
+2016-07-14 16:51:20 | INFO  | 212:blackboard.ws.client.GradeExtractApp               | Batch wait size [10] reached, sleeping for [2000] milliseconds before next batch.
+2016-07-14 16:51:22 | INFO  | 224:blackboard.ws.client.GradeExtractApp               | Course 41: COM114-1108-2016-1-ONL
+2016-07-14 16:51:23 | INFO  | 256:blackboard.ws.client.GradeExtractApp               |  Total student enrollments for course: 37
+2016-07-14 16:51:23 | INFO  | 293:blackboard.ws.client.GradeExtractApp               |  Total columns to extract for course: 21
+2016-07-14 16:51:29 | INFO  | 319:blackboard.ws.client.GradeExtractApp               |  Total users for course: 36
+2016-07-14 17:10:23 | INFO  | 329:blackboard.ws.client.GradeExtractApp               |  Loading grades...
+2016-07-14 17:10:32 | INFO  | 331:blackboard.ws.client.GradeExtractApp               |  Total grades for course: 613
+2016-07-14 17:10:32 | ERROR | 231:blackboard.ws.client.GradeExtractApp               | Error processing course [COM114-1108-2016-1-ONL]: null
+java.lang.NullPointerException
+2016-07-14 17:10:32 | INFO  | 224:blackboard.ws.client.GradeExtractApp               | Course 42: COM114-1109-2016-1-ONL
+2016-07-14 17:10:33 | INFO  | 256:blackboard.ws.client.GradeExtractApp               |  Total student enrollments for course: 42
+2016-07-14 17:10:33 | INFO  | 293:blackboard.ws.client.GradeExtractApp               |  Total columns to extract for course: 21
+2016-07-14 17:10:40 | INFO  | 319:blackboard.ws.client.GradeExtractApp               |  Total users for course: 39
+2016-07-14 17:10:40 | INFO  | 329:blackboard.ws.client.GradeExtractApp               |  Loading grades...
+2016-07-14 17:13:06 | INFO  | 118:blackboard.ws.client.GradeExtractApp               | EXTRACT STARTED : Thu Jul 14 17:13:06 CST 2016
+2016-07-14 17:13:06 | INFO  | 166:blackboard.ws.client.WebServiceClient              | Initializing...
+2016-07-14 17:13:06 | INFO  |  63:org.apache.axis2.deployment.ClusterBuilder         | Clustering has been disabled
+2016-07-14 17:13:06 | INFO  |1098:org.apache.axis2.deployment.DeploymentEngine       | No services directory was found under C:\Users\cbonilla\Documents\GitHub\AIEP-GradeExtract\lib\axis2-1.6.2\lib.
+2016-07-14 17:13:06 | INFO  |1109:org.apache.axis2.deployment.DeploymentEngine       | No modules directory was found under C:\Users\cbonilla\Documents\GitHub\AIEP-GradeExtract\lib\axis2-1.6.2\lib.
+2016-07-14 17:13:07 | INFO  |  82:org.apache.axis2.deployment.ModuleDeployer         | Deploying module: addressing-1.6.2 - file:/C:/Users/cbonilla/Documents/GitHub/AIEP-GradeExtract/lib/axis2-1.6.2/lib/addressing-1.6.2.mar
+2016-07-14 17:13:07 | INFO  |  82:org.apache.axis2.deployment.ModuleDeployer         | Deploying module: rampart-1.6.2 - file:/C:/Users/cbonilla/Documents/GitHub/AIEP-GradeExtract/lib/axis2-1.6.2/lib/rampart-1.6.2.mar
+2016-07-14 17:13:07 | INFO  | 211:blackboard.ws.client.WebServiceClient              | Checking versions...
+2016-07-14 17:13:28 | INFO  | 439:org.apache.commons.httpclient.HttpMethodDirector   | I/O exception (java.net.ConnectException) caught when processing request: Connection timed out: connect
+2016-07-14 17:13:28 | INFO  | 445:org.apache.commons.httpclient.HttpMethodDirector   | Retrying request
+2016-07-14 17:13:29 | INFO  | 215:blackboard.ws.client.WebServiceClient              | Context server version: 2
+2016-07-14 17:13:29 | INFO  | 219:blackboard.ws.client.WebServiceClient              | User server version: 1
+2016-07-14 17:13:29 | INFO  | 223:blackboard.ws.client.WebServiceClient              | Util server version: 2
+2016-07-14 17:13:29 | INFO  | 229:blackboard.ws.client.WebServiceClient              | Initializing the session...
+2016-07-14 17:13:29 | INFO  | 232:blackboard.ws.client.WebServiceClient              | Session Id: 1ce7c902f304455ab57c2e99dcbc0f3b
+2016-07-14 17:13:29 | INFO  | 234:blackboard.ws.client.WebServiceClient              | Initializing Util Context...
+2016-07-14 17:13:30 | INFO  | 241:blackboard.ws.client.WebServiceClient              | Initializing User Context...
+2016-07-14 17:13:30 | INFO  | 248:blackboard.ws.client.WebServiceClient              | Initializing Course Context...
+2016-07-14 17:13:30 | INFO  | 255:blackboard.ws.client.WebServiceClient              | Initializing Course Membership Context...
+2016-07-14 17:13:31 | INFO  | 262:blackboard.ws.client.WebServiceClient              | Initializing Gradebook Context...
+2016-07-14 17:13:31 | INFO  | 270:blackboard.ws.client.WebServiceClient              | Registering Tool...
+2016-07-14 17:13:31 | WARN  | 283:blackboard.ws.client.WebServiceClient              | Errors/warnings registering tool: 
+2016-07-14 17:13:31 | WARN  | 286:blackboard.ws.client.WebServiceClient              |  - Cannot reregister an activated client
+2016-07-14 17:13:31 | INFO  | 291:blackboard.ws.client.WebServiceClient              | Initialization complete.
+2016-07-14 17:13:33 | INFO  | 146:blackboard.ws.client.GradeExtractApp               | Loading courses...
+2016-07-14 17:13:45 | INFO  | 159:blackboard.ws.client.GradeExtractApp               | Total number of courses: 967
+2016-07-14 17:13:45 | INFO  | 224:blackboard.ws.client.GradeExtractApp               | Course 1: BASE-AULA-COM114
+2016-07-14 17:13:45 | INFO  | 256:blackboard.ws.client.GradeExtractApp               |  Total student enrollments for course: 0
+2016-07-14 17:13:45 | INFO  | 258:blackboard.ws.client.GradeExtractApp               |  No students = no grades, skipping course.
+2016-07-14 17:13:45 | INFO  | 224:blackboard.ws.client.GradeExtractApp               | Course 2: BASE-COM114-ONLINE-9SEMANAS
+2016-07-14 17:13:45 | INFO  | 256:blackboard.ws.client.GradeExtractApp               |  Total student enrollments for course: 0
+2016-07-14 17:13:45 | INFO  | 258:blackboard.ws.client.GradeExtractApp               |  No students = no grades, skipping course.
+2016-07-14 17:13:45 | INFO  | 224:blackboard.ws.client.GradeExtractApp               | Course 3: BASE-COM114-ONLINE-BIMESTRAL
+2016-07-14 17:13:46 | INFO  | 256:blackboard.ws.client.GradeExtractApp               |  Total student enrollments for course: 0
+2016-07-14 17:13:46 | INFO  | 258:blackboard.ws.client.GradeExtractApp               |  No students = no grades, skipping course.
+2016-07-14 17:13:46 | INFO  | 224:blackboard.ws.client.GradeExtractApp               | Course 4: BASE-COM114-ONLINE-SEMESTRAL
+2016-07-14 17:13:46 | INFO  | 256:blackboard.ws.client.GradeExtractApp               |  Total student enrollments for course: 0
+2016-07-14 17:13:46 | INFO  | 258:blackboard.ws.client.GradeExtractApp               |  No students = no grades, skipping course.
+2016-07-14 17:13:46 | INFO  | 224:blackboard.ws.client.GradeExtractApp               | Course 5: BASE-COM114-PRESENCIAL-BIMESTRAL
+2016-07-14 17:13:46 | INFO  | 256:blackboard.ws.client.GradeExtractApp               |  Total student enrollments for course: 0
+2016-07-14 17:13:46 | INFO  | 258:blackboard.ws.client.GradeExtractApp               |  No students = no grades, skipping course.
+2016-07-14 17:13:46 | INFO  | 224:blackboard.ws.client.GradeExtractApp               | Course 6: BASE-COM114-SEMIPRESENCIAL-BIMESTRAL
+2016-07-14 17:13:47 | INFO  | 256:blackboard.ws.client.GradeExtractApp               |  Total student enrollments for course: 0
+2016-07-14 17:13:47 | INFO  | 258:blackboard.ws.client.GradeExtractApp               |  No students = no grades, skipping course.
+2016-07-14 17:13:47 | INFO  | 224:blackboard.ws.client.GradeExtractApp               | Course 7: COM114-1-2016-1-ONL
+2016-07-14 17:13:47 | INFO  | 256:blackboard.ws.client.GradeExtractApp               |  Total student enrollments for course: 43
+2016-07-14 17:13:47 | INFO  | 293:blackboard.ws.client.GradeExtractApp               |  Total columns to extract for course: 23
+2016-07-14 17:13:56 | INFO  | 319:blackboard.ws.client.GradeExtractApp               |  Total users for course: 38
+2016-07-14 17:13:56 | INFO  | 329:blackboard.ws.client.GradeExtractApp               |  Loading grades...
+2016-07-14 17:14:00 | INFO  | 331:blackboard.ws.client.GradeExtractApp               |  Total grades for course: 342
+2016-07-14 17:14:00 | ERROR | 231:blackboard.ws.client.GradeExtractApp               | Error processing course [COM114-1-2016-1-ONL]: null
+java.lang.NullPointerException
+	at blackboard.ws.client.GradeExtractApp.printRow(GradeExtractApp.java:434)
+	at blackboard.ws.client.GradeExtractApp.printRow(GradeExtractApp.java:415)
+	at blackboard.ws.client.GradeExtractApp.doCourse(GradeExtractApp.java:352)
+	at blackboard.ws.client.GradeExtractApp.doMain(GradeExtractApp.java:226)
+	at blackboard.ws.client.GradeExtractApp.main(GradeExtractApp.java:122)
+2016-07-14 17:14:00 | INFO  | 224:blackboard.ws.client.GradeExtractApp               | Course 8: COM114-100-2016-1-ONL
+2016-07-14 17:14:00 | INFO  | 256:blackboard.ws.client.GradeExtractApp               |  Total student enrollments for course: 41
+2016-07-14 17:14:01 | INFO  | 293:blackboard.ws.client.GradeExtractApp               |  Total columns to extract for course: 20
+2016-07-14 17:14:08 | INFO  | 319:blackboard.ws.client.GradeExtractApp               |  Total users for course: 38
+2016-07-14 17:14:08 | INFO  | 329:blackboard.ws.client.GradeExtractApp               |  Loading grades...
+2016-07-14 17:14:12 | INFO  | 331:blackboard.ws.client.GradeExtractApp               |  Total grades for course: 334
+2016-07-14 17:14:12 | ERROR | 231:blackboard.ws.client.GradeExtractApp               | Error processing course [COM114-100-2016-1-ONL]: null
+java.lang.NullPointerException
+	at blackboard.ws.client.GradeExtractApp.printRow(GradeExtractApp.java:434)
+	at blackboard.ws.client.GradeExtractApp.printRow(GradeExtractApp.java:415)
+	at blackboard.ws.client.GradeExtractApp.doCourse(GradeExtractApp.java:352)
+	at blackboard.ws.client.GradeExtractApp.doMain(GradeExtractApp.java:226)
+	at blackboard.ws.client.GradeExtractApp.main(GradeExtractApp.java:122)
+2016-07-14 17:14:12 | INFO  | 224:blackboard.ws.client.GradeExtractApp               | Course 9: COM114-1000-2016-1-ONL
+2016-07-14 17:14:13 | INFO  | 256:blackboard.ws.client.GradeExtractApp               |  Total student enrollments for course: 47
+2016-07-14 17:14:13 | INFO  | 293:blackboard.ws.client.GradeExtractApp               |  Total columns to extract for course: 23
+2016-07-14 17:14:22 | INFO  | 319:blackboard.ws.client.GradeExtractApp               |  Total users for course: 44
+2016-07-14 17:14:22 | INFO  | 329:blackboard.ws.client.GradeExtractApp               |  Loading grades...
+2016-07-14 17:14:32 | INFO  | 331:blackboard.ws.client.GradeExtractApp               |  Total grades for course: 720
+2016-07-14 17:14:32 | ERROR | 231:blackboard.ws.client.GradeExtractApp               | Error processing course [COM114-1000-2016-1-ONL]: null
+java.lang.NullPointerException
+	at blackboard.ws.client.GradeExtractApp.printRow(GradeExtractApp.java:434)
+	at blackboard.ws.client.GradeExtractApp.printRow(GradeExtractApp.java:415)
+	at blackboard.ws.client.GradeExtractApp.doCourse(GradeExtractApp.java:352)
+	at blackboard.ws.client.GradeExtractApp.doMain(GradeExtractApp.java:226)
+	at blackboard.ws.client.GradeExtractApp.main(GradeExtractApp.java:122)
+2016-07-14 17:14:32 | INFO  | 224:blackboard.ws.client.GradeExtractApp               | Course 10: COM114-1001-2016-1-ONL
+2016-07-14 17:14:33 | INFO  | 256:blackboard.ws.client.GradeExtractApp               |  Total student enrollments for course: 46
+2016-07-14 17:14:34 | INFO  | 293:blackboard.ws.client.GradeExtractApp               |  Total columns to extract for course: 23
+2016-07-14 17:14:42 | INFO  | 319:blackboard.ws.client.GradeExtractApp               |  Total users for course: 35
+2016-07-14 17:14:42 | INFO  | 329:blackboard.ws.client.GradeExtractApp               |  Loading grades...
+2016-07-14 17:14:48 | INFO  | 331:blackboard.ws.client.GradeExtractApp               |  Total grades for course: 437
+2016-07-14 17:14:48 | ERROR | 231:blackboard.ws.client.GradeExtractApp               | Error processing course [COM114-1001-2016-1-ONL]: null
+java.lang.NullPointerException
+	at blackboard.ws.client.GradeExtractApp.printRow(GradeExtractApp.java:434)
+	at blackboard.ws.client.GradeExtractApp.printRow(GradeExtractApp.java:415)
+	at blackboard.ws.client.GradeExtractApp.doCourse(GradeExtractApp.java:352)
+	at blackboard.ws.client.GradeExtractApp.doMain(GradeExtractApp.java:226)
+	at blackboard.ws.client.GradeExtractApp.main(GradeExtractApp.java:122)
+2016-07-14 17:14:48 | INFO  | 194:blackboard.ws.client.GradeExtractApp               | Maximum course limit reached, ending.
+2016-07-14 17:14:48 | INFO  | 237:blackboard.ws.client.GradeExtractApp               | Closing report file stream.
+2016-07-14 17:14:49 | INFO  | 129:blackboard.ws.client.GradeExtractApp               | EXTRACT START TIME: Thu Jul 14 17:13:06 CST 2016
+2016-07-14 17:14:49 | INFO  | 130:blackboard.ws.client.GradeExtractApp               | EXTRACT COMPLETED : Thu Jul 14 17:14:49 CST 2016
+2016-07-14 17:14:49 | ERROR | 132:blackboard.ws.client.GradeExtractApp               | ERRORS(4):
+2016-07-14 17:14:49 | ERROR | 134:blackboard.ws.client.GradeExtractApp               |  - Error processing course [COM114-1-2016-1-ONL]: null
+2016-07-14 17:14:49 | ERROR | 134:blackboard.ws.client.GradeExtractApp               |  - Error processing course [COM114-100-2016-1-ONL]: null
+2016-07-14 17:14:49 | ERROR | 134:blackboard.ws.client.GradeExtractApp               |  - Error processing course [COM114-1000-2016-1-ONL]: null
+2016-07-14 17:14:49 | ERROR | 134:blackboard.ws.client.GradeExtractApp               |  - Error processing course [COM114-1001-2016-1-ONL]: null

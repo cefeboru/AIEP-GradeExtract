@@ -202,7 +202,7 @@
      */
     public CourseMembershipWSStub(org.apache.axis2.context.ConfigurationContext configurationContext) throws org.apache.axis2.AxisFault {
         
-                    this(configurationContext,"https://aieptest.blackboard.com:443//webapps/services/CourseMembership.WS" );
+                    this(configurationContext,"https://aiep-ws.blackboard.com:443///services/CourseMembership.WS" );
                 
     }
 
@@ -211,7 +211,7 @@
      */
     public CourseMembershipWSStub() throws org.apache.axis2.AxisFault {
         
-                    this("https://aieptest.blackboard.com:443//webapps/services/CourseMembership.WS" );
+                    this("https://aiep-ws.blackboard.com:443///services/CourseMembership.WS" );
                 
     }
 
@@ -1354,7 +1354,7 @@
         }
         return false;
     }
-     //https://aieptest.blackboard.com:443//webapps/services/CourseMembership.WS
+     //https://aiep-ws.blackboard.com:443///services/CourseMembership.WS
         public static class SaveCourseMembership
         implements org.apache.axis2.databinding.ADBBean{
         

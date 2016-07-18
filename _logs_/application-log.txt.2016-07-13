@@ -1,0 +1,1282 @@
+2016-07-13 08:43:38 | INFO  | 116:blackboard.ws.client.GradeExtractApp               | EXTRACT STARTED : Wed Jul 13 08:43:38 CST 2016
+2016-07-13 08:43:38 | INFO  | 162:blackboard.ws.client.WebServiceClient              | Initializing...
+2016-07-13 08:43:39 | INFO  |  63:org.apache.axis2.deployment.ClusterBuilder         | Clustering has been disabled
+2016-07-13 08:43:39 | INFO  |1098:org.apache.axis2.deployment.DeploymentEngine       | No services directory was found under C:\Users\cbonilla\Documents\GitHub\AIEP-GradeExtract\lib\axis2-1.6.2\lib.
+2016-07-13 08:43:39 | INFO  |1109:org.apache.axis2.deployment.DeploymentEngine       | No modules directory was found under C:\Users\cbonilla\Documents\GitHub\AIEP-GradeExtract\lib\axis2-1.6.2\lib.
+2016-07-13 08:43:39 | INFO  |  82:org.apache.axis2.deployment.ModuleDeployer         | Deploying module: addressing-1.6.2 - file:/C:/Users/cbonilla/Documents/GitHub/AIEP-GradeExtract/lib/axis2-1.6.2/lib/addressing-1.6.2.mar
+2016-07-13 08:43:39 | INFO  |  82:org.apache.axis2.deployment.ModuleDeployer         | Deploying module: rampart-1.6.2 - file:/C:/Users/cbonilla/Documents/GitHub/AIEP-GradeExtract/lib/axis2-1.6.2/lib/rampart-1.6.2.mar
+2016-07-13 08:43:39 | INFO  | 206:blackboard.ws.client.WebServiceClient              | Checking versions...
+2016-07-13 08:43:42 | ERROR | 124:blackboard.ws.client.GradeExtractApp               | The server did not recognise the action which it received: 
+org.apache.axis2.AxisFault: The server did not recognise the action which it received: 
+	at org.apache.axis2.handlers.addressing.AddressingInFaultHandler.invoke(AddressingInFaultHandler.java:115)
+	at org.apache.axis2.engine.Phase.invokeHandler(Phase.java:340)
+	at org.apache.axis2.engine.Phase.invoke(Phase.java:313)
+	at org.apache.axis2.engine.AxisEngine.invoke(AxisEngine.java:262)
+	at org.apache.axis2.engine.AxisEngine.receive(AxisEngine.java:168)
+	at org.apache.axis2.description.OutInAxisOperationClient.handleResponse(OutInAxisOperation.java:364)
+	at org.apache.axis2.description.OutInAxisOperationClient.send(OutInAxisOperation.java:421)
+	at org.apache.axis2.description.OutInAxisOperationClient.executeImpl(OutInAxisOperation.java:229)
+	at org.apache.axis2.client.OperationClient.execute(OperationClient.java:165)
+	at blackboard.ws.context.ContextWSStub.getServerVersion(ContextWSStub.java:1679)
+	at blackboard.ws.client.WebServiceClient.initialize(WebServiceClient.java:209)
+	at blackboard.ws.client.GradeExtractApp.newWebServiceClient(GradeExtractApp.java:372)
+	at blackboard.ws.client.GradeExtractApp.doMain(GradeExtractApp.java:140)
+	at blackboard.ws.client.GradeExtractApp.main(GradeExtractApp.java:120)
+2016-07-13 08:43:42 | INFO  | 127:blackboard.ws.client.GradeExtractApp               | EXTRACT START TIME: Wed Jul 13 08:43:38 CST 2016
+2016-07-13 08:43:42 | INFO  | 128:blackboard.ws.client.GradeExtractApp               | EXTRACT COMPLETED : Wed Jul 13 08:43:42 CST 2016
+2016-07-13 08:43:42 | ERROR | 130:blackboard.ws.client.GradeExtractApp               | ERRORS(1):
+2016-07-13 08:43:42 | ERROR | 132:blackboard.ws.client.GradeExtractApp               |  - The server did not recognise the action which it received: 
+2016-07-13 08:51:28 | INFO  | 116:blackboard.ws.client.GradeExtractApp               | EXTRACT STARTED : Wed Jul 13 08:51:28 CST 2016
+2016-07-13 08:51:28 | INFO  | 162:blackboard.ws.client.WebServiceClient              | Initializing...
+2016-07-13 08:51:28 | INFO  |  63:org.apache.axis2.deployment.ClusterBuilder         | Clustering has been disabled
+2016-07-13 08:51:28 | INFO  |1098:org.apache.axis2.deployment.DeploymentEngine       | No services directory was found under C:\Users\cbonilla\Documents\GitHub\AIEP-GradeExtract\lib\axis2-1.6.2\lib.
+2016-07-13 08:51:28 | INFO  |1109:org.apache.axis2.deployment.DeploymentEngine       | No modules directory was found under C:\Users\cbonilla\Documents\GitHub\AIEP-GradeExtract\lib\axis2-1.6.2\lib.
+2016-07-13 08:51:28 | INFO  |  82:org.apache.axis2.deployment.ModuleDeployer         | Deploying module: addressing-1.6.2 - file:/C:/Users/cbonilla/Documents/GitHub/AIEP-GradeExtract/lib/axis2-1.6.2/lib/addressing-1.6.2.mar
+2016-07-13 08:51:28 | INFO  |  82:org.apache.axis2.deployment.ModuleDeployer         | Deploying module: rampart-1.6.2 - file:/C:/Users/cbonilla/Documents/GitHub/AIEP-GradeExtract/lib/axis2-1.6.2/lib/rampart-1.6.2.mar
+2016-07-13 08:51:28 | INFO  | 206:blackboard.ws.client.WebServiceClient              | Checking versions...
+2016-07-13 08:51:32 | INFO  | 210:blackboard.ws.client.WebServiceClient              | Context server version: 2
+2016-07-13 08:51:32 | INFO  | 214:blackboard.ws.client.WebServiceClient              | User server version: 1
+2016-07-13 08:51:33 | INFO  | 218:blackboard.ws.client.WebServiceClient              | Util server version: 2
+2016-07-13 08:51:33 | INFO  | 224:blackboard.ws.client.WebServiceClient              | Initializing the session...
+2016-07-13 08:51:34 | INFO  | 227:blackboard.ws.client.WebServiceClient              | Session Id: 6f00142e84264bcc83d1c50fba38bc4c
+2016-07-13 08:51:34 | INFO  | 229:blackboard.ws.client.WebServiceClient              | Initializing Util Context...
+2016-07-13 08:51:34 | INFO  | 236:blackboard.ws.client.WebServiceClient              | Initializing User Context...
+2016-07-13 08:51:35 | INFO  | 243:blackboard.ws.client.WebServiceClient              | Initializing Course Context...
+2016-07-13 08:51:35 | INFO  | 250:blackboard.ws.client.WebServiceClient              | Initializing Course Membership Context...
+2016-07-13 08:51:36 | INFO  | 257:blackboard.ws.client.WebServiceClient              | Initializing Gradebook Context...
+2016-07-13 08:51:36 | INFO  | 265:blackboard.ws.client.WebServiceClient              | Registering Tool...
+2016-07-13 08:51:37 | WARN  | 278:blackboard.ws.client.WebServiceClient              | Errors/warnings registering tool: 
+2016-07-13 08:51:37 | WARN  | 281:blackboard.ws.client.WebServiceClient              |  - Invalid tool registration password supplied (kuTH2cra)
+2016-07-13 08:51:37 | INFO  | 286:blackboard.ws.client.WebServiceClient              | Initialization complete.
+2016-07-13 08:51:44 | ERROR | 124:blackboard.ws.client.GradeExtractApp               | [Context.WS001]Invalid user/password combination
+org.apache.axis2.AxisFault: [Context.WS001]Invalid user/password combination
+	at org.apache.axis2.util.Utils.getInboundFaultFromMessageContext(Utils.java:531)
+	at org.apache.axis2.description.OutInAxisOperationClient.handleResponse(OutInAxisOperation.java:375)
+	at org.apache.axis2.description.OutInAxisOperationClient.send(OutInAxisOperation.java:421)
+	at org.apache.axis2.description.OutInAxisOperationClient.executeImpl(OutInAxisOperation.java:229)
+	at org.apache.axis2.client.OperationClient.execute(OperationClient.java:165)
+	at blackboard.ws.context.ContextWSStub.login(ContextWSStub.java:1435)
+	at blackboard.ws.client.WebServiceClient.login(WebServiceClient.java:304)
+	at blackboard.ws.client.GradeExtractApp.newWebServiceClient(GradeExtractApp.java:373)
+	at blackboard.ws.client.GradeExtractApp.doMain(GradeExtractApp.java:140)
+	at blackboard.ws.client.GradeExtractApp.main(GradeExtractApp.java:120)
+2016-07-13 08:51:44 | INFO  | 127:blackboard.ws.client.GradeExtractApp               | EXTRACT START TIME: Wed Jul 13 08:51:28 CST 2016
+2016-07-13 08:51:44 | INFO  | 128:blackboard.ws.client.GradeExtractApp               | EXTRACT COMPLETED : Wed Jul 13 08:51:44 CST 2016
+2016-07-13 08:51:44 | ERROR | 130:blackboard.ws.client.GradeExtractApp               | ERRORS(1):
+2016-07-13 08:51:44 | ERROR | 132:blackboard.ws.client.GradeExtractApp               |  - [Context.WS001]Invalid user/password combination
+2016-07-13 08:52:23 | INFO  | 116:blackboard.ws.client.GradeExtractApp               | EXTRACT STARTED : Wed Jul 13 08:52:23 CST 2016
+2016-07-13 08:52:23 | INFO  | 162:blackboard.ws.client.WebServiceClient              | Initializing...
+2016-07-13 08:52:23 | INFO  |  63:org.apache.axis2.deployment.ClusterBuilder         | Clustering has been disabled
+2016-07-13 08:52:24 | INFO  |1098:org.apache.axis2.deployment.DeploymentEngine       | No services directory was found under C:\Users\cbonilla\Documents\GitHub\AIEP-GradeExtract\lib\axis2-1.6.2\lib.
+2016-07-13 08:52:24 | INFO  |1109:org.apache.axis2.deployment.DeploymentEngine       | No modules directory was found under C:\Users\cbonilla\Documents\GitHub\AIEP-GradeExtract\lib\axis2-1.6.2\lib.
+2016-07-13 08:52:24 | INFO  |  82:org.apache.axis2.deployment.ModuleDeployer         | Deploying module: addressing-1.6.2 - file:/C:/Users/cbonilla/Documents/GitHub/AIEP-GradeExtract/lib/axis2-1.6.2/lib/addressing-1.6.2.mar
+2016-07-13 08:52:24 | INFO  |  82:org.apache.axis2.deployment.ModuleDeployer         | Deploying module: rampart-1.6.2 - file:/C:/Users/cbonilla/Documents/GitHub/AIEP-GradeExtract/lib/axis2-1.6.2/lib/rampart-1.6.2.mar
+2016-07-13 08:52:24 | INFO  | 206:blackboard.ws.client.WebServiceClient              | Checking versions...
+2016-07-13 08:52:32 | INFO  | 210:blackboard.ws.client.WebServiceClient              | Context server version: 2
+2016-07-13 08:52:32 | INFO  | 214:blackboard.ws.client.WebServiceClient              | User server version: 1
+2016-07-13 08:52:33 | INFO  | 218:blackboard.ws.client.WebServiceClient              | Util server version: 2
+2016-07-13 08:52:33 | INFO  | 224:blackboard.ws.client.WebServiceClient              | Initializing the session...
+2016-07-13 08:52:34 | INFO  | 227:blackboard.ws.client.WebServiceClient              | Session Id: 0245f67e411242319edcc5858ad647bf
+2016-07-13 08:52:34 | INFO  | 229:blackboard.ws.client.WebServiceClient              | Initializing Util Context...
+2016-07-13 08:52:34 | INFO  | 236:blackboard.ws.client.WebServiceClient              | Initializing User Context...
+2016-07-13 08:52:35 | INFO  | 243:blackboard.ws.client.WebServiceClient              | Initializing Course Context...
+2016-07-13 08:52:35 | INFO  | 250:blackboard.ws.client.WebServiceClient              | Initializing Course Membership Context...
+2016-07-13 08:52:36 | INFO  | 257:blackboard.ws.client.WebServiceClient              | Initializing Gradebook Context...
+2016-07-13 08:52:36 | INFO  | 265:blackboard.ws.client.WebServiceClient              | Registering Tool...
+2016-07-13 08:52:38 | INFO  | 286:blackboard.ws.client.WebServiceClient              | Initialization complete.
+2016-07-13 08:52:45 | ERROR | 124:blackboard.ws.client.GradeExtractApp               | [Context.WS001]Invalid user/password combination
+org.apache.axis2.AxisFault: [Context.WS001]Invalid user/password combination
+	at org.apache.axis2.util.Utils.getInboundFaultFromMessageContext(Utils.java:531)
+	at org.apache.axis2.description.OutInAxisOperationClient.handleResponse(OutInAxisOperation.java:375)
+	at org.apache.axis2.description.OutInAxisOperationClient.send(OutInAxisOperation.java:421)
+	at org.apache.axis2.description.OutInAxisOperationClient.executeImpl(OutInAxisOperation.java:229)
+	at org.apache.axis2.client.OperationClient.execute(OperationClient.java:165)
+	at blackboard.ws.context.ContextWSStub.login(ContextWSStub.java:1435)
+	at blackboard.ws.client.WebServiceClient.login(WebServiceClient.java:304)
+	at blackboard.ws.client.GradeExtractApp.newWebServiceClient(GradeExtractApp.java:373)
+	at blackboard.ws.client.GradeExtractApp.doMain(GradeExtractApp.java:140)
+	at blackboard.ws.client.GradeExtractApp.main(GradeExtractApp.java:120)
+2016-07-13 08:52:45 | INFO  | 127:blackboard.ws.client.GradeExtractApp               | EXTRACT START TIME: Wed Jul 13 08:52:23 CST 2016
+2016-07-13 08:52:45 | INFO  | 128:blackboard.ws.client.GradeExtractApp               | EXTRACT COMPLETED : Wed Jul 13 08:52:45 CST 2016
+2016-07-13 08:52:45 | ERROR | 130:blackboard.ws.client.GradeExtractApp               | ERRORS(1):
+2016-07-13 08:52:45 | ERROR | 132:blackboard.ws.client.GradeExtractApp               |  - [Context.WS001]Invalid user/password combination
+2016-07-13 08:56:54 | INFO  | 116:blackboard.ws.client.GradeExtractApp               | EXTRACT STARTED : Wed Jul 13 08:56:54 CST 2016
+2016-07-13 08:56:54 | INFO  | 162:blackboard.ws.client.WebServiceClient              | Initializing...
+2016-07-13 08:56:55 | INFO  |  63:org.apache.axis2.deployment.ClusterBuilder         | Clustering has been disabled
+2016-07-13 08:56:55 | INFO  |1098:org.apache.axis2.deployment.DeploymentEngine       | No services directory was found under C:\Users\cbonilla\Documents\GitHub\AIEP-GradeExtract\lib\axis2-1.6.2\lib.
+2016-07-13 08:56:55 | INFO  |1109:org.apache.axis2.deployment.DeploymentEngine       | No modules directory was found under C:\Users\cbonilla\Documents\GitHub\AIEP-GradeExtract\lib\axis2-1.6.2\lib.
+2016-07-13 08:56:55 | INFO  |  82:org.apache.axis2.deployment.ModuleDeployer         | Deploying module: addressing-1.6.2 - file:/C:/Users/cbonilla/Documents/GitHub/AIEP-GradeExtract/lib/axis2-1.6.2/lib/addressing-1.6.2.mar
+2016-07-13 08:56:55 | INFO  |  82:org.apache.axis2.deployment.ModuleDeployer         | Deploying module: rampart-1.6.2 - file:/C:/Users/cbonilla/Documents/GitHub/AIEP-GradeExtract/lib/axis2-1.6.2/lib/rampart-1.6.2.mar
+2016-07-13 08:56:55 | INFO  | 206:blackboard.ws.client.WebServiceClient              | Checking versions...
+2016-07-13 08:56:56 | INFO  | 210:blackboard.ws.client.WebServiceClient              | Context server version: 2
+2016-07-13 08:56:56 | INFO  | 214:blackboard.ws.client.WebServiceClient              | User server version: 1
+2016-07-13 08:56:57 | INFO  | 218:blackboard.ws.client.WebServiceClient              | Util server version: 2
+2016-07-13 08:56:57 | INFO  | 224:blackboard.ws.client.WebServiceClient              | Initializing the session...
+2016-07-13 08:56:57 | INFO  | 227:blackboard.ws.client.WebServiceClient              | Session Id: 187a37d3bbb349039660e725d99642bc
+2016-07-13 08:56:57 | INFO  | 229:blackboard.ws.client.WebServiceClient              | Initializing Util Context...
+2016-07-13 08:56:58 | INFO  | 236:blackboard.ws.client.WebServiceClient              | Initializing User Context...
+2016-07-13 08:56:58 | INFO  | 243:blackboard.ws.client.WebServiceClient              | Initializing Course Context...
+2016-07-13 08:56:59 | INFO  | 250:blackboard.ws.client.WebServiceClient              | Initializing Course Membership Context...
+2016-07-13 08:56:59 | INFO  | 257:blackboard.ws.client.WebServiceClient              | Initializing Gradebook Context...
+2016-07-13 08:56:59 | INFO  | 265:blackboard.ws.client.WebServiceClient              | Registering Tool...
+2016-07-13 08:57:00 | INFO  | 286:blackboard.ws.client.WebServiceClient              | Initialization complete.
+2016-07-13 08:57:01 | INFO  | 144:blackboard.ws.client.GradeExtractApp               | Loading courses...
+2016-07-13 08:57:01 | INFO  | 157:blackboard.ws.client.GradeExtractApp               | Total number of courses: 0
+2016-07-13 08:57:01 | INFO  | 235:blackboard.ws.client.GradeExtractApp               | Closing report file stream.
+2016-07-13 08:57:02 | INFO  | 127:blackboard.ws.client.GradeExtractApp               | EXTRACT START TIME: Wed Jul 13 08:56:54 CST 2016
+2016-07-13 08:57:02 | INFO  | 128:blackboard.ws.client.GradeExtractApp               | EXTRACT COMPLETED : Wed Jul 13 08:57:02 CST 2016
+2016-07-13 09:51:44 | INFO  | 116:blackboard.ws.client.GradeExtractApp               | EXTRACT STARTED : Wed Jul 13 09:51:44 CST 2016
+2016-07-13 09:51:44 | INFO  | 162:blackboard.ws.client.WebServiceClient              | Initializing...
+2016-07-13 09:51:45 | INFO  |  63:org.apache.axis2.deployment.ClusterBuilder         | Clustering has been disabled
+2016-07-13 09:51:45 | INFO  |1098:org.apache.axis2.deployment.DeploymentEngine       | No services directory was found under C:\Users\cbonilla\Documents\GitHub\AIEP-GradeExtract\lib\axis2-1.6.2\lib.
+2016-07-13 09:51:45 | INFO  |1109:org.apache.axis2.deployment.DeploymentEngine       | No modules directory was found under C:\Users\cbonilla\Documents\GitHub\AIEP-GradeExtract\lib\axis2-1.6.2\lib.
+2016-07-13 09:51:45 | INFO  |  82:org.apache.axis2.deployment.ModuleDeployer         | Deploying module: addressing-1.6.2 - file:/C:/Users/cbonilla/Documents/GitHub/AIEP-GradeExtract/lib/axis2-1.6.2/lib/addressing-1.6.2.mar
+2016-07-13 09:51:45 | INFO  |  82:org.apache.axis2.deployment.ModuleDeployer         | Deploying module: rampart-1.6.2 - file:/C:/Users/cbonilla/Documents/GitHub/AIEP-GradeExtract/lib/axis2-1.6.2/lib/rampart-1.6.2.mar
+2016-07-13 09:51:45 | INFO  | 206:blackboard.ws.client.WebServiceClient              | Checking versions...
+2016-07-13 09:51:46 | INFO  | 210:blackboard.ws.client.WebServiceClient              | Context server version: 2
+2016-07-13 09:51:47 | INFO  | 214:blackboard.ws.client.WebServiceClient              | User server version: 1
+2016-07-13 09:51:47 | INFO  | 218:blackboard.ws.client.WebServiceClient              | Util server version: 2
+2016-07-13 09:51:47 | INFO  | 224:blackboard.ws.client.WebServiceClient              | Initializing the session...
+2016-07-13 09:51:48 | INFO  | 227:blackboard.ws.client.WebServiceClient              | Session Id: 3af898ed80ee4708b80bbca454def77c
+2016-07-13 09:51:48 | INFO  | 229:blackboard.ws.client.WebServiceClient              | Initializing Util Context...
+2016-07-13 09:51:48 | INFO  | 236:blackboard.ws.client.WebServiceClient              | Initializing User Context...
+2016-07-13 09:51:49 | INFO  | 243:blackboard.ws.client.WebServiceClient              | Initializing Course Context...
+2016-07-13 09:51:49 | INFO  | 250:blackboard.ws.client.WebServiceClient              | Initializing Course Membership Context...
+2016-07-13 09:51:50 | INFO  | 257:blackboard.ws.client.WebServiceClient              | Initializing Gradebook Context...
+2016-07-13 09:51:50 | INFO  | 265:blackboard.ws.client.WebServiceClient              | Registering Tool...
+2016-07-13 09:51:52 | INFO  | 286:blackboard.ws.client.WebServiceClient              | Initialization complete.
+2016-07-13 09:51:52 | INFO  | 144:blackboard.ws.client.GradeExtractApp               | Loading courses...
+2016-07-13 09:51:53 | INFO  | 157:blackboard.ws.client.GradeExtractApp               | Total number of courses: 0
+2016-07-13 09:51:53 | INFO  | 235:blackboard.ws.client.GradeExtractApp               | Closing report file stream.
+2016-07-13 09:51:53 | INFO  | 127:blackboard.ws.client.GradeExtractApp               | EXTRACT START TIME: Wed Jul 13 09:51:44 CST 2016
+2016-07-13 09:51:53 | INFO  | 128:blackboard.ws.client.GradeExtractApp               | EXTRACT COMPLETED : Wed Jul 13 09:51:53 CST 2016
+2016-07-13 11:35:46 | INFO  | 116:blackboard.ws.client.GradeExtractApp               | EXTRACT STARTED : Wed Jul 13 11:35:46 CST 2016
+2016-07-13 11:35:46 | INFO  | 163:blackboard.ws.client.WebServiceClient              | Initializing...
+2016-07-13 11:35:47 | INFO  |  63:org.apache.axis2.deployment.ClusterBuilder         | Clustering has been disabled
+2016-07-13 11:35:47 | INFO  |1098:org.apache.axis2.deployment.DeploymentEngine       | No services directory was found under C:\Users\cbonilla\Documents\GitHub\AIEP-GradeExtract\lib\axis2-1.6.2\lib.
+2016-07-13 11:35:47 | INFO  |1109:org.apache.axis2.deployment.DeploymentEngine       | No modules directory was found under C:\Users\cbonilla\Documents\GitHub\AIEP-GradeExtract\lib\axis2-1.6.2\lib.
+2016-07-13 11:35:47 | INFO  |  82:org.apache.axis2.deployment.ModuleDeployer         | Deploying module: addressing-1.6.2 - file:/C:/Users/cbonilla/Documents/GitHub/AIEP-GradeExtract/lib/axis2-1.6.2/lib/addressing-1.6.2.mar
+2016-07-13 11:35:47 | INFO  |  82:org.apache.axis2.deployment.ModuleDeployer         | Deploying module: rampart-1.6.2 - file:/C:/Users/cbonilla/Documents/GitHub/AIEP-GradeExtract/lib/axis2-1.6.2/lib/rampart-1.6.2.mar
+2016-07-13 11:35:47 | INFO  | 207:blackboard.ws.client.WebServiceClient              | Checking versions...
+2016-07-13 11:35:48 | INFO  | 211:blackboard.ws.client.WebServiceClient              | Context server version: 2
+2016-07-13 11:35:49 | INFO  | 215:blackboard.ws.client.WebServiceClient              | User server version: 1
+2016-07-13 11:35:50 | INFO  | 219:blackboard.ws.client.WebServiceClient              | Util server version: 2
+2016-07-13 11:35:50 | INFO  | 225:blackboard.ws.client.WebServiceClient              | Initializing the session...
+2016-07-13 11:35:50 | INFO  | 228:blackboard.ws.client.WebServiceClient              | Session Id: a10dce9d8fc44ea08847e75263155da2
+2016-07-13 11:35:50 | INFO  | 230:blackboard.ws.client.WebServiceClient              | Initializing Util Context...
+2016-07-13 11:35:51 | INFO  | 237:blackboard.ws.client.WebServiceClient              | Initializing User Context...
+2016-07-13 11:35:52 | INFO  | 244:blackboard.ws.client.WebServiceClient              | Initializing Course Context...
+2016-07-13 11:35:53 | INFO  | 251:blackboard.ws.client.WebServiceClient              | Initializing Course Membership Context...
+2016-07-13 11:35:53 | INFO  | 258:blackboard.ws.client.WebServiceClient              | Initializing Gradebook Context...
+2016-07-13 11:35:54 | INFO  | 266:blackboard.ws.client.WebServiceClient              | Registering Tool...
+2016-07-13 11:35:55 | INFO  | 287:blackboard.ws.client.WebServiceClient              | Initialization complete.
+2016-07-13 11:35:56 | INFO  | 144:blackboard.ws.client.GradeExtractApp               | Loading courses...
+2016-07-13 11:35:57 | INFO  | 157:blackboard.ws.client.GradeExtractApp               | Total number of courses: 1
+2016-07-13 11:35:57 | INFO  | 222:blackboard.ws.client.GradeExtractApp               | Course 1: COM114-1-2016-1-ONL-WS
+2016-07-13 11:35:58 | INFO  | 253:blackboard.ws.client.GradeExtractApp               |  Total student enrollments for course: 1
+2016-07-13 11:35:58 | INFO  | 287:blackboard.ws.client.GradeExtractApp               |  Total columns to extract for course: 3
+2016-07-13 11:35:59 | INFO  | 301:blackboard.ws.client.GradeExtractApp               |  Total users for course: 2
+2016-07-13 11:35:59 | INFO  | 311:blackboard.ws.client.GradeExtractApp               |  Loading grades...
+2016-07-13 11:36:00 | INFO  | 313:blackboard.ws.client.GradeExtractApp               |  Total grades for course: 3
+2016-07-13 11:36:00 | INFO  | 235:blackboard.ws.client.GradeExtractApp               | Closing report file stream.
+2016-07-13 11:36:01 | INFO  | 127:blackboard.ws.client.GradeExtractApp               | EXTRACT START TIME: Wed Jul 13 11:35:46 CST 2016
+2016-07-13 11:36:01 | INFO  | 128:blackboard.ws.client.GradeExtractApp               | EXTRACT COMPLETED : Wed Jul 13 11:36:01 CST 2016
+2016-07-13 11:37:45 | INFO  | 116:blackboard.ws.client.GradeExtractApp               | EXTRACT STARTED : Wed Jul 13 11:37:45 CST 2016
+2016-07-13 11:37:45 | INFO  | 163:blackboard.ws.client.WebServiceClient              | Initializing...
+2016-07-13 11:37:45 | INFO  |  63:org.apache.axis2.deployment.ClusterBuilder         | Clustering has been disabled
+2016-07-13 11:37:45 | INFO  |1098:org.apache.axis2.deployment.DeploymentEngine       | No services directory was found under C:\Users\cbonilla\Documents\GitHub\AIEP-GradeExtract\lib\axis2-1.6.2\lib.
+2016-07-13 11:37:45 | INFO  |1109:org.apache.axis2.deployment.DeploymentEngine       | No modules directory was found under C:\Users\cbonilla\Documents\GitHub\AIEP-GradeExtract\lib\axis2-1.6.2\lib.
+2016-07-13 11:37:45 | INFO  |  82:org.apache.axis2.deployment.ModuleDeployer         | Deploying module: addressing-1.6.2 - file:/C:/Users/cbonilla/Documents/GitHub/AIEP-GradeExtract/lib/axis2-1.6.2/lib/addressing-1.6.2.mar
+2016-07-13 11:37:45 | INFO  |  82:org.apache.axis2.deployment.ModuleDeployer         | Deploying module: rampart-1.6.2 - file:/C:/Users/cbonilla/Documents/GitHub/AIEP-GradeExtract/lib/axis2-1.6.2/lib/rampart-1.6.2.mar
+2016-07-13 11:37:45 | INFO  | 207:blackboard.ws.client.WebServiceClient              | Checking versions...
+2016-07-13 11:37:47 | INFO  | 211:blackboard.ws.client.WebServiceClient              | Context server version: 2
+2016-07-13 11:37:48 | INFO  | 215:blackboard.ws.client.WebServiceClient              | User server version: 1
+2016-07-13 11:37:48 | INFO  | 219:blackboard.ws.client.WebServiceClient              | Util server version: 2
+2016-07-13 11:37:48 | INFO  | 225:blackboard.ws.client.WebServiceClient              | Initializing the session...
+2016-07-13 11:37:49 | INFO  | 228:blackboard.ws.client.WebServiceClient              | Session Id: 31b0b659c30a4b4083472d42723e4239
+2016-07-13 11:37:49 | INFO  | 230:blackboard.ws.client.WebServiceClient              | Initializing Util Context...
+2016-07-13 11:37:50 | INFO  | 237:blackboard.ws.client.WebServiceClient              | Initializing User Context...
+2016-07-13 11:37:50 | INFO  | 244:blackboard.ws.client.WebServiceClient              | Initializing Course Context...
+2016-07-13 11:37:51 | INFO  | 251:blackboard.ws.client.WebServiceClient              | Initializing Course Membership Context...
+2016-07-13 11:37:52 | INFO  | 258:blackboard.ws.client.WebServiceClient              | Initializing Gradebook Context...
+2016-07-13 11:37:52 | INFO  | 266:blackboard.ws.client.WebServiceClient              | Registering Tool...
+2016-07-13 11:37:54 | INFO  | 287:blackboard.ws.client.WebServiceClient              | Initialization complete.
+2016-07-13 11:37:55 | INFO  | 144:blackboard.ws.client.GradeExtractApp               | Loading courses...
+2016-07-13 11:37:56 | INFO  | 157:blackboard.ws.client.GradeExtractApp               | Total number of courses: 1
+2016-07-13 11:37:56 | INFO  | 222:blackboard.ws.client.GradeExtractApp               | Course 1: COM114-1-2016-1-ONL-WS
+2016-07-13 11:37:57 | INFO  | 253:blackboard.ws.client.GradeExtractApp               |  Total student enrollments for course: 1
+2016-07-13 11:37:57 | INFO  | 287:blackboard.ws.client.GradeExtractApp               |  Total columns to extract for course: 3
+2016-07-13 11:37:58 | INFO  | 301:blackboard.ws.client.GradeExtractApp               |  Total users for course: 2
+2016-07-13 11:37:58 | INFO  | 311:blackboard.ws.client.GradeExtractApp               |  Loading grades...
+2016-07-13 11:37:59 | INFO  | 313:blackboard.ws.client.GradeExtractApp               |  Total grades for course: 3
+2016-07-13 11:37:59 | INFO  | 235:blackboard.ws.client.GradeExtractApp               | Closing report file stream.
+2016-07-13 11:37:59 | INFO  | 127:blackboard.ws.client.GradeExtractApp               | EXTRACT START TIME: Wed Jul 13 11:37:45 CST 2016
+2016-07-13 11:37:59 | INFO  | 128:blackboard.ws.client.GradeExtractApp               | EXTRACT COMPLETED : Wed Jul 13 11:37:59 CST 2016
+2016-07-13 11:45:13 | INFO  | 116:blackboard.ws.client.GradeExtractApp               | EXTRACT STARTED : Wed Jul 13 11:45:13 CST 2016
+2016-07-13 11:45:13 | INFO  | 163:blackboard.ws.client.WebServiceClient              | Initializing...
+2016-07-13 11:45:13 | INFO  |  63:org.apache.axis2.deployment.ClusterBuilder         | Clustering has been disabled
+2016-07-13 11:45:13 | INFO  |1098:org.apache.axis2.deployment.DeploymentEngine       | No services directory was found under C:\Users\cbonilla\Documents\GitHub\AIEP-GradeExtract\lib\axis2-1.6.2\lib.
+2016-07-13 11:45:13 | INFO  |1109:org.apache.axis2.deployment.DeploymentEngine       | No modules directory was found under C:\Users\cbonilla\Documents\GitHub\AIEP-GradeExtract\lib\axis2-1.6.2\lib.
+2016-07-13 11:45:14 | INFO  |  82:org.apache.axis2.deployment.ModuleDeployer         | Deploying module: addressing-1.6.2 - file:/C:/Users/cbonilla/Documents/GitHub/AIEP-GradeExtract/lib/axis2-1.6.2/lib/addressing-1.6.2.mar
+2016-07-13 11:45:14 | INFO  |  82:org.apache.axis2.deployment.ModuleDeployer         | Deploying module: rampart-1.6.2 - file:/C:/Users/cbonilla/Documents/GitHub/AIEP-GradeExtract/lib/axis2-1.6.2/lib/rampart-1.6.2.mar
+2016-07-13 11:45:14 | INFO  | 207:blackboard.ws.client.WebServiceClient              | Checking versions...
+2016-07-13 11:48:46 | INFO  | 117:blackboard.ws.client.GradeExtractApp               | EXTRACT STARTED : Wed Jul 13 11:48:46 CST 2016
+2016-07-13 11:48:46 | INFO  | 163:blackboard.ws.client.WebServiceClient              | Initializing...
+2016-07-13 11:48:46 | INFO  |  63:org.apache.axis2.deployment.ClusterBuilder         | Clustering has been disabled
+2016-07-13 11:48:46 | INFO  |1098:org.apache.axis2.deployment.DeploymentEngine       | No services directory was found under C:\Users\cbonilla\Documents\GitHub\AIEP-GradeExtract\lib\axis2-1.6.2\lib.
+2016-07-13 11:48:46 | INFO  |1109:org.apache.axis2.deployment.DeploymentEngine       | No modules directory was found under C:\Users\cbonilla\Documents\GitHub\AIEP-GradeExtract\lib\axis2-1.6.2\lib.
+2016-07-13 11:48:46 | INFO  |  82:org.apache.axis2.deployment.ModuleDeployer         | Deploying module: addressing-1.6.2 - file:/C:/Users/cbonilla/Documents/GitHub/AIEP-GradeExtract/lib/axis2-1.6.2/lib/addressing-1.6.2.mar
+2016-07-13 11:48:46 | INFO  |  82:org.apache.axis2.deployment.ModuleDeployer         | Deploying module: rampart-1.6.2 - file:/C:/Users/cbonilla/Documents/GitHub/AIEP-GradeExtract/lib/axis2-1.6.2/lib/rampart-1.6.2.mar
+2016-07-13 11:48:46 | INFO  | 207:blackboard.ws.client.WebServiceClient              | Checking versions...
+2016-07-13 11:48:48 | INFO  | 211:blackboard.ws.client.WebServiceClient              | Context server version: 2
+2016-07-13 11:48:48 | INFO  | 215:blackboard.ws.client.WebServiceClient              | User server version: 1
+2016-07-13 11:48:49 | INFO  | 219:blackboard.ws.client.WebServiceClient              | Util server version: 2
+2016-07-13 11:48:49 | INFO  | 225:blackboard.ws.client.WebServiceClient              | Initializing the session...
+2016-07-13 11:48:50 | INFO  | 228:blackboard.ws.client.WebServiceClient              | Session Id: bb706981ab934424a1b2a26dffd052a2
+2016-07-13 11:48:50 | INFO  | 230:blackboard.ws.client.WebServiceClient              | Initializing Util Context...
+2016-07-13 11:48:51 | INFO  | 237:blackboard.ws.client.WebServiceClient              | Initializing User Context...
+2016-07-13 11:48:51 | INFO  | 244:blackboard.ws.client.WebServiceClient              | Initializing Course Context...
+2016-07-13 11:48:52 | INFO  | 251:blackboard.ws.client.WebServiceClient              | Initializing Course Membership Context...
+2016-07-13 11:48:53 | INFO  | 258:blackboard.ws.client.WebServiceClient              | Initializing Gradebook Context...
+2016-07-13 11:48:54 | INFO  | 266:blackboard.ws.client.WebServiceClient              | Registering Tool...
+2016-07-13 11:48:55 | INFO  | 287:blackboard.ws.client.WebServiceClient              | Initialization complete.
+2016-07-13 11:48:56 | INFO  | 145:blackboard.ws.client.GradeExtractApp               | Loading courses...
+2016-07-13 11:48:57 | INFO  | 158:blackboard.ws.client.GradeExtractApp               | Total number of courses: 1
+2016-07-13 11:48:57 | INFO  | 223:blackboard.ws.client.GradeExtractApp               | Course 1: COM114-1-2016-1-ONL-WS
+2016-07-13 11:48:57 | INFO  | 254:blackboard.ws.client.GradeExtractApp               |  Total student enrollments for course: 1
+2016-07-13 11:48:58 | INFO  | 288:blackboard.ws.client.GradeExtractApp               |  Total columns to extract for course: 3
+2016-07-13 11:48:59 | INFO  | 302:blackboard.ws.client.GradeExtractApp               |  Total users for course: 2
+2016-07-13 11:48:59 | INFO  | 312:blackboard.ws.client.GradeExtractApp               |  Loading grades...
+2016-07-13 11:49:00 | INFO  | 314:blackboard.ws.client.GradeExtractApp               |  Total grades for course: 3
+2016-07-13 11:49:02 | INFO  | 236:blackboard.ws.client.GradeExtractApp               | Closing report file stream.
+2016-07-13 11:49:03 | INFO  | 128:blackboard.ws.client.GradeExtractApp               | EXTRACT START TIME: Wed Jul 13 11:48:46 CST 2016
+2016-07-13 11:49:03 | INFO  | 129:blackboard.ws.client.GradeExtractApp               | EXTRACT COMPLETED : Wed Jul 13 11:49:03 CST 2016
+2016-07-13 11:50:32 | INFO  | 117:blackboard.ws.client.GradeExtractApp               | EXTRACT STARTED : Wed Jul 13 11:50:32 CST 2016
+2016-07-13 11:50:32 | INFO  | 163:blackboard.ws.client.WebServiceClient              | Initializing...
+2016-07-13 11:50:32 | INFO  |  63:org.apache.axis2.deployment.ClusterBuilder         | Clustering has been disabled
+2016-07-13 11:50:32 | INFO  |1098:org.apache.axis2.deployment.DeploymentEngine       | No services directory was found under C:\Users\cbonilla\Documents\GitHub\AIEP-GradeExtract\lib\axis2-1.6.2\lib.
+2016-07-13 11:50:32 | INFO  |1109:org.apache.axis2.deployment.DeploymentEngine       | No modules directory was found under C:\Users\cbonilla\Documents\GitHub\AIEP-GradeExtract\lib\axis2-1.6.2\lib.
+2016-07-13 11:50:32 | INFO  |  82:org.apache.axis2.deployment.ModuleDeployer         | Deploying module: addressing-1.6.2 - file:/C:/Users/cbonilla/Documents/GitHub/AIEP-GradeExtract/lib/axis2-1.6.2/lib/addressing-1.6.2.mar
+2016-07-13 11:50:32 | INFO  |  82:org.apache.axis2.deployment.ModuleDeployer         | Deploying module: rampart-1.6.2 - file:/C:/Users/cbonilla/Documents/GitHub/AIEP-GradeExtract/lib/axis2-1.6.2/lib/rampart-1.6.2.mar
+2016-07-13 11:50:33 | INFO  | 207:blackboard.ws.client.WebServiceClient              | Checking versions...
+2016-07-13 11:50:34 | INFO  | 211:blackboard.ws.client.WebServiceClient              | Context server version: 2
+2016-07-13 11:50:35 | INFO  | 215:blackboard.ws.client.WebServiceClient              | User server version: 1
+2016-07-13 11:50:35 | INFO  | 219:blackboard.ws.client.WebServiceClient              | Util server version: 2
+2016-07-13 11:50:35 | INFO  | 225:blackboard.ws.client.WebServiceClient              | Initializing the session...
+2016-07-13 11:50:36 | INFO  | 228:blackboard.ws.client.WebServiceClient              | Session Id: 1e68976ae08842bc8f0fffa61687c472
+2016-07-13 11:50:36 | INFO  | 230:blackboard.ws.client.WebServiceClient              | Initializing Util Context...
+2016-07-13 11:50:37 | INFO  | 237:blackboard.ws.client.WebServiceClient              | Initializing User Context...
+2016-07-13 11:50:37 | INFO  | 244:blackboard.ws.client.WebServiceClient              | Initializing Course Context...
+2016-07-13 11:50:38 | INFO  | 251:blackboard.ws.client.WebServiceClient              | Initializing Course Membership Context...
+2016-07-13 11:50:39 | INFO  | 258:blackboard.ws.client.WebServiceClient              | Initializing Gradebook Context...
+2016-07-13 11:50:40 | INFO  | 266:blackboard.ws.client.WebServiceClient              | Registering Tool...
+2016-07-13 11:50:41 | INFO  | 287:blackboard.ws.client.WebServiceClient              | Initialization complete.
+2016-07-13 11:50:41 | INFO  | 145:blackboard.ws.client.GradeExtractApp               | Loading courses...
+2016-07-13 11:50:42 | INFO  | 158:blackboard.ws.client.GradeExtractApp               | Total number of courses: 1
+2016-07-13 11:50:42 | INFO  | 223:blackboard.ws.client.GradeExtractApp               | Course 1: COM114-1-2016-1-ONL-WS
+2016-07-13 11:50:43 | INFO  | 254:blackboard.ws.client.GradeExtractApp               |  Total student enrollments for course: 1
+2016-07-13 11:50:43 | INFO  | 288:blackboard.ws.client.GradeExtractApp               |  Total columns to extract for course: 3
+2016-07-13 11:50:44 | INFO  | 302:blackboard.ws.client.GradeExtractApp               |  Total users for course: 2
+2016-07-13 11:50:44 | INFO  | 312:blackboard.ws.client.GradeExtractApp               |  Loading grades...
+2016-07-13 11:50:45 | INFO  | 314:blackboard.ws.client.GradeExtractApp               |  Total grades for course: 3
+2016-07-13 11:50:47 | INFO  | 236:blackboard.ws.client.GradeExtractApp               | Closing report file stream.
+2016-07-13 11:50:48 | INFO  | 128:blackboard.ws.client.GradeExtractApp               | EXTRACT START TIME: Wed Jul 13 11:50:32 CST 2016
+2016-07-13 11:50:48 | INFO  | 129:blackboard.ws.client.GradeExtractApp               | EXTRACT COMPLETED : Wed Jul 13 11:50:48 CST 2016
+2016-07-13 11:52:01 | INFO  | 117:blackboard.ws.client.GradeExtractApp               | EXTRACT STARTED : Wed Jul 13 11:52:01 CST 2016
+2016-07-13 11:52:01 | INFO  | 163:blackboard.ws.client.WebServiceClient              | Initializing...
+2016-07-13 11:52:01 | INFO  |  63:org.apache.axis2.deployment.ClusterBuilder         | Clustering has been disabled
+2016-07-13 11:52:01 | INFO  |1098:org.apache.axis2.deployment.DeploymentEngine       | No services directory was found under C:\Users\cbonilla\Documents\GitHub\AIEP-GradeExtract\lib\axis2-1.6.2\lib.
+2016-07-13 11:52:01 | INFO  |1109:org.apache.axis2.deployment.DeploymentEngine       | No modules directory was found under C:\Users\cbonilla\Documents\GitHub\AIEP-GradeExtract\lib\axis2-1.6.2\lib.
+2016-07-13 11:52:01 | INFO  |  82:org.apache.axis2.deployment.ModuleDeployer         | Deploying module: addressing-1.6.2 - file:/C:/Users/cbonilla/Documents/GitHub/AIEP-GradeExtract/lib/axis2-1.6.2/lib/addressing-1.6.2.mar
+2016-07-13 11:52:01 | INFO  |  82:org.apache.axis2.deployment.ModuleDeployer         | Deploying module: rampart-1.6.2 - file:/C:/Users/cbonilla/Documents/GitHub/AIEP-GradeExtract/lib/axis2-1.6.2/lib/rampart-1.6.2.mar
+2016-07-13 11:52:01 | INFO  | 207:blackboard.ws.client.WebServiceClient              | Checking versions...
+2016-07-13 11:52:03 | INFO  | 211:blackboard.ws.client.WebServiceClient              | Context server version: 2
+2016-07-13 11:52:03 | INFO  | 215:blackboard.ws.client.WebServiceClient              | User server version: 1
+2016-07-13 11:52:04 | INFO  | 219:blackboard.ws.client.WebServiceClient              | Util server version: 2
+2016-07-13 11:52:04 | INFO  | 225:blackboard.ws.client.WebServiceClient              | Initializing the session...
+2016-07-13 11:52:05 | INFO  | 228:blackboard.ws.client.WebServiceClient              | Session Id: dc1f7fd4a6354cd186b95e8eb470b305
+2016-07-13 11:52:05 | INFO  | 230:blackboard.ws.client.WebServiceClient              | Initializing Util Context...
+2016-07-13 11:52:06 | INFO  | 237:blackboard.ws.client.WebServiceClient              | Initializing User Context...
+2016-07-13 11:52:06 | INFO  | 244:blackboard.ws.client.WebServiceClient              | Initializing Course Context...
+2016-07-13 11:52:07 | INFO  | 251:blackboard.ws.client.WebServiceClient              | Initializing Course Membership Context...
+2016-07-13 11:52:08 | INFO  | 258:blackboard.ws.client.WebServiceClient              | Initializing Gradebook Context...
+2016-07-13 11:52:09 | INFO  | 266:blackboard.ws.client.WebServiceClient              | Registering Tool...
+2016-07-13 11:52:10 | INFO  | 287:blackboard.ws.client.WebServiceClient              | Initialization complete.
+2016-07-13 11:52:11 | INFO  | 145:blackboard.ws.client.GradeExtractApp               | Loading courses...
+2016-07-13 11:52:11 | INFO  | 158:blackboard.ws.client.GradeExtractApp               | Total number of courses: 1
+2016-07-13 11:52:11 | INFO  | 223:blackboard.ws.client.GradeExtractApp               | Course 1: COM114-1-2016-1-ONL-WS
+2016-07-13 11:52:12 | INFO  | 254:blackboard.ws.client.GradeExtractApp               |  Total student enrollments for course: 1
+2016-07-13 11:52:13 | INFO  | 288:blackboard.ws.client.GradeExtractApp               |  Total columns to extract for course: 3
+2016-07-13 11:52:14 | INFO  | 302:blackboard.ws.client.GradeExtractApp               |  Total users for course: 2
+2016-07-13 11:52:14 | INFO  | 312:blackboard.ws.client.GradeExtractApp               |  Loading grades...
+2016-07-13 11:52:14 | INFO  | 314:blackboard.ws.client.GradeExtractApp               |  Total grades for course: 3
+2016-07-13 11:52:17 | INFO  | 236:blackboard.ws.client.GradeExtractApp               | Closing report file stream.
+2016-07-13 11:52:17 | INFO  | 128:blackboard.ws.client.GradeExtractApp               | EXTRACT START TIME: Wed Jul 13 11:52:01 CST 2016
+2016-07-13 11:52:17 | INFO  | 129:blackboard.ws.client.GradeExtractApp               | EXTRACT COMPLETED : Wed Jul 13 11:52:17 CST 2016
+2016-07-13 13:38:20 | INFO  | 117:blackboard.ws.client.GradeExtractApp               | EXTRACT STARTED : Wed Jul 13 13:38:20 CST 2016
+2016-07-13 13:38:20 | INFO  | 163:blackboard.ws.client.WebServiceClient              | Initializing...
+2016-07-13 13:38:20 | INFO  |  63:org.apache.axis2.deployment.ClusterBuilder         | Clustering has been disabled
+2016-07-13 13:38:20 | INFO  |1098:org.apache.axis2.deployment.DeploymentEngine       | No services directory was found under C:\Users\cbonilla\Documents\GitHub\AIEP-GradeExtract\lib\axis2-1.6.2\lib.
+2016-07-13 13:38:20 | INFO  |1109:org.apache.axis2.deployment.DeploymentEngine       | No modules directory was found under C:\Users\cbonilla\Documents\GitHub\AIEP-GradeExtract\lib\axis2-1.6.2\lib.
+2016-07-13 13:38:20 | INFO  |  82:org.apache.axis2.deployment.ModuleDeployer         | Deploying module: addressing-1.6.2 - file:/C:/Users/cbonilla/Documents/GitHub/AIEP-GradeExtract/lib/axis2-1.6.2/lib/addressing-1.6.2.mar
+2016-07-13 13:38:20 | INFO  |  82:org.apache.axis2.deployment.ModuleDeployer         | Deploying module: rampart-1.6.2 - file:/C:/Users/cbonilla/Documents/GitHub/AIEP-GradeExtract/lib/axis2-1.6.2/lib/rampart-1.6.2.mar
+2016-07-13 13:38:20 | INFO  | 207:blackboard.ws.client.WebServiceClient              | Checking versions...
+2016-07-13 13:38:21 | INFO  | 211:blackboard.ws.client.WebServiceClient              | Context server version: 2
+2016-07-13 13:38:22 | INFO  | 215:blackboard.ws.client.WebServiceClient              | User server version: 1
+2016-07-13 13:38:22 | INFO  | 219:blackboard.ws.client.WebServiceClient              | Util server version: 2
+2016-07-13 13:38:22 | INFO  | 225:blackboard.ws.client.WebServiceClient              | Initializing the session...
+2016-07-13 13:38:23 | INFO  | 228:blackboard.ws.client.WebServiceClient              | Session Id: bdbcff973abc4d0594fd112a5816bca4
+2016-07-13 13:38:23 | INFO  | 230:blackboard.ws.client.WebServiceClient              | Initializing Util Context...
+2016-07-13 13:38:23 | INFO  | 237:blackboard.ws.client.WebServiceClient              | Initializing User Context...
+2016-07-13 13:38:23 | INFO  | 244:blackboard.ws.client.WebServiceClient              | Initializing Course Context...
+2016-07-13 13:38:24 | INFO  | 251:blackboard.ws.client.WebServiceClient              | Initializing Course Membership Context...
+2016-07-13 13:38:24 | INFO  | 258:blackboard.ws.client.WebServiceClient              | Initializing Gradebook Context...
+2016-07-13 13:38:25 | INFO  | 266:blackboard.ws.client.WebServiceClient              | Registering Tool...
+2016-07-13 13:38:26 | INFO  | 287:blackboard.ws.client.WebServiceClient              | Initialization complete.
+2016-07-13 13:38:26 | INFO  | 145:blackboard.ws.client.GradeExtractApp               | Loading courses...
+2016-07-13 13:38:27 | INFO  | 158:blackboard.ws.client.GradeExtractApp               | Total number of courses: 2
+2016-07-13 13:38:27 | INFO  | 223:blackboard.ws.client.GradeExtractApp               | Course 1: COM114-1-2016-1-ONL-WS
+2016-07-13 13:38:27 | INFO  | 254:blackboard.ws.client.GradeExtractApp               |  Total student enrollments for course: 1
+2016-07-13 13:38:28 | INFO  | 288:blackboard.ws.client.GradeExtractApp               |  Total columns to extract for course: 3
+2016-07-13 13:38:28 | ERROR | 230:blackboard.ws.client.GradeExtractApp               | Error processing course [COM114-1-2016-1-ONL-WS]: [Ljava.lang.Object; cannot be cast to [Lblackboard.ws.gradebook.GradebookWSStub$ColumnVO;
+java.lang.ClassCastException: [Ljava.lang.Object; cannot be cast to [Lblackboard.ws.gradebook.GradebookWSStub$ColumnVO;
+	at blackboard.ws.client.GradeExtractApp.doCourse(GradeExtractApp.java:306)
+	at blackboard.ws.client.GradeExtractApp.doMain(GradeExtractApp.java:225)
+	at blackboard.ws.client.GradeExtractApp.main(GradeExtractApp.java:121)
+2016-07-13 13:38:28 | INFO  | 223:blackboard.ws.client.GradeExtractApp               | Course 2: COM114-1015-2016-1-ONL
+2016-07-13 13:38:28 | INFO  | 254:blackboard.ws.client.GradeExtractApp               |  Total student enrollments for course: 0
+2016-07-13 13:38:28 | INFO  | 256:blackboard.ws.client.GradeExtractApp               |  No students = no grades, skipping course.
+2016-07-13 13:38:28 | INFO  | 236:blackboard.ws.client.GradeExtractApp               | Closing report file stream.
+2016-07-13 13:38:29 | INFO  | 128:blackboard.ws.client.GradeExtractApp               | EXTRACT START TIME: Wed Jul 13 13:38:20 CST 2016
+2016-07-13 13:38:29 | INFO  | 129:blackboard.ws.client.GradeExtractApp               | EXTRACT COMPLETED : Wed Jul 13 13:38:29 CST 2016
+2016-07-13 13:38:29 | ERROR | 131:blackboard.ws.client.GradeExtractApp               | ERRORS(1):
+2016-07-13 13:38:29 | ERROR | 133:blackboard.ws.client.GradeExtractApp               |  - Error processing course [COM114-1-2016-1-ONL-WS]: [Ljava.lang.Object; cannot be cast to [Lblackboard.ws.gradebook.GradebookWSStub$ColumnVO;
+2016-07-13 13:39:45 | INFO  | 117:blackboard.ws.client.GradeExtractApp               | EXTRACT STARTED : Wed Jul 13 13:39:45 CST 2016
+2016-07-13 13:39:45 | INFO  | 163:blackboard.ws.client.WebServiceClient              | Initializing...
+2016-07-13 13:39:45 | INFO  |  63:org.apache.axis2.deployment.ClusterBuilder         | Clustering has been disabled
+2016-07-13 13:39:45 | INFO  |1098:org.apache.axis2.deployment.DeploymentEngine       | No services directory was found under C:\Users\cbonilla\Documents\GitHub\AIEP-GradeExtract\lib\axis2-1.6.2\lib.
+2016-07-13 13:39:45 | INFO  |1109:org.apache.axis2.deployment.DeploymentEngine       | No modules directory was found under C:\Users\cbonilla\Documents\GitHub\AIEP-GradeExtract\lib\axis2-1.6.2\lib.
+2016-07-13 13:39:45 | INFO  |  82:org.apache.axis2.deployment.ModuleDeployer         | Deploying module: addressing-1.6.2 - file:/C:/Users/cbonilla/Documents/GitHub/AIEP-GradeExtract/lib/axis2-1.6.2/lib/addressing-1.6.2.mar
+2016-07-13 13:39:45 | INFO  |  82:org.apache.axis2.deployment.ModuleDeployer         | Deploying module: rampart-1.6.2 - file:/C:/Users/cbonilla/Documents/GitHub/AIEP-GradeExtract/lib/axis2-1.6.2/lib/rampart-1.6.2.mar
+2016-07-13 13:39:45 | INFO  | 207:blackboard.ws.client.WebServiceClient              | Checking versions...
+2016-07-13 13:39:46 | INFO  | 211:blackboard.ws.client.WebServiceClient              | Context server version: 2
+2016-07-13 13:39:47 | INFO  | 215:blackboard.ws.client.WebServiceClient              | User server version: 1
+2016-07-13 13:39:47 | INFO  | 219:blackboard.ws.client.WebServiceClient              | Util server version: 2
+2016-07-13 13:39:47 | INFO  | 225:blackboard.ws.client.WebServiceClient              | Initializing the session...
+2016-07-13 13:39:47 | INFO  | 228:blackboard.ws.client.WebServiceClient              | Session Id: 085bef98f54d4feda938df91010dd04d
+2016-07-13 13:39:47 | INFO  | 230:blackboard.ws.client.WebServiceClient              | Initializing Util Context...
+2016-07-13 13:39:48 | INFO  | 237:blackboard.ws.client.WebServiceClient              | Initializing User Context...
+2016-07-13 13:39:48 | INFO  | 244:blackboard.ws.client.WebServiceClient              | Initializing Course Context...
+2016-07-13 13:39:49 | INFO  | 251:blackboard.ws.client.WebServiceClient              | Initializing Course Membership Context...
+2016-07-13 13:39:49 | INFO  | 258:blackboard.ws.client.WebServiceClient              | Initializing Gradebook Context...
+2016-07-13 13:39:50 | INFO  | 266:blackboard.ws.client.WebServiceClient              | Registering Tool...
+2016-07-13 13:39:50 | INFO  | 287:blackboard.ws.client.WebServiceClient              | Initialization complete.
+2016-07-13 13:39:51 | INFO  | 145:blackboard.ws.client.GradeExtractApp               | Loading courses...
+2016-07-13 13:39:51 | INFO  | 158:blackboard.ws.client.GradeExtractApp               | Total number of courses: 2
+2016-07-13 13:39:51 | INFO  | 223:blackboard.ws.client.GradeExtractApp               | Course 1: COM114-1-2016-1-ONL-WS
+2016-07-13 13:39:52 | INFO  | 254:blackboard.ws.client.GradeExtractApp               |  Total student enrollments for course: 1
+2016-07-13 13:39:52 | INFO  | 288:blackboard.ws.client.GradeExtractApp               |  Total columns to extract for course: 3
+2016-07-13 13:39:53 | INFO  | 312:blackboard.ws.client.GradeExtractApp               |  Total users for course: 2
+2016-07-13 13:39:53 | INFO  | 322:blackboard.ws.client.GradeExtractApp               |  Loading grades...
+2016-07-13 13:39:53 | INFO  | 324:blackboard.ws.client.GradeExtractApp               |  Total grades for course: 3
+2016-07-13 13:39:53 | INFO  | 223:blackboard.ws.client.GradeExtractApp               | Course 2: COM114-1015-2016-1-ONL
+2016-07-13 13:39:54 | INFO  | 254:blackboard.ws.client.GradeExtractApp               |  Total student enrollments for course: 0
+2016-07-13 13:39:54 | INFO  | 256:blackboard.ws.client.GradeExtractApp               |  No students = no grades, skipping course.
+2016-07-13 13:39:54 | INFO  | 236:blackboard.ws.client.GradeExtractApp               | Closing report file stream.
+2016-07-13 13:39:54 | INFO  | 128:blackboard.ws.client.GradeExtractApp               | EXTRACT START TIME: Wed Jul 13 13:39:45 CST 2016
+2016-07-13 13:39:54 | INFO  | 129:blackboard.ws.client.GradeExtractApp               | EXTRACT COMPLETED : Wed Jul 13 13:39:54 CST 2016
+2016-07-13 13:43:38 | INFO  | 117:blackboard.ws.client.GradeExtractApp               | EXTRACT STARTED : Wed Jul 13 13:43:38 CST 2016
+2016-07-13 13:43:38 | INFO  | 163:blackboard.ws.client.WebServiceClient              | Initializing...
+2016-07-13 13:43:38 | INFO  |  63:org.apache.axis2.deployment.ClusterBuilder         | Clustering has been disabled
+2016-07-13 13:43:38 | INFO  |1098:org.apache.axis2.deployment.DeploymentEngine       | No services directory was found under C:\Users\cbonilla\Documents\GitHub\AIEP-GradeExtract\lib\axis2-1.6.2\lib.
+2016-07-13 13:43:38 | INFO  |1109:org.apache.axis2.deployment.DeploymentEngine       | No modules directory was found under C:\Users\cbonilla\Documents\GitHub\AIEP-GradeExtract\lib\axis2-1.6.2\lib.
+2016-07-13 13:43:38 | INFO  |  82:org.apache.axis2.deployment.ModuleDeployer         | Deploying module: addressing-1.6.2 - file:/C:/Users/cbonilla/Documents/GitHub/AIEP-GradeExtract/lib/axis2-1.6.2/lib/addressing-1.6.2.mar
+2016-07-13 13:43:38 | INFO  |  82:org.apache.axis2.deployment.ModuleDeployer         | Deploying module: rampart-1.6.2 - file:/C:/Users/cbonilla/Documents/GitHub/AIEP-GradeExtract/lib/axis2-1.6.2/lib/rampart-1.6.2.mar
+2016-07-13 13:43:38 | INFO  | 207:blackboard.ws.client.WebServiceClient              | Checking versions...
+2016-07-13 13:43:39 | INFO  | 211:blackboard.ws.client.WebServiceClient              | Context server version: 2
+2016-07-13 13:43:40 | INFO  | 215:blackboard.ws.client.WebServiceClient              | User server version: 1
+2016-07-13 13:43:40 | INFO  | 219:blackboard.ws.client.WebServiceClient              | Util server version: 2
+2016-07-13 13:43:40 | INFO  | 225:blackboard.ws.client.WebServiceClient              | Initializing the session...
+2016-07-13 13:43:41 | INFO  | 228:blackboard.ws.client.WebServiceClient              | Session Id: 21a69f0d84d843238378be4b46ea5ce7
+2016-07-13 13:43:41 | INFO  | 230:blackboard.ws.client.WebServiceClient              | Initializing Util Context...
+2016-07-13 13:43:41 | INFO  | 237:blackboard.ws.client.WebServiceClient              | Initializing User Context...
+2016-07-13 13:43:41 | INFO  | 244:blackboard.ws.client.WebServiceClient              | Initializing Course Context...
+2016-07-13 13:43:42 | INFO  | 251:blackboard.ws.client.WebServiceClient              | Initializing Course Membership Context...
+2016-07-13 13:43:42 | INFO  | 258:blackboard.ws.client.WebServiceClient              | Initializing Gradebook Context...
+2016-07-13 13:43:43 | INFO  | 266:blackboard.ws.client.WebServiceClient              | Registering Tool...
+2016-07-13 13:43:44 | INFO  | 287:blackboard.ws.client.WebServiceClient              | Initialization complete.
+2016-07-13 13:43:44 | INFO  | 145:blackboard.ws.client.GradeExtractApp               | Loading courses...
+2016-07-13 13:43:45 | INFO  | 158:blackboard.ws.client.GradeExtractApp               | Total number of courses: 2
+2016-07-13 13:43:45 | INFO  | 223:blackboard.ws.client.GradeExtractApp               | Course 1: COM114-1-2016-1-ONL-WS
+2016-07-13 13:43:45 | INFO  | 254:blackboard.ws.client.GradeExtractApp               |  Total student enrollments for course: 1
+2016-07-13 13:43:46 | INFO  | 288:blackboard.ws.client.GradeExtractApp               |  Total columns to extract for course: 3
+2016-07-13 13:43:46 | ERROR | 230:blackboard.ws.client.GradeExtractApp               | Error processing course [COM114-1-2016-1-ONL-WS]: [Gradebook.WS015]Failed to fetch the course in session 
+org.apache.axis2.AxisFault: [Gradebook.WS015]Failed to fetch the course in session 
+	at org.apache.axis2.util.Utils.getInboundFaultFromMessageContext(Utils.java:531)
+	at org.apache.axis2.description.OutInAxisOperationClient.handleResponse(OutInAxisOperation.java:375)
+	at org.apache.axis2.description.OutInAxisOperationClient.send(OutInAxisOperation.java:421)
+	at org.apache.axis2.description.OutInAxisOperationClient.executeImpl(OutInAxisOperation.java:229)
+	at org.apache.axis2.client.OperationClient.execute(OperationClient.java:165)
+	at blackboard.ws.gradebook.GradebookWSStub.getGradebookTypes(GradebookWSStub.java:2597)
+	at blackboard.ws.client.WebServiceClient.getColumnGradebookType(WebServiceClient.java:454)
+	at blackboard.ws.client.GradeExtractApp.doCourse(GradeExtractApp.java:303)
+	at blackboard.ws.client.GradeExtractApp.doMain(GradeExtractApp.java:225)
+	at blackboard.ws.client.GradeExtractApp.main(GradeExtractApp.java:121)
+2016-07-13 13:43:46 | INFO  | 223:blackboard.ws.client.GradeExtractApp               | Course 2: COM114-1015-2016-1-ONL
+2016-07-13 13:43:46 | INFO  | 254:blackboard.ws.client.GradeExtractApp               |  Total student enrollments for course: 0
+2016-07-13 13:43:46 | INFO  | 256:blackboard.ws.client.GradeExtractApp               |  No students = no grades, skipping course.
+2016-07-13 13:43:46 | INFO  | 236:blackboard.ws.client.GradeExtractApp               | Closing report file stream.
+2016-07-13 13:43:47 | INFO  | 128:blackboard.ws.client.GradeExtractApp               | EXTRACT START TIME: Wed Jul 13 13:43:38 CST 2016
+2016-07-13 13:43:47 | INFO  | 129:blackboard.ws.client.GradeExtractApp               | EXTRACT COMPLETED : Wed Jul 13 13:43:47 CST 2016
+2016-07-13 13:43:47 | ERROR | 131:blackboard.ws.client.GradeExtractApp               | ERRORS(1):
+2016-07-13 13:43:47 | ERROR | 133:blackboard.ws.client.GradeExtractApp               |  - Error processing course [COM114-1-2016-1-ONL-WS]: [Gradebook.WS015]Failed to fetch the course in session 
+2016-07-13 13:52:02 | INFO  | 117:blackboard.ws.client.GradeExtractApp               | EXTRACT STARTED : Wed Jul 13 13:52:02 CST 2016
+2016-07-13 13:52:02 | INFO  | 163:blackboard.ws.client.WebServiceClient              | Initializing...
+2016-07-13 13:52:02 | INFO  |  63:org.apache.axis2.deployment.ClusterBuilder         | Clustering has been disabled
+2016-07-13 13:52:02 | INFO  |1098:org.apache.axis2.deployment.DeploymentEngine       | No services directory was found under C:\Users\cbonilla\Documents\GitHub\AIEP-GradeExtract\lib\axis2-1.6.2\lib.
+2016-07-13 13:52:02 | INFO  |1109:org.apache.axis2.deployment.DeploymentEngine       | No modules directory was found under C:\Users\cbonilla\Documents\GitHub\AIEP-GradeExtract\lib\axis2-1.6.2\lib.
+2016-07-13 13:52:03 | INFO  |  82:org.apache.axis2.deployment.ModuleDeployer         | Deploying module: addressing-1.6.2 - file:/C:/Users/cbonilla/Documents/GitHub/AIEP-GradeExtract/lib/axis2-1.6.2/lib/addressing-1.6.2.mar
+2016-07-13 13:52:03 | INFO  |  82:org.apache.axis2.deployment.ModuleDeployer         | Deploying module: rampart-1.6.2 - file:/C:/Users/cbonilla/Documents/GitHub/AIEP-GradeExtract/lib/axis2-1.6.2/lib/rampart-1.6.2.mar
+2016-07-13 13:52:03 | INFO  | 207:blackboard.ws.client.WebServiceClient              | Checking versions...
+2016-07-13 13:52:04 | INFO  | 211:blackboard.ws.client.WebServiceClient              | Context server version: 2
+2016-07-13 13:52:04 | INFO  | 215:blackboard.ws.client.WebServiceClient              | User server version: 1
+2016-07-13 13:52:05 | INFO  | 219:blackboard.ws.client.WebServiceClient              | Util server version: 2
+2016-07-13 13:52:05 | INFO  | 225:blackboard.ws.client.WebServiceClient              | Initializing the session...
+2016-07-13 13:52:05 | INFO  | 228:blackboard.ws.client.WebServiceClient              | Session Id: 5f5e2ef30f0148d18956932bb9a92c05
+2016-07-13 13:52:05 | INFO  | 230:blackboard.ws.client.WebServiceClient              | Initializing Util Context...
+2016-07-13 13:52:05 | INFO  | 237:blackboard.ws.client.WebServiceClient              | Initializing User Context...
+2016-07-13 13:52:06 | INFO  | 244:blackboard.ws.client.WebServiceClient              | Initializing Course Context...
+2016-07-13 13:52:06 | INFO  | 251:blackboard.ws.client.WebServiceClient              | Initializing Course Membership Context...
+2016-07-13 13:52:07 | INFO  | 258:blackboard.ws.client.WebServiceClient              | Initializing Gradebook Context...
+2016-07-13 13:52:07 | INFO  | 266:blackboard.ws.client.WebServiceClient              | Registering Tool...
+2016-07-13 13:52:08 | INFO  | 287:blackboard.ws.client.WebServiceClient              | Initialization complete.
+2016-07-13 13:52:08 | INFO  | 145:blackboard.ws.client.GradeExtractApp               | Loading courses...
+2016-07-13 13:52:09 | INFO  | 158:blackboard.ws.client.GradeExtractApp               | Total number of courses: 2
+2016-07-13 13:52:09 | INFO  | 223:blackboard.ws.client.GradeExtractApp               | Course 1: COM114-1-2016-1-ONL-WS
+2016-07-13 13:52:09 | INFO  | 254:blackboard.ws.client.GradeExtractApp               |  Total student enrollments for course: 1
+2016-07-13 13:52:10 | INFO  | 288:blackboard.ws.client.GradeExtractApp               |  Total columns to extract for course: 3
+2016-07-13 13:52:11 | ERROR | 230:blackboard.ws.client.GradeExtractApp               | Error processing course [COM114-1-2016-1-ONL-WS]: [Ljava.lang.Object; cannot be cast to [Lblackboard.ws.gradebook.GradebookWSStub$ColumnVO;
+java.lang.ClassCastException: [Ljava.lang.Object; cannot be cast to [Lblackboard.ws.gradebook.GradebookWSStub$ColumnVO;
+	at blackboard.ws.client.GradeExtractApp.doCourse(GradeExtractApp.java:307)
+	at blackboard.ws.client.GradeExtractApp.doMain(GradeExtractApp.java:225)
+	at blackboard.ws.client.GradeExtractApp.main(GradeExtractApp.java:121)
+2016-07-13 13:52:11 | INFO  | 223:blackboard.ws.client.GradeExtractApp               | Course 2: COM114-1015-2016-1-ONL
+2016-07-13 13:52:11 | INFO  | 254:blackboard.ws.client.GradeExtractApp               |  Total student enrollments for course: 0
+2016-07-13 13:52:11 | INFO  | 256:blackboard.ws.client.GradeExtractApp               |  No students = no grades, skipping course.
+2016-07-13 13:52:11 | INFO  | 236:blackboard.ws.client.GradeExtractApp               | Closing report file stream.
+2016-07-13 13:52:12 | INFO  | 128:blackboard.ws.client.GradeExtractApp               | EXTRACT START TIME: Wed Jul 13 13:52:02 CST 2016
+2016-07-13 13:52:12 | INFO  | 129:blackboard.ws.client.GradeExtractApp               | EXTRACT COMPLETED : Wed Jul 13 13:52:12 CST 2016
+2016-07-13 13:52:12 | ERROR | 131:blackboard.ws.client.GradeExtractApp               | ERRORS(1):
+2016-07-13 13:52:12 | ERROR | 133:blackboard.ws.client.GradeExtractApp               |  - Error processing course [COM114-1-2016-1-ONL-WS]: [Ljava.lang.Object; cannot be cast to [Lblackboard.ws.gradebook.GradebookWSStub$ColumnVO;
+2016-07-13 13:53:20 | INFO  | 117:blackboard.ws.client.GradeExtractApp               | EXTRACT STARTED : Wed Jul 13 13:53:20 CST 2016
+2016-07-13 13:53:20 | INFO  | 163:blackboard.ws.client.WebServiceClient              | Initializing...
+2016-07-13 13:53:20 | INFO  |  63:org.apache.axis2.deployment.ClusterBuilder         | Clustering has been disabled
+2016-07-13 13:53:20 | INFO  |1098:org.apache.axis2.deployment.DeploymentEngine       | No services directory was found under C:\Users\cbonilla\Documents\GitHub\AIEP-GradeExtract\lib\axis2-1.6.2\lib.
+2016-07-13 13:53:20 | INFO  |1109:org.apache.axis2.deployment.DeploymentEngine       | No modules directory was found under C:\Users\cbonilla\Documents\GitHub\AIEP-GradeExtract\lib\axis2-1.6.2\lib.
+2016-07-13 13:53:20 | INFO  |  82:org.apache.axis2.deployment.ModuleDeployer         | Deploying module: addressing-1.6.2 - file:/C:/Users/cbonilla/Documents/GitHub/AIEP-GradeExtract/lib/axis2-1.6.2/lib/addressing-1.6.2.mar
+2016-07-13 13:53:20 | INFO  |  82:org.apache.axis2.deployment.ModuleDeployer         | Deploying module: rampart-1.6.2 - file:/C:/Users/cbonilla/Documents/GitHub/AIEP-GradeExtract/lib/axis2-1.6.2/lib/rampart-1.6.2.mar
+2016-07-13 13:53:20 | INFO  | 207:blackboard.ws.client.WebServiceClient              | Checking versions...
+2016-07-13 13:53:21 | INFO  | 211:blackboard.ws.client.WebServiceClient              | Context server version: 2
+2016-07-13 13:53:21 | INFO  | 215:blackboard.ws.client.WebServiceClient              | User server version: 1
+2016-07-13 13:53:22 | INFO  | 219:blackboard.ws.client.WebServiceClient              | Util server version: 2
+2016-07-13 13:53:22 | INFO  | 225:blackboard.ws.client.WebServiceClient              | Initializing the session...
+2016-07-13 13:53:22 | INFO  | 228:blackboard.ws.client.WebServiceClient              | Session Id: cdebbdd60c92435fa5dd4affb94fa27f
+2016-07-13 13:53:22 | INFO  | 230:blackboard.ws.client.WebServiceClient              | Initializing Util Context...
+2016-07-13 13:53:23 | INFO  | 237:blackboard.ws.client.WebServiceClient              | Initializing User Context...
+2016-07-13 13:53:23 | INFO  | 244:blackboard.ws.client.WebServiceClient              | Initializing Course Context...
+2016-07-13 13:53:24 | INFO  | 251:blackboard.ws.client.WebServiceClient              | Initializing Course Membership Context...
+2016-07-13 13:53:24 | INFO  | 258:blackboard.ws.client.WebServiceClient              | Initializing Gradebook Context...
+2016-07-13 13:53:24 | INFO  | 266:blackboard.ws.client.WebServiceClient              | Registering Tool...
+2016-07-13 13:53:25 | INFO  | 287:blackboard.ws.client.WebServiceClient              | Initialization complete.
+2016-07-13 13:53:26 | INFO  | 145:blackboard.ws.client.GradeExtractApp               | Loading courses...
+2016-07-13 13:53:26 | INFO  | 158:blackboard.ws.client.GradeExtractApp               | Total number of courses: 2
+2016-07-13 13:53:26 | INFO  | 223:blackboard.ws.client.GradeExtractApp               | Course 1: COM114-1-2016-1-ONL-WS
+2016-07-13 13:53:27 | INFO  | 254:blackboard.ws.client.GradeExtractApp               |  Total student enrollments for course: 1
+2016-07-13 13:53:27 | INFO  | 288:blackboard.ws.client.GradeExtractApp               |  Total columns to extract for course: 3
+2016-07-13 13:53:29 | INFO  | 313:blackboard.ws.client.GradeExtractApp               |  Total users for course: 2
+2016-07-13 13:53:29 | INFO  | 323:blackboard.ws.client.GradeExtractApp               |  Loading grades...
+2016-07-13 13:53:29 | INFO  | 325:blackboard.ws.client.GradeExtractApp               |  Total grades for course: 3
+2016-07-13 13:53:29 | INFO  | 223:blackboard.ws.client.GradeExtractApp               | Course 2: COM114-1015-2016-1-ONL
+2016-07-13 13:53:30 | INFO  | 254:blackboard.ws.client.GradeExtractApp               |  Total student enrollments for course: 0
+2016-07-13 13:53:30 | INFO  | 256:blackboard.ws.client.GradeExtractApp               |  No students = no grades, skipping course.
+2016-07-13 13:53:30 | INFO  | 236:blackboard.ws.client.GradeExtractApp               | Closing report file stream.
+2016-07-13 13:53:30 | INFO  | 128:blackboard.ws.client.GradeExtractApp               | EXTRACT START TIME: Wed Jul 13 13:53:20 CST 2016
+2016-07-13 13:53:30 | INFO  | 129:blackboard.ws.client.GradeExtractApp               | EXTRACT COMPLETED : Wed Jul 13 13:53:30 CST 2016
+2016-07-13 14:09:37 | INFO  | 117:blackboard.ws.client.GradeExtractApp               | EXTRACT STARTED : Wed Jul 13 14:09:37 CST 2016
+2016-07-13 14:09:37 | INFO  | 163:blackboard.ws.client.WebServiceClient              | Initializing...
+2016-07-13 14:09:37 | INFO  |  63:org.apache.axis2.deployment.ClusterBuilder         | Clustering has been disabled
+2016-07-13 14:09:37 | INFO  |1098:org.apache.axis2.deployment.DeploymentEngine       | No services directory was found under C:\Users\cbonilla\Documents\GitHub\AIEP-GradeExtract\lib\axis2-1.6.2\lib.
+2016-07-13 14:09:37 | INFO  |1109:org.apache.axis2.deployment.DeploymentEngine       | No modules directory was found under C:\Users\cbonilla\Documents\GitHub\AIEP-GradeExtract\lib\axis2-1.6.2\lib.
+2016-07-13 14:09:37 | INFO  |  82:org.apache.axis2.deployment.ModuleDeployer         | Deploying module: addressing-1.6.2 - file:/C:/Users/cbonilla/Documents/GitHub/AIEP-GradeExtract/lib/axis2-1.6.2/lib/addressing-1.6.2.mar
+2016-07-13 14:09:37 | INFO  |  82:org.apache.axis2.deployment.ModuleDeployer         | Deploying module: rampart-1.6.2 - file:/C:/Users/cbonilla/Documents/GitHub/AIEP-GradeExtract/lib/axis2-1.6.2/lib/rampart-1.6.2.mar
+2016-07-13 14:09:37 | INFO  | 207:blackboard.ws.client.WebServiceClient              | Checking versions...
+2016-07-13 14:09:38 | INFO  | 211:blackboard.ws.client.WebServiceClient              | Context server version: 2
+2016-07-13 14:09:38 | INFO  | 215:blackboard.ws.client.WebServiceClient              | User server version: 1
+2016-07-13 14:09:39 | INFO  | 219:blackboard.ws.client.WebServiceClient              | Util server version: 2
+2016-07-13 14:09:39 | INFO  | 225:blackboard.ws.client.WebServiceClient              | Initializing the session...
+2016-07-13 14:09:39 | INFO  | 228:blackboard.ws.client.WebServiceClient              | Session Id: a092a1b0a7c045cea25df5ac1d9ed197
+2016-07-13 14:09:39 | INFO  | 230:blackboard.ws.client.WebServiceClient              | Initializing Util Context...
+2016-07-13 14:09:40 | INFO  | 237:blackboard.ws.client.WebServiceClient              | Initializing User Context...
+2016-07-13 14:09:40 | INFO  | 244:blackboard.ws.client.WebServiceClient              | Initializing Course Context...
+2016-07-13 14:09:41 | INFO  | 251:blackboard.ws.client.WebServiceClient              | Initializing Course Membership Context...
+2016-07-13 14:09:41 | INFO  | 258:blackboard.ws.client.WebServiceClient              | Initializing Gradebook Context...
+2016-07-13 14:09:42 | INFO  | 266:blackboard.ws.client.WebServiceClient              | Registering Tool...
+2016-07-13 14:09:42 | INFO  | 287:blackboard.ws.client.WebServiceClient              | Initialization complete.
+2016-07-13 14:09:43 | INFO  | 145:blackboard.ws.client.GradeExtractApp               | Loading courses...
+2016-07-13 14:09:43 | INFO  | 158:blackboard.ws.client.GradeExtractApp               | Total number of courses: 2
+2016-07-13 14:09:43 | INFO  | 223:blackboard.ws.client.GradeExtractApp               | Course 1: COM114-1-2016-1-ONL-WS
+2016-07-13 14:09:44 | INFO  | 255:blackboard.ws.client.GradeExtractApp               |  Total student enrollments for course: 1
+2016-07-13 14:09:44 | INFO  | 289:blackboard.ws.client.GradeExtractApp               |  Total columns to extract for course: 3
+2016-07-13 14:09:46 | INFO  | 315:blackboard.ws.client.GradeExtractApp               |  Total users for course: 2
+2016-07-13 14:09:46 | INFO  | 325:blackboard.ws.client.GradeExtractApp               |  Loading grades...
+2016-07-13 14:09:46 | INFO  | 327:blackboard.ws.client.GradeExtractApp               |  Total grades for course: 3
+2016-07-13 14:09:46 | INFO  | 223:blackboard.ws.client.GradeExtractApp               | Course 2: COM114-1015-2016-1-ONL
+2016-07-13 14:09:47 | INFO  | 255:blackboard.ws.client.GradeExtractApp               |  Total student enrollments for course: 0
+2016-07-13 14:09:47 | INFO  | 257:blackboard.ws.client.GradeExtractApp               |  No students = no grades, skipping course.
+2016-07-13 14:09:47 | INFO  | 236:blackboard.ws.client.GradeExtractApp               | Closing report file stream.
+2016-07-13 14:09:47 | INFO  | 128:blackboard.ws.client.GradeExtractApp               | EXTRACT START TIME: Wed Jul 13 14:09:37 CST 2016
+2016-07-13 14:09:47 | INFO  | 129:blackboard.ws.client.GradeExtractApp               | EXTRACT COMPLETED : Wed Jul 13 14:09:47 CST 2016
+2016-07-13 14:10:57 | INFO  | 117:blackboard.ws.client.GradeExtractApp               | EXTRACT STARTED : Wed Jul 13 14:10:57 CST 2016
+2016-07-13 14:10:57 | INFO  | 163:blackboard.ws.client.WebServiceClient              | Initializing...
+2016-07-13 14:10:57 | INFO  |  63:org.apache.axis2.deployment.ClusterBuilder         | Clustering has been disabled
+2016-07-13 14:10:57 | INFO  |1098:org.apache.axis2.deployment.DeploymentEngine       | No services directory was found under C:\Users\cbonilla\Documents\GitHub\AIEP-GradeExtract\lib\axis2-1.6.2\lib.
+2016-07-13 14:10:57 | INFO  |1109:org.apache.axis2.deployment.DeploymentEngine       | No modules directory was found under C:\Users\cbonilla\Documents\GitHub\AIEP-GradeExtract\lib\axis2-1.6.2\lib.
+2016-07-13 14:10:58 | INFO  |  82:org.apache.axis2.deployment.ModuleDeployer         | Deploying module: addressing-1.6.2 - file:/C:/Users/cbonilla/Documents/GitHub/AIEP-GradeExtract/lib/axis2-1.6.2/lib/addressing-1.6.2.mar
+2016-07-13 14:10:58 | INFO  |  82:org.apache.axis2.deployment.ModuleDeployer         | Deploying module: rampart-1.6.2 - file:/C:/Users/cbonilla/Documents/GitHub/AIEP-GradeExtract/lib/axis2-1.6.2/lib/rampart-1.6.2.mar
+2016-07-13 14:10:58 | INFO  | 207:blackboard.ws.client.WebServiceClient              | Checking versions...
+2016-07-13 14:10:59 | INFO  | 211:blackboard.ws.client.WebServiceClient              | Context server version: 2
+2016-07-13 14:10:59 | INFO  | 215:blackboard.ws.client.WebServiceClient              | User server version: 1
+2016-07-13 14:10:59 | INFO  | 439:org.apache.commons.httpclient.HttpMethodDirector   | I/O exception (org.apache.commons.httpclient.NoHttpResponseException) caught when processing request: The server qa04-04.blackboard.laureate.net failed to respond
+2016-07-13 14:10:59 | INFO  | 445:org.apache.commons.httpclient.HttpMethodDirector   | Retrying request
+2016-07-13 14:11:00 | INFO  | 219:blackboard.ws.client.WebServiceClient              | Util server version: 2
+2016-07-13 14:11:00 | INFO  | 225:blackboard.ws.client.WebServiceClient              | Initializing the session...
+2016-07-13 14:11:00 | INFO  | 228:blackboard.ws.client.WebServiceClient              | Session Id: ba599d03073b4b5faef81253c36ff74e
+2016-07-13 14:11:00 | INFO  | 230:blackboard.ws.client.WebServiceClient              | Initializing Util Context...
+2016-07-13 14:11:01 | INFO  | 237:blackboard.ws.client.WebServiceClient              | Initializing User Context...
+2016-07-13 14:11:01 | INFO  | 244:blackboard.ws.client.WebServiceClient              | Initializing Course Context...
+2016-07-13 14:11:02 | INFO  | 251:blackboard.ws.client.WebServiceClient              | Initializing Course Membership Context...
+2016-07-13 14:11:02 | INFO  | 258:blackboard.ws.client.WebServiceClient              | Initializing Gradebook Context...
+2016-07-13 14:11:03 | INFO  | 266:blackboard.ws.client.WebServiceClient              | Registering Tool...
+2016-07-13 14:11:03 | INFO  | 287:blackboard.ws.client.WebServiceClient              | Initialization complete.
+2016-07-13 14:11:04 | INFO  | 145:blackboard.ws.client.GradeExtractApp               | Loading courses...
+2016-07-13 14:11:04 | INFO  | 158:blackboard.ws.client.GradeExtractApp               | Total number of courses: 2
+2016-07-13 14:11:04 | INFO  | 223:blackboard.ws.client.GradeExtractApp               | Course 1: COM114-1-2016-1-ONL-WS
+2016-07-13 14:11:05 | INFO  | 255:blackboard.ws.client.GradeExtractApp               |  Total student enrollments for course: 1
+2016-07-13 14:11:05 | INFO  | 289:blackboard.ws.client.GradeExtractApp               |  Total columns to extract for course: 3
+2016-07-13 14:11:07 | INFO  | 315:blackboard.ws.client.GradeExtractApp               |  Total users for course: 2
+2016-07-13 14:11:07 | INFO  | 325:blackboard.ws.client.GradeExtractApp               |  Loading grades...
+2016-07-13 14:11:07 | INFO  | 327:blackboard.ws.client.GradeExtractApp               |  Total grades for course: 3
+2016-07-13 14:11:07 | INFO  | 223:blackboard.ws.client.GradeExtractApp               | Course 2: COM114-1015-2016-1-ONL
+2016-07-13 14:11:07 | INFO  | 255:blackboard.ws.client.GradeExtractApp               |  Total student enrollments for course: 0
+2016-07-13 14:11:07 | INFO  | 257:blackboard.ws.client.GradeExtractApp               |  No students = no grades, skipping course.
+2016-07-13 14:11:07 | INFO  | 236:blackboard.ws.client.GradeExtractApp               | Closing report file stream.
+2016-07-13 14:11:08 | INFO  | 128:blackboard.ws.client.GradeExtractApp               | EXTRACT START TIME: Wed Jul 13 14:10:57 CST 2016
+2016-07-13 14:11:08 | INFO  | 129:blackboard.ws.client.GradeExtractApp               | EXTRACT COMPLETED : Wed Jul 13 14:11:08 CST 2016
+2016-07-13 14:11:59 | INFO  | 117:blackboard.ws.client.GradeExtractApp               | EXTRACT STARTED : Wed Jul 13 14:11:59 CST 2016
+2016-07-13 14:11:59 | INFO  | 163:blackboard.ws.client.WebServiceClient              | Initializing...
+2016-07-13 14:11:59 | INFO  |  63:org.apache.axis2.deployment.ClusterBuilder         | Clustering has been disabled
+2016-07-13 14:11:59 | INFO  |1098:org.apache.axis2.deployment.DeploymentEngine       | No services directory was found under C:\Users\cbonilla\Documents\GitHub\AIEP-GradeExtract\lib\axis2-1.6.2\lib.
+2016-07-13 14:11:59 | INFO  |1109:org.apache.axis2.deployment.DeploymentEngine       | No modules directory was found under C:\Users\cbonilla\Documents\GitHub\AIEP-GradeExtract\lib\axis2-1.6.2\lib.
+2016-07-13 14:11:59 | INFO  |  82:org.apache.axis2.deployment.ModuleDeployer         | Deploying module: addressing-1.6.2 - file:/C:/Users/cbonilla/Documents/GitHub/AIEP-GradeExtract/lib/axis2-1.6.2/lib/addressing-1.6.2.mar
+2016-07-13 14:11:59 | INFO  |  82:org.apache.axis2.deployment.ModuleDeployer         | Deploying module: rampart-1.6.2 - file:/C:/Users/cbonilla/Documents/GitHub/AIEP-GradeExtract/lib/axis2-1.6.2/lib/rampart-1.6.2.mar
+2016-07-13 14:11:59 | INFO  | 207:blackboard.ws.client.WebServiceClient              | Checking versions...
+2016-07-13 14:12:01 | INFO  | 211:blackboard.ws.client.WebServiceClient              | Context server version: 2
+2016-07-13 14:12:02 | INFO  | 215:blackboard.ws.client.WebServiceClient              | User server version: 1
+2016-07-13 14:12:02 | INFO  | 219:blackboard.ws.client.WebServiceClient              | Util server version: 2
+2016-07-13 14:12:02 | INFO  | 225:blackboard.ws.client.WebServiceClient              | Initializing the session...
+2016-07-13 14:12:02 | INFO  | 228:blackboard.ws.client.WebServiceClient              | Session Id: 793bd217cddb4bcaa7468d58d78ad2b9
+2016-07-13 14:12:02 | INFO  | 230:blackboard.ws.client.WebServiceClient              | Initializing Util Context...
+2016-07-13 14:12:03 | INFO  | 237:blackboard.ws.client.WebServiceClient              | Initializing User Context...
+2016-07-13 14:12:03 | INFO  | 244:blackboard.ws.client.WebServiceClient              | Initializing Course Context...
+2016-07-13 14:12:04 | INFO  | 251:blackboard.ws.client.WebServiceClient              | Initializing Course Membership Context...
+2016-07-13 14:12:04 | INFO  | 258:blackboard.ws.client.WebServiceClient              | Initializing Gradebook Context...
+2016-07-13 14:12:05 | INFO  | 266:blackboard.ws.client.WebServiceClient              | Registering Tool...
+2016-07-13 14:12:05 | INFO  | 287:blackboard.ws.client.WebServiceClient              | Initialization complete.
+2016-07-13 14:12:06 | INFO  | 145:blackboard.ws.client.GradeExtractApp               | Loading courses...
+2016-07-13 14:12:06 | INFO  | 158:blackboard.ws.client.GradeExtractApp               | Total number of courses: 2
+2016-07-13 14:12:06 | INFO  | 223:blackboard.ws.client.GradeExtractApp               | Course 1: COM114-1-2016-1-ONL-WS
+2016-07-13 14:12:07 | INFO  | 255:blackboard.ws.client.GradeExtractApp               |  Total student enrollments for course: 1
+2016-07-13 14:12:07 | INFO  | 289:blackboard.ws.client.GradeExtractApp               |  Total columns to extract for course: 3
+2016-07-13 14:12:09 | INFO  | 315:blackboard.ws.client.GradeExtractApp               |  Total users for course: 2
+2016-07-13 14:12:09 | INFO  | 325:blackboard.ws.client.GradeExtractApp               |  Loading grades...
+2016-07-13 14:12:09 | INFO  | 327:blackboard.ws.client.GradeExtractApp               |  Total grades for course: 3
+2016-07-13 14:12:09 | INFO  | 223:blackboard.ws.client.GradeExtractApp               | Course 2: COM114-1015-2016-1-ONL
+2016-07-13 14:12:10 | INFO  | 255:blackboard.ws.client.GradeExtractApp               |  Total student enrollments for course: 0
+2016-07-13 14:12:10 | INFO  | 257:blackboard.ws.client.GradeExtractApp               |  No students = no grades, skipping course.
+2016-07-13 14:12:10 | INFO  | 236:blackboard.ws.client.GradeExtractApp               | Closing report file stream.
+2016-07-13 14:12:10 | INFO  | 128:blackboard.ws.client.GradeExtractApp               | EXTRACT START TIME: Wed Jul 13 14:11:59 CST 2016
+2016-07-13 14:12:10 | INFO  | 129:blackboard.ws.client.GradeExtractApp               | EXTRACT COMPLETED : Wed Jul 13 14:12:10 CST 2016
+2016-07-13 14:14:01 | INFO  | 117:blackboard.ws.client.GradeExtractApp               | EXTRACT STARTED : Wed Jul 13 14:14:01 CST 2016
+2016-07-13 14:14:01 | INFO  | 163:blackboard.ws.client.WebServiceClient              | Initializing...
+2016-07-13 14:14:01 | INFO  |  63:org.apache.axis2.deployment.ClusterBuilder         | Clustering has been disabled
+2016-07-13 14:14:01 | INFO  |1098:org.apache.axis2.deployment.DeploymentEngine       | No services directory was found under C:\Users\cbonilla\Documents\GitHub\AIEP-GradeExtract\lib\axis2-1.6.2\lib.
+2016-07-13 14:14:01 | INFO  |1109:org.apache.axis2.deployment.DeploymentEngine       | No modules directory was found under C:\Users\cbonilla\Documents\GitHub\AIEP-GradeExtract\lib\axis2-1.6.2\lib.
+2016-07-13 14:14:02 | INFO  |  82:org.apache.axis2.deployment.ModuleDeployer         | Deploying module: addressing-1.6.2 - file:/C:/Users/cbonilla/Documents/GitHub/AIEP-GradeExtract/lib/axis2-1.6.2/lib/addressing-1.6.2.mar
+2016-07-13 14:14:02 | INFO  |  82:org.apache.axis2.deployment.ModuleDeployer         | Deploying module: rampart-1.6.2 - file:/C:/Users/cbonilla/Documents/GitHub/AIEP-GradeExtract/lib/axis2-1.6.2/lib/rampart-1.6.2.mar
+2016-07-13 14:14:02 | INFO  | 207:blackboard.ws.client.WebServiceClient              | Checking versions...
+2016-07-13 14:14:03 | INFO  | 211:blackboard.ws.client.WebServiceClient              | Context server version: 2
+2016-07-13 14:14:03 | INFO  | 215:blackboard.ws.client.WebServiceClient              | User server version: 1
+2016-07-13 14:14:04 | INFO  | 219:blackboard.ws.client.WebServiceClient              | Util server version: 2
+2016-07-13 14:14:04 | INFO  | 225:blackboard.ws.client.WebServiceClient              | Initializing the session...
+2016-07-13 14:14:04 | INFO  | 228:blackboard.ws.client.WebServiceClient              | Session Id: 404b68bae152406484c57fed485bea6d
+2016-07-13 14:14:04 | INFO  | 230:blackboard.ws.client.WebServiceClient              | Initializing Util Context...
+2016-07-13 14:14:04 | INFO  | 237:blackboard.ws.client.WebServiceClient              | Initializing User Context...
+2016-07-13 14:14:05 | INFO  | 244:blackboard.ws.client.WebServiceClient              | Initializing Course Context...
+2016-07-13 14:14:05 | INFO  | 439:org.apache.commons.httpclient.HttpMethodDirector   | I/O exception (org.apache.commons.httpclient.NoHttpResponseException) caught when processing request: The server qa04-04.blackboard.laureate.net failed to respond
+2016-07-13 14:14:05 | INFO  | 445:org.apache.commons.httpclient.HttpMethodDirector   | Retrying request
+2016-07-13 14:14:06 | INFO  | 251:blackboard.ws.client.WebServiceClient              | Initializing Course Membership Context...
+2016-07-13 14:14:06 | INFO  | 258:blackboard.ws.client.WebServiceClient              | Initializing Gradebook Context...
+2016-07-13 14:14:06 | INFO  | 266:blackboard.ws.client.WebServiceClient              | Registering Tool...
+2016-07-13 14:14:07 | INFO  | 287:blackboard.ws.client.WebServiceClient              | Initialization complete.
+2016-07-13 14:14:08 | INFO  | 145:blackboard.ws.client.GradeExtractApp               | Loading courses...
+2016-07-13 14:14:08 | INFO  | 158:blackboard.ws.client.GradeExtractApp               | Total number of courses: 2
+2016-07-13 14:14:08 | INFO  | 223:blackboard.ws.client.GradeExtractApp               | Course 1: COM114-1-2016-1-ONL-WS
+2016-07-13 14:14:09 | INFO  | 255:blackboard.ws.client.GradeExtractApp               |  Total student enrollments for course: 1
+2016-07-13 14:14:09 | INFO  | 289:blackboard.ws.client.GradeExtractApp               |  Total columns to extract for course: 3
+2016-07-13 14:14:10 | INFO  | 315:blackboard.ws.client.GradeExtractApp               |  Total users for course: 2
+2016-07-13 14:14:10 | INFO  | 325:blackboard.ws.client.GradeExtractApp               |  Loading grades...
+2016-07-13 14:14:11 | INFO  | 327:blackboard.ws.client.GradeExtractApp               |  Total grades for course: 3
+2016-07-13 14:14:11 | INFO  | 223:blackboard.ws.client.GradeExtractApp               | Course 2: COM114-1015-2016-1-ONL
+2016-07-13 14:14:12 | INFO  | 255:blackboard.ws.client.GradeExtractApp               |  Total student enrollments for course: 0
+2016-07-13 14:14:12 | INFO  | 257:blackboard.ws.client.GradeExtractApp               |  No students = no grades, skipping course.
+2016-07-13 14:14:12 | INFO  | 236:blackboard.ws.client.GradeExtractApp               | Closing report file stream.
+2016-07-13 14:14:12 | INFO  | 128:blackboard.ws.client.GradeExtractApp               | EXTRACT START TIME: Wed Jul 13 14:14:01 CST 2016
+2016-07-13 14:14:12 | INFO  | 129:blackboard.ws.client.GradeExtractApp               | EXTRACT COMPLETED : Wed Jul 13 14:14:12 CST 2016
+2016-07-13 14:19:57 | INFO  | 117:blackboard.ws.client.GradeExtractApp               | EXTRACT STARTED : Wed Jul 13 14:19:57 CST 2016
+2016-07-13 14:19:57 | INFO  | 163:blackboard.ws.client.WebServiceClient              | Initializing...
+2016-07-13 14:19:57 | INFO  |  63:org.apache.axis2.deployment.ClusterBuilder         | Clustering has been disabled
+2016-07-13 14:19:57 | INFO  |1098:org.apache.axis2.deployment.DeploymentEngine       | No services directory was found under C:\Users\cbonilla\Documents\GitHub\AIEP-GradeExtract\lib\axis2-1.6.2\lib.
+2016-07-13 14:19:57 | INFO  |1109:org.apache.axis2.deployment.DeploymentEngine       | No modules directory was found under C:\Users\cbonilla\Documents\GitHub\AIEP-GradeExtract\lib\axis2-1.6.2\lib.
+2016-07-13 14:19:57 | INFO  |  82:org.apache.axis2.deployment.ModuleDeployer         | Deploying module: addressing-1.6.2 - file:/C:/Users/cbonilla/Documents/GitHub/AIEP-GradeExtract/lib/axis2-1.6.2/lib/addressing-1.6.2.mar
+2016-07-13 14:19:57 | INFO  |  82:org.apache.axis2.deployment.ModuleDeployer         | Deploying module: rampart-1.6.2 - file:/C:/Users/cbonilla/Documents/GitHub/AIEP-GradeExtract/lib/axis2-1.6.2/lib/rampart-1.6.2.mar
+2016-07-13 14:19:57 | INFO  | 207:blackboard.ws.client.WebServiceClient              | Checking versions...
+2016-07-13 14:19:59 | INFO  | 211:blackboard.ws.client.WebServiceClient              | Context server version: 2
+2016-07-13 14:19:59 | INFO  | 215:blackboard.ws.client.WebServiceClient              | User server version: 1
+2016-07-13 14:19:59 | INFO  | 219:blackboard.ws.client.WebServiceClient              | Util server version: 2
+2016-07-13 14:19:59 | INFO  | 225:blackboard.ws.client.WebServiceClient              | Initializing the session...
+2016-07-13 14:20:00 | INFO  | 228:blackboard.ws.client.WebServiceClient              | Session Id: 82788be0149a412a8002b29481929b03
+2016-07-13 14:20:00 | INFO  | 230:blackboard.ws.client.WebServiceClient              | Initializing Util Context...
+2016-07-13 14:20:00 | INFO  | 237:blackboard.ws.client.WebServiceClient              | Initializing User Context...
+2016-07-13 14:20:01 | INFO  | 244:blackboard.ws.client.WebServiceClient              | Initializing Course Context...
+2016-07-13 14:20:01 | INFO  | 251:blackboard.ws.client.WebServiceClient              | Initializing Course Membership Context...
+2016-07-13 14:20:02 | INFO  | 258:blackboard.ws.client.WebServiceClient              | Initializing Gradebook Context...
+2016-07-13 14:20:02 | INFO  | 266:blackboard.ws.client.WebServiceClient              | Registering Tool...
+2016-07-13 14:20:03 | INFO  | 287:blackboard.ws.client.WebServiceClient              | Initialization complete.
+2016-07-13 14:20:03 | INFO  | 145:blackboard.ws.client.GradeExtractApp               | Loading courses...
+2016-07-13 14:20:04 | INFO  | 158:blackboard.ws.client.GradeExtractApp               | Total number of courses: 2
+2016-07-13 14:20:04 | INFO  | 223:blackboard.ws.client.GradeExtractApp               | Course 1: COM114-1-2016-1-ONL-WS
+2016-07-13 14:20:04 | INFO  | 255:blackboard.ws.client.GradeExtractApp               |  Total student enrollments for course: 1
+2016-07-13 14:20:05 | INFO  | 289:blackboard.ws.client.GradeExtractApp               |  Total columns to extract for course: 3
+2016-07-13 14:20:06 | INFO  | 315:blackboard.ws.client.GradeExtractApp               |  Total users for course: 2
+2016-07-13 14:20:06 | INFO  | 325:blackboard.ws.client.GradeExtractApp               |  Loading grades...
+2016-07-13 14:20:07 | INFO  | 327:blackboard.ws.client.GradeExtractApp               |  Total grades for course: 3
+2016-07-13 14:20:07 | INFO  | 223:blackboard.ws.client.GradeExtractApp               | Course 2: COM114-1015-2016-1-ONL
+2016-07-13 14:20:07 | INFO  | 255:blackboard.ws.client.GradeExtractApp               |  Total student enrollments for course: 1
+2016-07-13 14:20:07 | INFO  | 289:blackboard.ws.client.GradeExtractApp               |  Total columns to extract for course: 23
+2016-07-13 14:20:16 | INFO  | 315:blackboard.ws.client.GradeExtractApp               |  Total users for course: 2
+2016-07-13 14:20:16 | INFO  | 325:blackboard.ws.client.GradeExtractApp               |  Loading grades...
+2016-07-13 14:20:16 | INFO  | 327:blackboard.ws.client.GradeExtractApp               |  Total grades for course: 3
+2016-07-13 14:20:16 | INFO  | 236:blackboard.ws.client.GradeExtractApp               | Closing report file stream.
+2016-07-13 14:20:17 | INFO  | 128:blackboard.ws.client.GradeExtractApp               | EXTRACT START TIME: Wed Jul 13 14:19:57 CST 2016
+2016-07-13 14:20:17 | INFO  | 129:blackboard.ws.client.GradeExtractApp               | EXTRACT COMPLETED : Wed Jul 13 14:20:17 CST 2016
+2016-07-13 14:23:10 | INFO  | 117:blackboard.ws.client.GradeExtractApp               | EXTRACT STARTED : Wed Jul 13 14:23:10 CST 2016
+2016-07-13 14:23:10 | INFO  | 163:blackboard.ws.client.WebServiceClient              | Initializing...
+2016-07-13 14:23:10 | INFO  |  63:org.apache.axis2.deployment.ClusterBuilder         | Clustering has been disabled
+2016-07-13 14:23:10 | INFO  |1098:org.apache.axis2.deployment.DeploymentEngine       | No services directory was found under C:\Users\cbonilla\Documents\GitHub\AIEP-GradeExtract\lib\axis2-1.6.2\lib.
+2016-07-13 14:23:10 | INFO  |1109:org.apache.axis2.deployment.DeploymentEngine       | No modules directory was found under C:\Users\cbonilla\Documents\GitHub\AIEP-GradeExtract\lib\axis2-1.6.2\lib.
+2016-07-13 14:23:10 | INFO  |  82:org.apache.axis2.deployment.ModuleDeployer         | Deploying module: addressing-1.6.2 - file:/C:/Users/cbonilla/Documents/GitHub/AIEP-GradeExtract/lib/axis2-1.6.2/lib/addressing-1.6.2.mar
+2016-07-13 14:23:10 | INFO  |  82:org.apache.axis2.deployment.ModuleDeployer         | Deploying module: rampart-1.6.2 - file:/C:/Users/cbonilla/Documents/GitHub/AIEP-GradeExtract/lib/axis2-1.6.2/lib/rampart-1.6.2.mar
+2016-07-13 14:23:10 | INFO  | 207:blackboard.ws.client.WebServiceClient              | Checking versions...
+2016-07-13 14:23:20 | INFO  | 117:blackboard.ws.client.GradeExtractApp               | EXTRACT STARTED : Wed Jul 13 14:23:20 CST 2016
+2016-07-13 14:23:20 | INFO  | 163:blackboard.ws.client.WebServiceClient              | Initializing...
+2016-07-13 14:23:20 | INFO  |  63:org.apache.axis2.deployment.ClusterBuilder         | Clustering has been disabled
+2016-07-13 14:23:20 | INFO  |1098:org.apache.axis2.deployment.DeploymentEngine       | No services directory was found under C:\Users\cbonilla\Documents\GitHub\AIEP-GradeExtract\lib\axis2-1.6.2\lib.
+2016-07-13 14:23:20 | INFO  |1109:org.apache.axis2.deployment.DeploymentEngine       | No modules directory was found under C:\Users\cbonilla\Documents\GitHub\AIEP-GradeExtract\lib\axis2-1.6.2\lib.
+2016-07-13 14:23:20 | INFO  |  82:org.apache.axis2.deployment.ModuleDeployer         | Deploying module: addressing-1.6.2 - file:/C:/Users/cbonilla/Documents/GitHub/AIEP-GradeExtract/lib/axis2-1.6.2/lib/addressing-1.6.2.mar
+2016-07-13 14:23:20 | INFO  |  82:org.apache.axis2.deployment.ModuleDeployer         | Deploying module: rampart-1.6.2 - file:/C:/Users/cbonilla/Documents/GitHub/AIEP-GradeExtract/lib/axis2-1.6.2/lib/rampart-1.6.2.mar
+2016-07-13 14:23:20 | INFO  | 207:blackboard.ws.client.WebServiceClient              | Checking versions...
+2016-07-13 14:23:21 | INFO  | 211:blackboard.ws.client.WebServiceClient              | Context server version: 2
+2016-07-13 14:23:22 | INFO  | 215:blackboard.ws.client.WebServiceClient              | User server version: 1
+2016-07-13 14:23:22 | INFO  | 219:blackboard.ws.client.WebServiceClient              | Util server version: 2
+2016-07-13 14:23:22 | INFO  | 225:blackboard.ws.client.WebServiceClient              | Initializing the session...
+2016-07-13 14:23:23 | INFO  | 228:blackboard.ws.client.WebServiceClient              | Session Id: 83a0c1afbc5d45ff814965b75f1a8ae9
+2016-07-13 14:23:23 | INFO  | 230:blackboard.ws.client.WebServiceClient              | Initializing Util Context...
+2016-07-13 14:23:23 | INFO  | 237:blackboard.ws.client.WebServiceClient              | Initializing User Context...
+2016-07-13 14:23:23 | INFO  | 244:blackboard.ws.client.WebServiceClient              | Initializing Course Context...
+2016-07-13 14:23:24 | INFO  | 251:blackboard.ws.client.WebServiceClient              | Initializing Course Membership Context...
+2016-07-13 14:23:24 | INFO  | 258:blackboard.ws.client.WebServiceClient              | Initializing Gradebook Context...
+2016-07-13 14:23:25 | INFO  | 266:blackboard.ws.client.WebServiceClient              | Registering Tool...
+2016-07-13 14:23:26 | INFO  | 287:blackboard.ws.client.WebServiceClient              | Initialization complete.
+2016-07-13 14:23:26 | INFO  | 145:blackboard.ws.client.GradeExtractApp               | Loading courses...
+2016-07-13 14:23:27 | INFO  | 158:blackboard.ws.client.GradeExtractApp               | Total number of courses: 2
+2016-07-13 14:23:27 | INFO  | 223:blackboard.ws.client.GradeExtractApp               | Course 1: COM114-1-2016-1-ONL-WS
+2016-07-13 14:23:27 | INFO  | 255:blackboard.ws.client.GradeExtractApp               |  Total student enrollments for course: 1
+2016-07-13 14:23:27 | INFO  | 289:blackboard.ws.client.GradeExtractApp               |  Total columns to extract for course: 3
+2016-07-13 14:23:29 | INFO  | 315:blackboard.ws.client.GradeExtractApp               |  Total users for course: 2
+2016-07-13 14:23:29 | INFO  | 325:blackboard.ws.client.GradeExtractApp               |  Loading grades...
+2016-07-13 14:23:29 | INFO  | 327:blackboard.ws.client.GradeExtractApp               |  Total grades for course: 3
+2016-07-13 14:23:29 | INFO  | 223:blackboard.ws.client.GradeExtractApp               | Course 2: COM114-1015-2016-1-ONL
+2016-07-13 14:23:30 | INFO  | 255:blackboard.ws.client.GradeExtractApp               |  Total student enrollments for course: 1
+2016-07-13 14:23:30 | INFO  | 289:blackboard.ws.client.GradeExtractApp               |  Total columns to extract for course: 23
+2016-07-13 14:23:38 | INFO  | 315:blackboard.ws.client.GradeExtractApp               |  Total users for course: 2
+2016-07-13 14:23:38 | INFO  | 325:blackboard.ws.client.GradeExtractApp               |  Loading grades...
+2016-07-13 14:23:39 | INFO  | 327:blackboard.ws.client.GradeExtractApp               |  Total grades for course: 3
+2016-07-13 14:23:39 | INFO  | 236:blackboard.ws.client.GradeExtractApp               | Closing report file stream.
+2016-07-13 14:23:39 | INFO  | 128:blackboard.ws.client.GradeExtractApp               | EXTRACT START TIME: Wed Jul 13 14:23:20 CST 2016
+2016-07-13 14:23:39 | INFO  | 129:blackboard.ws.client.GradeExtractApp               | EXTRACT COMPLETED : Wed Jul 13 14:23:39 CST 2016
+2016-07-13 14:25:18 | INFO  | 117:blackboard.ws.client.GradeExtractApp               | EXTRACT STARTED : Wed Jul 13 14:25:18 CST 2016
+2016-07-13 14:25:18 | INFO  | 163:blackboard.ws.client.WebServiceClient              | Initializing...
+2016-07-13 14:25:19 | INFO  |  63:org.apache.axis2.deployment.ClusterBuilder         | Clustering has been disabled
+2016-07-13 14:25:19 | INFO  |1098:org.apache.axis2.deployment.DeploymentEngine       | No services directory was found under C:\Users\cbonilla\Documents\GitHub\AIEP-GradeExtract\lib\axis2-1.6.2\lib.
+2016-07-13 14:25:19 | INFO  |1109:org.apache.axis2.deployment.DeploymentEngine       | No modules directory was found under C:\Users\cbonilla\Documents\GitHub\AIEP-GradeExtract\lib\axis2-1.6.2\lib.
+2016-07-13 14:25:19 | INFO  |  82:org.apache.axis2.deployment.ModuleDeployer         | Deploying module: addressing-1.6.2 - file:/C:/Users/cbonilla/Documents/GitHub/AIEP-GradeExtract/lib/axis2-1.6.2/lib/addressing-1.6.2.mar
+2016-07-13 14:25:19 | INFO  |  82:org.apache.axis2.deployment.ModuleDeployer         | Deploying module: rampart-1.6.2 - file:/C:/Users/cbonilla/Documents/GitHub/AIEP-GradeExtract/lib/axis2-1.6.2/lib/rampart-1.6.2.mar
+2016-07-13 14:25:19 | INFO  | 207:blackboard.ws.client.WebServiceClient              | Checking versions...
+2016-07-13 14:25:20 | INFO  | 211:blackboard.ws.client.WebServiceClient              | Context server version: 2
+2016-07-13 14:25:20 | INFO  | 215:blackboard.ws.client.WebServiceClient              | User server version: 1
+2016-07-13 14:25:21 | INFO  | 219:blackboard.ws.client.WebServiceClient              | Util server version: 2
+2016-07-13 14:25:21 | INFO  | 225:blackboard.ws.client.WebServiceClient              | Initializing the session...
+2016-07-13 14:25:21 | INFO  | 228:blackboard.ws.client.WebServiceClient              | Session Id: 7084110eaf8c400e887a6ae03c981828
+2016-07-13 14:25:21 | INFO  | 230:blackboard.ws.client.WebServiceClient              | Initializing Util Context...
+2016-07-13 14:25:21 | INFO  | 237:blackboard.ws.client.WebServiceClient              | Initializing User Context...
+2016-07-13 14:25:22 | INFO  | 244:blackboard.ws.client.WebServiceClient              | Initializing Course Context...
+2016-07-13 14:25:22 | INFO  | 251:blackboard.ws.client.WebServiceClient              | Initializing Course Membership Context...
+2016-07-13 14:25:23 | INFO  | 258:blackboard.ws.client.WebServiceClient              | Initializing Gradebook Context...
+2016-07-13 14:25:23 | INFO  | 266:blackboard.ws.client.WebServiceClient              | Registering Tool...
+2016-07-13 14:25:24 | INFO  | 287:blackboard.ws.client.WebServiceClient              | Initialization complete.
+2016-07-13 14:25:24 | INFO  | 145:blackboard.ws.client.GradeExtractApp               | Loading courses...
+2016-07-13 14:25:25 | INFO  | 158:blackboard.ws.client.GradeExtractApp               | Total number of courses: 2
+2016-07-13 14:25:25 | INFO  | 223:blackboard.ws.client.GradeExtractApp               | Course 1: COM114-1-2016-1-ONL-WS
+2016-07-13 14:25:25 | INFO  | 255:blackboard.ws.client.GradeExtractApp               |  Total student enrollments for course: 1
+2016-07-13 14:25:26 | INFO  | 289:blackboard.ws.client.GradeExtractApp               |  Total columns to extract for course: 3
+2016-07-13 14:25:27 | INFO  | 315:blackboard.ws.client.GradeExtractApp               |  Total users for course: 2
+2016-07-13 14:25:27 | INFO  | 325:blackboard.ws.client.GradeExtractApp               |  Loading grades...
+2016-07-13 14:25:28 | INFO  | 327:blackboard.ws.client.GradeExtractApp               |  Total grades for course: 3
+2016-07-13 14:25:28 | INFO  | 223:blackboard.ws.client.GradeExtractApp               | Course 2: COM114-1015-2016-1-ONL
+2016-07-13 14:25:28 | INFO  | 255:blackboard.ws.client.GradeExtractApp               |  Total student enrollments for course: 1
+2016-07-13 14:25:29 | INFO  | 289:blackboard.ws.client.GradeExtractApp               |  Total columns to extract for course: 23
+2016-07-13 14:25:36 | INFO  | 315:blackboard.ws.client.GradeExtractApp               |  Total users for course: 2
+2016-07-13 14:25:36 | INFO  | 325:blackboard.ws.client.GradeExtractApp               |  Loading grades...
+2016-07-13 14:25:37 | INFO  | 327:blackboard.ws.client.GradeExtractApp               |  Total grades for course: 3
+2016-07-13 14:25:37 | INFO  | 236:blackboard.ws.client.GradeExtractApp               | Closing report file stream.
+2016-07-13 14:25:37 | INFO  | 128:blackboard.ws.client.GradeExtractApp               | EXTRACT START TIME: Wed Jul 13 14:25:18 CST 2016
+2016-07-13 14:25:37 | INFO  | 129:blackboard.ws.client.GradeExtractApp               | EXTRACT COMPLETED : Wed Jul 13 14:25:37 CST 2016
+2016-07-13 14:29:13 | INFO  | 117:blackboard.ws.client.GradeExtractApp               | EXTRACT STARTED : Wed Jul 13 14:29:13 CST 2016
+2016-07-13 14:29:13 | INFO  | 163:blackboard.ws.client.WebServiceClient              | Initializing...
+2016-07-13 14:29:13 | INFO  |  63:org.apache.axis2.deployment.ClusterBuilder         | Clustering has been disabled
+2016-07-13 14:29:14 | INFO  |1098:org.apache.axis2.deployment.DeploymentEngine       | No services directory was found under C:\Users\cbonilla\Documents\GitHub\AIEP-GradeExtract\lib\axis2-1.6.2\lib.
+2016-07-13 14:29:14 | INFO  |1109:org.apache.axis2.deployment.DeploymentEngine       | No modules directory was found under C:\Users\cbonilla\Documents\GitHub\AIEP-GradeExtract\lib\axis2-1.6.2\lib.
+2016-07-13 14:29:14 | INFO  |  82:org.apache.axis2.deployment.ModuleDeployer         | Deploying module: addressing-1.6.2 - file:/C:/Users/cbonilla/Documents/GitHub/AIEP-GradeExtract/lib/axis2-1.6.2/lib/addressing-1.6.2.mar
+2016-07-13 14:29:14 | INFO  |  82:org.apache.axis2.deployment.ModuleDeployer         | Deploying module: rampart-1.6.2 - file:/C:/Users/cbonilla/Documents/GitHub/AIEP-GradeExtract/lib/axis2-1.6.2/lib/rampart-1.6.2.mar
+2016-07-13 14:29:14 | INFO  | 207:blackboard.ws.client.WebServiceClient              | Checking versions...
+2016-07-13 14:29:15 | INFO  | 211:blackboard.ws.client.WebServiceClient              | Context server version: 2
+2016-07-13 14:29:15 | INFO  | 215:blackboard.ws.client.WebServiceClient              | User server version: 1
+2016-07-13 14:29:16 | INFO  | 219:blackboard.ws.client.WebServiceClient              | Util server version: 2
+2016-07-13 14:29:16 | INFO  | 225:blackboard.ws.client.WebServiceClient              | Initializing the session...
+2016-07-13 14:29:16 | INFO  | 228:blackboard.ws.client.WebServiceClient              | Session Id: 46565844386c45d7bdcd19d622e8876a
+2016-07-13 14:29:16 | INFO  | 230:blackboard.ws.client.WebServiceClient              | Initializing Util Context...
+2016-07-13 14:29:17 | INFO  | 237:blackboard.ws.client.WebServiceClient              | Initializing User Context...
+2016-07-13 14:29:17 | INFO  | 244:blackboard.ws.client.WebServiceClient              | Initializing Course Context...
+2016-07-13 14:29:17 | INFO  | 251:blackboard.ws.client.WebServiceClient              | Initializing Course Membership Context...
+2016-07-13 14:29:18 | INFO  | 258:blackboard.ws.client.WebServiceClient              | Initializing Gradebook Context...
+2016-07-13 14:29:19 | INFO  | 266:blackboard.ws.client.WebServiceClient              | Registering Tool...
+2016-07-13 14:29:19 | INFO  | 287:blackboard.ws.client.WebServiceClient              | Initialization complete.
+2016-07-13 14:29:20 | INFO  | 145:blackboard.ws.client.GradeExtractApp               | Loading courses...
+2016-07-13 14:29:20 | INFO  | 158:blackboard.ws.client.GradeExtractApp               | Total number of courses: 2
+2016-07-13 14:29:20 | INFO  | 223:blackboard.ws.client.GradeExtractApp               | Course 1: COM114-1-2016-1-ONL-WS
+2016-07-13 14:29:21 | INFO  | 255:blackboard.ws.client.GradeExtractApp               |  Total student enrollments for course: 1
+2016-07-13 14:29:21 | INFO  | 289:blackboard.ws.client.GradeExtractApp               |  Total columns to extract for course: 3
+2016-07-13 14:29:22 | INFO  | 315:blackboard.ws.client.GradeExtractApp               |  Total users for course: 2
+2016-07-13 14:29:23 | INFO  | 325:blackboard.ws.client.GradeExtractApp               |  Loading grades...
+2016-07-13 14:29:23 | INFO  | 327:blackboard.ws.client.GradeExtractApp               |  Total grades for course: 3
+2016-07-13 14:29:23 | INFO  | 223:blackboard.ws.client.GradeExtractApp               | Course 2: COM114-1015-2016-1-ONL
+2016-07-13 14:29:23 | INFO  | 255:blackboard.ws.client.GradeExtractApp               |  Total student enrollments for course: 1
+2016-07-13 14:29:24 | INFO  | 289:blackboard.ws.client.GradeExtractApp               |  Total columns to extract for course: 23
+2016-07-13 14:29:32 | INFO  | 315:blackboard.ws.client.GradeExtractApp               |  Total users for course: 2
+2016-07-13 14:29:32 | INFO  | 325:blackboard.ws.client.GradeExtractApp               |  Loading grades...
+2016-07-13 14:29:32 | INFO  | 327:blackboard.ws.client.GradeExtractApp               |  Total grades for course: 3
+2016-07-13 14:29:32 | INFO  | 236:blackboard.ws.client.GradeExtractApp               | Closing report file stream.
+2016-07-13 14:29:33 | INFO  | 128:blackboard.ws.client.GradeExtractApp               | EXTRACT START TIME: Wed Jul 13 14:29:13 CST 2016
+2016-07-13 14:29:33 | INFO  | 129:blackboard.ws.client.GradeExtractApp               | EXTRACT COMPLETED : Wed Jul 13 14:29:33 CST 2016
+2016-07-13 14:32:21 | INFO  | 117:blackboard.ws.client.GradeExtractApp               | EXTRACT STARTED : Wed Jul 13 14:32:21 CST 2016
+2016-07-13 14:32:21 | INFO  | 163:blackboard.ws.client.WebServiceClient              | Initializing...
+2016-07-13 14:32:21 | INFO  |  63:org.apache.axis2.deployment.ClusterBuilder         | Clustering has been disabled
+2016-07-13 14:32:21 | INFO  |1098:org.apache.axis2.deployment.DeploymentEngine       | No services directory was found under C:\Users\cbonilla\Documents\GitHub\AIEP-GradeExtract\lib\axis2-1.6.2\lib.
+2016-07-13 14:32:21 | INFO  |1109:org.apache.axis2.deployment.DeploymentEngine       | No modules directory was found under C:\Users\cbonilla\Documents\GitHub\AIEP-GradeExtract\lib\axis2-1.6.2\lib.
+2016-07-13 14:32:21 | INFO  |  82:org.apache.axis2.deployment.ModuleDeployer         | Deploying module: addressing-1.6.2 - file:/C:/Users/cbonilla/Documents/GitHub/AIEP-GradeExtract/lib/axis2-1.6.2/lib/addressing-1.6.2.mar
+2016-07-13 14:32:21 | INFO  |  82:org.apache.axis2.deployment.ModuleDeployer         | Deploying module: rampart-1.6.2 - file:/C:/Users/cbonilla/Documents/GitHub/AIEP-GradeExtract/lib/axis2-1.6.2/lib/rampart-1.6.2.mar
+2016-07-13 14:32:21 | INFO  | 207:blackboard.ws.client.WebServiceClient              | Checking versions...
+2016-07-13 14:32:22 | INFO  | 211:blackboard.ws.client.WebServiceClient              | Context server version: 2
+2016-07-13 14:32:23 | INFO  | 215:blackboard.ws.client.WebServiceClient              | User server version: 1
+2016-07-13 14:32:23 | INFO  | 219:blackboard.ws.client.WebServiceClient              | Util server version: 2
+2016-07-13 14:32:23 | INFO  | 225:blackboard.ws.client.WebServiceClient              | Initializing the session...
+2016-07-13 14:32:23 | INFO  | 228:blackboard.ws.client.WebServiceClient              | Session Id: 1868d58901964a83b6aa5cb159bc2ea3
+2016-07-13 14:32:23 | INFO  | 230:blackboard.ws.client.WebServiceClient              | Initializing Util Context...
+2016-07-13 14:32:24 | INFO  | 237:blackboard.ws.client.WebServiceClient              | Initializing User Context...
+2016-07-13 14:32:24 | INFO  | 244:blackboard.ws.client.WebServiceClient              | Initializing Course Context...
+2016-07-13 14:32:25 | INFO  | 251:blackboard.ws.client.WebServiceClient              | Initializing Course Membership Context...
+2016-07-13 14:32:25 | INFO  | 258:blackboard.ws.client.WebServiceClient              | Initializing Gradebook Context...
+2016-07-13 14:32:26 | INFO  | 266:blackboard.ws.client.WebServiceClient              | Registering Tool...
+2016-07-13 14:32:26 | INFO  | 287:blackboard.ws.client.WebServiceClient              | Initialization complete.
+2016-07-13 14:32:27 | INFO  | 145:blackboard.ws.client.GradeExtractApp               | Loading courses...
+2016-07-13 14:32:27 | INFO  | 158:blackboard.ws.client.GradeExtractApp               | Total number of courses: 2
+2016-07-13 14:32:27 | INFO  | 236:blackboard.ws.client.GradeExtractApp               | Closing report file stream.
+2016-07-13 14:32:28 | ERROR | 125:blackboard.ws.client.GradeExtractApp               | 
+java.lang.NullPointerException
+	at blackboard.ws.client.GradeExtractApp.printRow(GradeExtractApp.java:447)
+	at blackboard.ws.client.GradeExtractApp.printHeader(GradeExtractApp.java:403)
+	at blackboard.ws.client.GradeExtractApp.doMain(GradeExtractApp.java:187)
+	at blackboard.ws.client.GradeExtractApp.main(GradeExtractApp.java:121)
+2016-07-13 14:32:28 | INFO  | 128:blackboard.ws.client.GradeExtractApp               | EXTRACT START TIME: Wed Jul 13 14:32:21 CST 2016
+2016-07-13 14:32:28 | INFO  | 129:blackboard.ws.client.GradeExtractApp               | EXTRACT COMPLETED : Wed Jul 13 14:32:28 CST 2016
+2016-07-13 14:32:28 | ERROR | 131:blackboard.ws.client.GradeExtractApp               | ERRORS(1):
+2016-07-13 14:32:28 | ERROR | 133:blackboard.ws.client.GradeExtractApp               |  - null
+2016-07-13 14:33:38 | INFO  | 117:blackboard.ws.client.GradeExtractApp               | EXTRACT STARTED : Wed Jul 13 14:33:38 CST 2016
+2016-07-13 14:33:38 | INFO  | 163:blackboard.ws.client.WebServiceClient              | Initializing...
+2016-07-13 14:33:38 | INFO  |  63:org.apache.axis2.deployment.ClusterBuilder         | Clustering has been disabled
+2016-07-13 14:33:38 | INFO  |1098:org.apache.axis2.deployment.DeploymentEngine       | No services directory was found under C:\Users\cbonilla\Documents\GitHub\AIEP-GradeExtract\lib\axis2-1.6.2\lib.
+2016-07-13 14:33:38 | INFO  |1109:org.apache.axis2.deployment.DeploymentEngine       | No modules directory was found under C:\Users\cbonilla\Documents\GitHub\AIEP-GradeExtract\lib\axis2-1.6.2\lib.
+2016-07-13 14:33:38 | INFO  |  82:org.apache.axis2.deployment.ModuleDeployer         | Deploying module: addressing-1.6.2 - file:/C:/Users/cbonilla/Documents/GitHub/AIEP-GradeExtract/lib/axis2-1.6.2/lib/addressing-1.6.2.mar
+2016-07-13 14:33:38 | INFO  |  82:org.apache.axis2.deployment.ModuleDeployer         | Deploying module: rampart-1.6.2 - file:/C:/Users/cbonilla/Documents/GitHub/AIEP-GradeExtract/lib/axis2-1.6.2/lib/rampart-1.6.2.mar
+2016-07-13 14:33:38 | INFO  | 207:blackboard.ws.client.WebServiceClient              | Checking versions...
+2016-07-13 14:33:39 | INFO  | 211:blackboard.ws.client.WebServiceClient              | Context server version: 2
+2016-07-13 14:33:40 | INFO  | 215:blackboard.ws.client.WebServiceClient              | User server version: 1
+2016-07-13 14:33:40 | INFO  | 219:blackboard.ws.client.WebServiceClient              | Util server version: 2
+2016-07-13 14:33:40 | INFO  | 225:blackboard.ws.client.WebServiceClient              | Initializing the session...
+2016-07-13 14:33:41 | INFO  | 228:blackboard.ws.client.WebServiceClient              | Session Id: 91ad2b9ff2044362a0bcab6e7f228537
+2016-07-13 14:33:41 | INFO  | 230:blackboard.ws.client.WebServiceClient              | Initializing Util Context...
+2016-07-13 14:33:41 | INFO  | 237:blackboard.ws.client.WebServiceClient              | Initializing User Context...
+2016-07-13 14:33:41 | INFO  | 244:blackboard.ws.client.WebServiceClient              | Initializing Course Context...
+2016-07-13 14:33:42 | INFO  | 251:blackboard.ws.client.WebServiceClient              | Initializing Course Membership Context...
+2016-07-13 14:33:42 | INFO  | 258:blackboard.ws.client.WebServiceClient              | Initializing Gradebook Context...
+2016-07-13 14:33:43 | INFO  | 266:blackboard.ws.client.WebServiceClient              | Registering Tool...
+2016-07-13 14:33:43 | INFO  | 287:blackboard.ws.client.WebServiceClient              | Initialization complete.
+2016-07-13 14:33:44 | INFO  | 145:blackboard.ws.client.GradeExtractApp               | Loading courses...
+2016-07-13 14:33:44 | INFO  | 158:blackboard.ws.client.GradeExtractApp               | Total number of courses: 2
+2016-07-13 14:33:44 | INFO  | 236:blackboard.ws.client.GradeExtractApp               | Closing report file stream.
+2016-07-13 14:33:45 | ERROR | 125:blackboard.ws.client.GradeExtractApp               | 
+java.lang.NullPointerException
+	at blackboard.ws.client.GradeExtractApp.printRow(GradeExtractApp.java:447)
+	at blackboard.ws.client.GradeExtractApp.printHeader(GradeExtractApp.java:403)
+	at blackboard.ws.client.GradeExtractApp.doMain(GradeExtractApp.java:187)
+	at blackboard.ws.client.GradeExtractApp.main(GradeExtractApp.java:121)
+2016-07-13 14:33:45 | INFO  | 128:blackboard.ws.client.GradeExtractApp               | EXTRACT START TIME: Wed Jul 13 14:33:38 CST 2016
+2016-07-13 14:33:45 | INFO  | 129:blackboard.ws.client.GradeExtractApp               | EXTRACT COMPLETED : Wed Jul 13 14:33:45 CST 2016
+2016-07-13 14:33:45 | ERROR | 131:blackboard.ws.client.GradeExtractApp               | ERRORS(1):
+2016-07-13 14:33:45 | ERROR | 133:blackboard.ws.client.GradeExtractApp               |  - null
+2016-07-13 14:35:17 | INFO  | 117:blackboard.ws.client.GradeExtractApp               | EXTRACT STARTED : Wed Jul 13 14:35:17 CST 2016
+2016-07-13 14:35:17 | INFO  | 163:blackboard.ws.client.WebServiceClient              | Initializing...
+2016-07-13 14:35:17 | INFO  |  63:org.apache.axis2.deployment.ClusterBuilder         | Clustering has been disabled
+2016-07-13 14:35:17 | INFO  |1098:org.apache.axis2.deployment.DeploymentEngine       | No services directory was found under C:\Users\cbonilla\Documents\GitHub\AIEP-GradeExtract\lib\axis2-1.6.2\lib.
+2016-07-13 14:35:17 | INFO  |1109:org.apache.axis2.deployment.DeploymentEngine       | No modules directory was found under C:\Users\cbonilla\Documents\GitHub\AIEP-GradeExtract\lib\axis2-1.6.2\lib.
+2016-07-13 14:35:17 | INFO  |  82:org.apache.axis2.deployment.ModuleDeployer         | Deploying module: addressing-1.6.2 - file:/C:/Users/cbonilla/Documents/GitHub/AIEP-GradeExtract/lib/axis2-1.6.2/lib/addressing-1.6.2.mar
+2016-07-13 14:35:17 | INFO  |  82:org.apache.axis2.deployment.ModuleDeployer         | Deploying module: rampart-1.6.2 - file:/C:/Users/cbonilla/Documents/GitHub/AIEP-GradeExtract/lib/axis2-1.6.2/lib/rampart-1.6.2.mar
+2016-07-13 14:35:17 | INFO  | 207:blackboard.ws.client.WebServiceClient              | Checking versions...
+2016-07-13 14:35:18 | INFO  | 211:blackboard.ws.client.WebServiceClient              | Context server version: 2
+2016-07-13 14:35:19 | INFO  | 215:blackboard.ws.client.WebServiceClient              | User server version: 1
+2016-07-13 14:35:19 | INFO  | 219:blackboard.ws.client.WebServiceClient              | Util server version: 2
+2016-07-13 14:35:19 | INFO  | 225:blackboard.ws.client.WebServiceClient              | Initializing the session...
+2016-07-13 14:35:20 | INFO  | 228:blackboard.ws.client.WebServiceClient              | Session Id: 37a3c2a159a94e4fba3e10bd777331a7
+2016-07-13 14:35:20 | INFO  | 230:blackboard.ws.client.WebServiceClient              | Initializing Util Context...
+2016-07-13 14:35:20 | INFO  | 237:blackboard.ws.client.WebServiceClient              | Initializing User Context...
+2016-07-13 14:35:21 | INFO  | 244:blackboard.ws.client.WebServiceClient              | Initializing Course Context...
+2016-07-13 14:35:21 | INFO  | 251:blackboard.ws.client.WebServiceClient              | Initializing Course Membership Context...
+2016-07-13 14:35:22 | INFO  | 258:blackboard.ws.client.WebServiceClient              | Initializing Gradebook Context...
+2016-07-13 14:35:22 | INFO  | 266:blackboard.ws.client.WebServiceClient              | Registering Tool...
+2016-07-13 14:35:23 | INFO  | 287:blackboard.ws.client.WebServiceClient              | Initialization complete.
+2016-07-13 14:35:23 | INFO  | 145:blackboard.ws.client.GradeExtractApp               | Loading courses...
+2016-07-13 14:35:24 | INFO  | 158:blackboard.ws.client.GradeExtractApp               | Total number of courses: 2
+2016-07-13 14:35:24 | INFO  | 223:blackboard.ws.client.GradeExtractApp               | Course 1: COM114-1-2016-1-ONL-WS
+2016-07-13 14:35:24 | INFO  | 255:blackboard.ws.client.GradeExtractApp               |  Total student enrollments for course: 1
+2016-07-13 14:35:25 | INFO  | 289:blackboard.ws.client.GradeExtractApp               |  Total columns to extract for course: 3
+2016-07-13 14:35:26 | INFO  | 315:blackboard.ws.client.GradeExtractApp               |  Total users for course: 2
+2016-07-13 14:35:26 | INFO  | 325:blackboard.ws.client.GradeExtractApp               |  Loading grades...
+2016-07-13 14:35:27 | INFO  | 327:blackboard.ws.client.GradeExtractApp               |  Total grades for course: 3
+2016-07-13 14:35:27 | INFO  | 223:blackboard.ws.client.GradeExtractApp               | Course 2: COM114-1015-2016-1-ONL
+2016-07-13 14:35:27 | INFO  | 255:blackboard.ws.client.GradeExtractApp               |  Total student enrollments for course: 1
+2016-07-13 14:35:28 | INFO  | 289:blackboard.ws.client.GradeExtractApp               |  Total columns to extract for course: 23
+2016-07-13 14:35:36 | INFO  | 315:blackboard.ws.client.GradeExtractApp               |  Total users for course: 2
+2016-07-13 14:35:36 | INFO  | 325:blackboard.ws.client.GradeExtractApp               |  Loading grades...
+2016-07-13 14:35:36 | INFO  | 327:blackboard.ws.client.GradeExtractApp               |  Total grades for course: 3
+2016-07-13 14:35:36 | INFO  | 236:blackboard.ws.client.GradeExtractApp               | Closing report file stream.
+2016-07-13 14:35:37 | INFO  | 128:blackboard.ws.client.GradeExtractApp               | EXTRACT START TIME: Wed Jul 13 14:35:17 CST 2016
+2016-07-13 14:35:37 | INFO  | 129:blackboard.ws.client.GradeExtractApp               | EXTRACT COMPLETED : Wed Jul 13 14:35:37 CST 2016
+2016-07-13 14:39:09 | INFO  | 117:blackboard.ws.client.GradeExtractApp               | EXTRACT STARTED : Wed Jul 13 14:39:09 CST 2016
+2016-07-13 14:39:09 | INFO  | 163:blackboard.ws.client.WebServiceClient              | Initializing...
+2016-07-13 14:39:09 | INFO  |  63:org.apache.axis2.deployment.ClusterBuilder         | Clustering has been disabled
+2016-07-13 14:39:09 | INFO  |1098:org.apache.axis2.deployment.DeploymentEngine       | No services directory was found under C:\Users\cbonilla\Documents\GitHub\AIEP-GradeExtract\lib\axis2-1.6.2\lib.
+2016-07-13 14:39:09 | INFO  |1109:org.apache.axis2.deployment.DeploymentEngine       | No modules directory was found under C:\Users\cbonilla\Documents\GitHub\AIEP-GradeExtract\lib\axis2-1.6.2\lib.
+2016-07-13 14:39:09 | INFO  |  82:org.apache.axis2.deployment.ModuleDeployer         | Deploying module: addressing-1.6.2 - file:/C:/Users/cbonilla/Documents/GitHub/AIEP-GradeExtract/lib/axis2-1.6.2/lib/addressing-1.6.2.mar
+2016-07-13 14:39:09 | INFO  |  82:org.apache.axis2.deployment.ModuleDeployer         | Deploying module: rampart-1.6.2 - file:/C:/Users/cbonilla/Documents/GitHub/AIEP-GradeExtract/lib/axis2-1.6.2/lib/rampart-1.6.2.mar
+2016-07-13 14:39:09 | INFO  | 207:blackboard.ws.client.WebServiceClient              | Checking versions...
+2016-07-13 14:39:10 | INFO  | 211:blackboard.ws.client.WebServiceClient              | Context server version: 2
+2016-07-13 14:39:10 | INFO  | 215:blackboard.ws.client.WebServiceClient              | User server version: 1
+2016-07-13 14:39:11 | INFO  | 219:blackboard.ws.client.WebServiceClient              | Util server version: 2
+2016-07-13 14:39:11 | INFO  | 225:blackboard.ws.client.WebServiceClient              | Initializing the session...
+2016-07-13 14:39:11 | INFO  | 228:blackboard.ws.client.WebServiceClient              | Session Id: 9f6b3e392cb642c5a5ceebd7558e8380
+2016-07-13 14:39:11 | INFO  | 230:blackboard.ws.client.WebServiceClient              | Initializing Util Context...
+2016-07-13 14:39:15 | INFO  | 237:blackboard.ws.client.WebServiceClient              | Initializing User Context...
+2016-07-13 14:39:15 | INFO  | 244:blackboard.ws.client.WebServiceClient              | Initializing Course Context...
+2016-07-13 14:39:16 | INFO  | 251:blackboard.ws.client.WebServiceClient              | Initializing Course Membership Context...
+2016-07-13 14:39:16 | INFO  | 258:blackboard.ws.client.WebServiceClient              | Initializing Gradebook Context...
+2016-07-13 14:39:16 | INFO  | 266:blackboard.ws.client.WebServiceClient              | Registering Tool...
+2016-07-13 14:39:17 | INFO  | 287:blackboard.ws.client.WebServiceClient              | Initialization complete.
+2016-07-13 14:39:18 | INFO  | 145:blackboard.ws.client.GradeExtractApp               | Loading courses...
+2016-07-13 14:39:18 | INFO  | 158:blackboard.ws.client.GradeExtractApp               | Total number of courses: 2
+2016-07-13 14:39:18 | INFO  | 223:blackboard.ws.client.GradeExtractApp               | Course 1: COM114-1-2016-1-ONL-WS
+2016-07-13 14:39:18 | INFO  | 255:blackboard.ws.client.GradeExtractApp               |  Total student enrollments for course: 1
+2016-07-13 14:39:19 | INFO  | 289:blackboard.ws.client.GradeExtractApp               |  Total columns to extract for course: 3
+2016-07-13 14:39:20 | INFO  | 315:blackboard.ws.client.GradeExtractApp               |  Total users for course: 2
+2016-07-13 14:39:20 | INFO  | 325:blackboard.ws.client.GradeExtractApp               |  Loading grades...
+2016-07-13 14:39:21 | INFO  | 327:blackboard.ws.client.GradeExtractApp               |  Total grades for course: 3
+2016-07-13 14:39:21 | INFO  | 223:blackboard.ws.client.GradeExtractApp               | Course 2: COM114-1015-2016-1-ONL
+2016-07-13 14:39:21 | INFO  | 255:blackboard.ws.client.GradeExtractApp               |  Total student enrollments for course: 1
+2016-07-13 14:39:22 | INFO  | 289:blackboard.ws.client.GradeExtractApp               |  Total columns to extract for course: 23
+2016-07-13 14:39:31 | INFO  | 315:blackboard.ws.client.GradeExtractApp               |  Total users for course: 2
+2016-07-13 14:39:31 | INFO  | 325:blackboard.ws.client.GradeExtractApp               |  Loading grades...
+2016-07-13 14:39:31 | INFO  | 327:blackboard.ws.client.GradeExtractApp               |  Total grades for course: 3
+2016-07-13 14:39:31 | INFO  | 236:blackboard.ws.client.GradeExtractApp               | Closing report file stream.
+2016-07-13 14:39:32 | INFO  | 128:blackboard.ws.client.GradeExtractApp               | EXTRACT START TIME: Wed Jul 13 14:39:09 CST 2016
+2016-07-13 14:39:32 | INFO  | 129:blackboard.ws.client.GradeExtractApp               | EXTRACT COMPLETED : Wed Jul 13 14:39:32 CST 2016
+2016-07-13 14:44:38 | INFO  | 117:blackboard.ws.client.GradeExtractApp               | EXTRACT STARTED : Wed Jul 13 14:44:38 CST 2016
+2016-07-13 14:44:38 | INFO  | 163:blackboard.ws.client.WebServiceClient              | Initializing...
+2016-07-13 14:44:38 | INFO  |  63:org.apache.axis2.deployment.ClusterBuilder         | Clustering has been disabled
+2016-07-13 14:44:38 | INFO  |1098:org.apache.axis2.deployment.DeploymentEngine       | No services directory was found under C:\Users\cbonilla\Documents\GitHub\AIEP-GradeExtract\lib\axis2-1.6.2\lib.
+2016-07-13 14:44:38 | INFO  |1109:org.apache.axis2.deployment.DeploymentEngine       | No modules directory was found under C:\Users\cbonilla\Documents\GitHub\AIEP-GradeExtract\lib\axis2-1.6.2\lib.
+2016-07-13 14:44:38 | INFO  |  82:org.apache.axis2.deployment.ModuleDeployer         | Deploying module: addressing-1.6.2 - file:/C:/Users/cbonilla/Documents/GitHub/AIEP-GradeExtract/lib/axis2-1.6.2/lib/addressing-1.6.2.mar
+2016-07-13 14:44:38 | INFO  |  82:org.apache.axis2.deployment.ModuleDeployer         | Deploying module: rampart-1.6.2 - file:/C:/Users/cbonilla/Documents/GitHub/AIEP-GradeExtract/lib/axis2-1.6.2/lib/rampart-1.6.2.mar
+2016-07-13 14:44:38 | INFO  | 207:blackboard.ws.client.WebServiceClient              | Checking versions...
+2016-07-13 14:44:39 | INFO  | 211:blackboard.ws.client.WebServiceClient              | Context server version: 2
+2016-07-13 14:44:39 | INFO  | 215:blackboard.ws.client.WebServiceClient              | User server version: 1
+2016-07-13 14:44:40 | INFO  | 219:blackboard.ws.client.WebServiceClient              | Util server version: 2
+2016-07-13 14:44:40 | INFO  | 225:blackboard.ws.client.WebServiceClient              | Initializing the session...
+2016-07-13 14:44:40 | INFO  | 228:blackboard.ws.client.WebServiceClient              | Session Id: 4d3b97ab23264b7fb1ada6729f292a38
+2016-07-13 14:44:40 | INFO  | 230:blackboard.ws.client.WebServiceClient              | Initializing Util Context...
+2016-07-13 14:44:41 | INFO  | 237:blackboard.ws.client.WebServiceClient              | Initializing User Context...
+2016-07-13 14:44:41 | INFO  | 244:blackboard.ws.client.WebServiceClient              | Initializing Course Context...
+2016-07-13 14:44:41 | INFO  | 251:blackboard.ws.client.WebServiceClient              | Initializing Course Membership Context...
+2016-07-13 14:44:42 | INFO  | 258:blackboard.ws.client.WebServiceClient              | Initializing Gradebook Context...
+2016-07-13 14:44:42 | INFO  | 266:blackboard.ws.client.WebServiceClient              | Registering Tool...
+2016-07-13 14:44:43 | INFO  | 287:blackboard.ws.client.WebServiceClient              | Initialization complete.
+2016-07-13 14:44:43 | INFO  | 145:blackboard.ws.client.GradeExtractApp               | Loading courses...
+2016-07-13 14:44:44 | INFO  | 158:blackboard.ws.client.GradeExtractApp               | Total number of courses: 2
+2016-07-13 14:44:44 | INFO  | 223:blackboard.ws.client.GradeExtractApp               | Course 1: COM114-1-2016-1-ONL-WS
+2016-07-13 14:44:44 | INFO  | 255:blackboard.ws.client.GradeExtractApp               |  Total student enrollments for course: 1
+2016-07-13 14:44:45 | INFO  | 292:blackboard.ws.client.GradeExtractApp               |  Total columns to extract for course: 3
+2016-07-13 14:44:46 | INFO  | 318:blackboard.ws.client.GradeExtractApp               |  Total users for course: 2
+2016-07-13 14:44:46 | INFO  | 328:blackboard.ws.client.GradeExtractApp               |  Loading grades...
+2016-07-13 14:44:47 | INFO  | 330:blackboard.ws.client.GradeExtractApp               |  Total grades for course: 3
+2016-07-13 14:44:47 | INFO  | 223:blackboard.ws.client.GradeExtractApp               | Course 2: COM114-1015-2016-1-ONL
+2016-07-13 14:44:47 | INFO  | 255:blackboard.ws.client.GradeExtractApp               |  Total student enrollments for course: 1
+2016-07-13 14:44:48 | INFO  | 292:blackboard.ws.client.GradeExtractApp               |  Total columns to extract for course: 23
+2016-07-13 14:44:55 | INFO  | 318:blackboard.ws.client.GradeExtractApp               |  Total users for course: 2
+2016-07-13 14:44:55 | INFO  | 328:blackboard.ws.client.GradeExtractApp               |  Loading grades...
+2016-07-13 14:44:56 | INFO  | 330:blackboard.ws.client.GradeExtractApp               |  Total grades for course: 3
+2016-07-13 14:44:56 | INFO  | 236:blackboard.ws.client.GradeExtractApp               | Closing report file stream.
+2016-07-13 14:44:56 | INFO  | 128:blackboard.ws.client.GradeExtractApp               | EXTRACT START TIME: Wed Jul 13 14:44:38 CST 2016
+2016-07-13 14:44:56 | INFO  | 129:blackboard.ws.client.GradeExtractApp               | EXTRACT COMPLETED : Wed Jul 13 14:44:56 CST 2016
+2016-07-13 15:08:13 | INFO  | 118:blackboard.ws.client.GradeExtractApp               | EXTRACT STARTED : Wed Jul 13 15:08:13 CST 2016
+2016-07-13 15:08:13 | INFO  | 166:blackboard.ws.client.WebServiceClient              | Initializing...
+2016-07-13 15:08:13 | INFO  |  63:org.apache.axis2.deployment.ClusterBuilder         | Clustering has been disabled
+2016-07-13 15:08:13 | INFO  |1098:org.apache.axis2.deployment.DeploymentEngine       | No services directory was found under C:\Users\cbonilla\Documents\GitHub\AIEP-GradeExtract\lib\axis2-1.6.2\lib.
+2016-07-13 15:08:13 | INFO  |1109:org.apache.axis2.deployment.DeploymentEngine       | No modules directory was found under C:\Users\cbonilla\Documents\GitHub\AIEP-GradeExtract\lib\axis2-1.6.2\lib.
+2016-07-13 15:08:14 | INFO  |  82:org.apache.axis2.deployment.ModuleDeployer         | Deploying module: addressing-1.6.2 - file:/C:/Users/cbonilla/Documents/GitHub/AIEP-GradeExtract/lib/axis2-1.6.2/lib/addressing-1.6.2.mar
+2016-07-13 15:08:14 | INFO  |  82:org.apache.axis2.deployment.ModuleDeployer         | Deploying module: rampart-1.6.2 - file:/C:/Users/cbonilla/Documents/GitHub/AIEP-GradeExtract/lib/axis2-1.6.2/lib/rampart-1.6.2.mar
+2016-07-13 15:08:14 | INFO  | 210:blackboard.ws.client.WebServiceClient              | Checking versions...
+2016-07-13 15:08:15 | INFO  | 214:blackboard.ws.client.WebServiceClient              | Context server version: 2
+2016-07-13 15:08:15 | INFO  | 218:blackboard.ws.client.WebServiceClient              | User server version: 1
+2016-07-13 15:08:16 | INFO  | 222:blackboard.ws.client.WebServiceClient              | Util server version: 2
+2016-07-13 15:08:16 | INFO  | 228:blackboard.ws.client.WebServiceClient              | Initializing the session...
+2016-07-13 15:08:16 | INFO  | 231:blackboard.ws.client.WebServiceClient              | Session Id: 0891b6c3eaa84008b7c5e204e11fe7a9
+2016-07-13 15:08:16 | INFO  | 233:blackboard.ws.client.WebServiceClient              | Initializing Util Context...
+2016-07-13 15:08:16 | INFO  | 240:blackboard.ws.client.WebServiceClient              | Initializing User Context...
+2016-07-13 15:08:17 | INFO  | 247:blackboard.ws.client.WebServiceClient              | Initializing Course Context...
+2016-07-13 15:08:17 | INFO  | 254:blackboard.ws.client.WebServiceClient              | Initializing Course Membership Context...
+2016-07-13 15:08:18 | INFO  | 261:blackboard.ws.client.WebServiceClient              | Initializing Gradebook Context...
+2016-07-13 15:08:18 | INFO  | 269:blackboard.ws.client.WebServiceClient              | Registering Tool...
+2016-07-13 15:08:19 | INFO  | 290:blackboard.ws.client.WebServiceClient              | Initialization complete.
+2016-07-13 15:08:20 | INFO  | 146:blackboard.ws.client.GradeExtractApp               | Loading courses...
+2016-07-13 15:08:20 | INFO  | 159:blackboard.ws.client.GradeExtractApp               | Total number of courses: 2
+2016-07-13 15:08:20 | INFO  | 224:blackboard.ws.client.GradeExtractApp               | Course 1: COM114-1-2016-1-ONL-WS
+2016-07-13 15:08:21 | INFO  | 256:blackboard.ws.client.GradeExtractApp               |  Total student enrollments for course: 1
+2016-07-13 15:08:21 | INFO  | 293:blackboard.ws.client.GradeExtractApp               |  Total columns to extract for course: 3
+2016-07-13 15:08:22 | INFO  | 319:blackboard.ws.client.GradeExtractApp               |  Total users for course: 2
+2016-07-13 15:08:22 | INFO  | 329:blackboard.ws.client.GradeExtractApp               |  Loading grades...
+2016-07-13 15:08:23 | INFO  | 331:blackboard.ws.client.GradeExtractApp               |  Total grades for course: 3
+2016-07-13 15:08:23 | ERROR | 231:blackboard.ws.client.GradeExtractApp               | Error processing course [COM114-1-2016-1-ONL-WS]: null
+java.lang.NullPointerException
+	at blackboard.ws.client.GradeExtractApp.doCourse(GradeExtractApp.java:349)
+	at blackboard.ws.client.GradeExtractApp.doMain(GradeExtractApp.java:226)
+	at blackboard.ws.client.GradeExtractApp.main(GradeExtractApp.java:122)
+2016-07-13 15:08:23 | INFO  | 224:blackboard.ws.client.GradeExtractApp               | Course 2: COM114-1015-2016-1-ONL
+2016-07-13 15:08:24 | INFO  | 256:blackboard.ws.client.GradeExtractApp               |  Total student enrollments for course: 1
+2016-07-13 15:08:24 | INFO  | 293:blackboard.ws.client.GradeExtractApp               |  Total columns to extract for course: 23
+2016-07-13 15:08:32 | INFO  | 319:blackboard.ws.client.GradeExtractApp               |  Total users for course: 2
+2016-07-13 15:08:32 | INFO  | 329:blackboard.ws.client.GradeExtractApp               |  Loading grades...
+2016-07-13 15:08:33 | INFO  | 331:blackboard.ws.client.GradeExtractApp               |  Total grades for course: 3
+2016-07-13 15:08:33 | ERROR | 231:blackboard.ws.client.GradeExtractApp               | Error processing course [COM114-1015-2016-1-ONL]: null
+java.lang.NullPointerException
+	at blackboard.ws.client.GradeExtractApp.doCourse(GradeExtractApp.java:349)
+	at blackboard.ws.client.GradeExtractApp.doMain(GradeExtractApp.java:226)
+	at blackboard.ws.client.GradeExtractApp.main(GradeExtractApp.java:122)
+2016-07-13 15:08:33 | INFO  | 237:blackboard.ws.client.GradeExtractApp               | Closing report file stream.
+2016-07-13 15:08:33 | INFO  | 129:blackboard.ws.client.GradeExtractApp               | EXTRACT START TIME: Wed Jul 13 15:08:13 CST 2016
+2016-07-13 15:08:33 | INFO  | 130:blackboard.ws.client.GradeExtractApp               | EXTRACT COMPLETED : Wed Jul 13 15:08:33 CST 2016
+2016-07-13 15:08:33 | ERROR | 132:blackboard.ws.client.GradeExtractApp               | ERRORS(2):
+2016-07-13 15:08:33 | ERROR | 134:blackboard.ws.client.GradeExtractApp               |  - Error processing course [COM114-1-2016-1-ONL-WS]: null
+2016-07-13 15:08:33 | ERROR | 134:blackboard.ws.client.GradeExtractApp               |  - Error processing course [COM114-1015-2016-1-ONL]: null
+2016-07-13 15:09:38 | INFO  | 118:blackboard.ws.client.GradeExtractApp               | EXTRACT STARTED : Wed Jul 13 15:09:38 CST 2016
+2016-07-13 15:09:38 | INFO  | 166:blackboard.ws.client.WebServiceClient              | Initializing...
+2016-07-13 15:09:39 | INFO  |  63:org.apache.axis2.deployment.ClusterBuilder         | Clustering has been disabled
+2016-07-13 15:09:39 | INFO  |1098:org.apache.axis2.deployment.DeploymentEngine       | No services directory was found under C:\Users\cbonilla\Documents\GitHub\AIEP-GradeExtract\lib\axis2-1.6.2\lib.
+2016-07-13 15:09:39 | INFO  |1109:org.apache.axis2.deployment.DeploymentEngine       | No modules directory was found under C:\Users\cbonilla\Documents\GitHub\AIEP-GradeExtract\lib\axis2-1.6.2\lib.
+2016-07-13 15:09:39 | INFO  |  82:org.apache.axis2.deployment.ModuleDeployer         | Deploying module: addressing-1.6.2 - file:/C:/Users/cbonilla/Documents/GitHub/AIEP-GradeExtract/lib/axis2-1.6.2/lib/addressing-1.6.2.mar
+2016-07-13 15:09:39 | INFO  |  82:org.apache.axis2.deployment.ModuleDeployer         | Deploying module: rampart-1.6.2 - file:/C:/Users/cbonilla/Documents/GitHub/AIEP-GradeExtract/lib/axis2-1.6.2/lib/rampart-1.6.2.mar
+2016-07-13 15:09:39 | INFO  | 210:blackboard.ws.client.WebServiceClient              | Checking versions...
+2016-07-13 15:09:40 | INFO  | 214:blackboard.ws.client.WebServiceClient              | Context server version: 2
+2016-07-13 15:09:40 | INFO  | 218:blackboard.ws.client.WebServiceClient              | User server version: 1
+2016-07-13 15:09:41 | INFO  | 222:blackboard.ws.client.WebServiceClient              | Util server version: 2
+2016-07-13 15:09:41 | INFO  | 228:blackboard.ws.client.WebServiceClient              | Initializing the session...
+2016-07-13 15:09:41 | INFO  | 231:blackboard.ws.client.WebServiceClient              | Session Id: abfbf2da42d34c12938a7f3962a9b0f2
+2016-07-13 15:09:41 | INFO  | 233:blackboard.ws.client.WebServiceClient              | Initializing Util Context...
+2016-07-13 15:09:41 | INFO  | 240:blackboard.ws.client.WebServiceClient              | Initializing User Context...
+2016-07-13 15:09:42 | INFO  | 247:blackboard.ws.client.WebServiceClient              | Initializing Course Context...
+2016-07-13 15:09:42 | INFO  | 254:blackboard.ws.client.WebServiceClient              | Initializing Course Membership Context...
+2016-07-13 15:09:43 | INFO  | 261:blackboard.ws.client.WebServiceClient              | Initializing Gradebook Context...
+2016-07-13 15:09:43 | INFO  | 269:blackboard.ws.client.WebServiceClient              | Registering Tool...
+2016-07-13 15:09:44 | INFO  | 290:blackboard.ws.client.WebServiceClient              | Initialization complete.
+2016-07-13 15:09:44 | INFO  | 146:blackboard.ws.client.GradeExtractApp               | Loading courses...
+2016-07-13 15:09:45 | INFO  | 159:blackboard.ws.client.GradeExtractApp               | Total number of courses: 2
+2016-07-13 15:09:45 | INFO  | 224:blackboard.ws.client.GradeExtractApp               | Course 1: COM114-1-2016-1-ONL-WS
+2016-07-13 15:09:45 | INFO  | 256:blackboard.ws.client.GradeExtractApp               |  Total student enrollments for course: 1
+2016-07-13 15:09:46 | INFO  | 293:blackboard.ws.client.GradeExtractApp               |  Total columns to extract for course: 3
+2016-07-13 15:09:47 | INFO  | 319:blackboard.ws.client.GradeExtractApp               |  Total users for course: 2
+2016-07-13 15:09:47 | INFO  | 329:blackboard.ws.client.GradeExtractApp               |  Loading grades...
+2016-07-13 15:09:48 | INFO  | 331:blackboard.ws.client.GradeExtractApp               |  Total grades for course: 3
+2016-07-13 15:09:49 | INFO  | 224:blackboard.ws.client.GradeExtractApp               | Course 2: COM114-1015-2016-1-ONL
+2016-07-13 15:09:49 | INFO  | 256:blackboard.ws.client.GradeExtractApp               |  Total student enrollments for course: 1
+2016-07-13 15:09:49 | INFO  | 293:blackboard.ws.client.GradeExtractApp               |  Total columns to extract for course: 23
+2016-07-13 15:09:57 | INFO  | 319:blackboard.ws.client.GradeExtractApp               |  Total users for course: 2
+2016-07-13 15:09:57 | INFO  | 329:blackboard.ws.client.GradeExtractApp               |  Loading grades...
+2016-07-13 15:09:58 | INFO  | 331:blackboard.ws.client.GradeExtractApp               |  Total grades for course: 3
+2016-07-13 15:09:58 | ERROR | 231:blackboard.ws.client.GradeExtractApp               | Error processing course [COM114-1015-2016-1-ONL]: null
+java.lang.NullPointerException
+	at blackboard.ws.client.GradeExtractApp.doCourse(GradeExtractApp.java:348)
+	at blackboard.ws.client.GradeExtractApp.doMain(GradeExtractApp.java:226)
+	at blackboard.ws.client.GradeExtractApp.main(GradeExtractApp.java:122)
+2016-07-13 15:09:58 | INFO  | 237:blackboard.ws.client.GradeExtractApp               | Closing report file stream.
+2016-07-13 15:09:59 | INFO  | 129:blackboard.ws.client.GradeExtractApp               | EXTRACT START TIME: Wed Jul 13 15:09:38 CST 2016
+2016-07-13 15:09:59 | INFO  | 130:blackboard.ws.client.GradeExtractApp               | EXTRACT COMPLETED : Wed Jul 13 15:09:59 CST 2016
+2016-07-13 15:09:59 | ERROR | 132:blackboard.ws.client.GradeExtractApp               | ERRORS(1):
+2016-07-13 15:09:59 | ERROR | 134:blackboard.ws.client.GradeExtractApp               |  - Error processing course [COM114-1015-2016-1-ONL]: null
+2016-07-13 15:12:17 | INFO  | 118:blackboard.ws.client.GradeExtractApp               | EXTRACT STARTED : Wed Jul 13 15:12:17 CST 2016
+2016-07-13 15:12:17 | INFO  | 166:blackboard.ws.client.WebServiceClient              | Initializing...
+2016-07-13 15:12:17 | INFO  |  63:org.apache.axis2.deployment.ClusterBuilder         | Clustering has been disabled
+2016-07-13 15:12:17 | INFO  |1098:org.apache.axis2.deployment.DeploymentEngine       | No services directory was found under C:\Users\cbonilla\Documents\GitHub\AIEP-GradeExtract\lib\axis2-1.6.2\lib.
+2016-07-13 15:12:17 | INFO  |1109:org.apache.axis2.deployment.DeploymentEngine       | No modules directory was found under C:\Users\cbonilla\Documents\GitHub\AIEP-GradeExtract\lib\axis2-1.6.2\lib.
+2016-07-13 15:12:17 | INFO  |  82:org.apache.axis2.deployment.ModuleDeployer         | Deploying module: addressing-1.6.2 - file:/C:/Users/cbonilla/Documents/GitHub/AIEP-GradeExtract/lib/axis2-1.6.2/lib/addressing-1.6.2.mar
+2016-07-13 15:12:17 | INFO  |  82:org.apache.axis2.deployment.ModuleDeployer         | Deploying module: rampart-1.6.2 - file:/C:/Users/cbonilla/Documents/GitHub/AIEP-GradeExtract/lib/axis2-1.6.2/lib/rampart-1.6.2.mar
+2016-07-13 15:12:17 | INFO  | 210:blackboard.ws.client.WebServiceClient              | Checking versions...
+2016-07-13 15:12:18 | INFO  | 214:blackboard.ws.client.WebServiceClient              | Context server version: 2
+2016-07-13 15:12:18 | INFO  | 218:blackboard.ws.client.WebServiceClient              | User server version: 1
+2016-07-13 15:12:19 | INFO  | 222:blackboard.ws.client.WebServiceClient              | Util server version: 2
+2016-07-13 15:12:19 | INFO  | 228:blackboard.ws.client.WebServiceClient              | Initializing the session...
+2016-07-13 15:12:19 | INFO  | 231:blackboard.ws.client.WebServiceClient              | Session Id: 55c99f73b9d141e5bc185d2ae513e010
+2016-07-13 15:12:19 | INFO  | 233:blackboard.ws.client.WebServiceClient              | Initializing Util Context...
+2016-07-13 15:12:20 | INFO  | 240:blackboard.ws.client.WebServiceClient              | Initializing User Context...
+2016-07-13 15:12:20 | INFO  | 247:blackboard.ws.client.WebServiceClient              | Initializing Course Context...
+2016-07-13 15:12:21 | INFO  | 254:blackboard.ws.client.WebServiceClient              | Initializing Course Membership Context...
+2016-07-13 15:12:21 | INFO  | 261:blackboard.ws.client.WebServiceClient              | Initializing Gradebook Context...
+2016-07-13 15:12:21 | INFO  | 269:blackboard.ws.client.WebServiceClient              | Registering Tool...
+2016-07-13 15:12:22 | INFO  | 290:blackboard.ws.client.WebServiceClient              | Initialization complete.
+2016-07-13 15:12:23 | INFO  | 146:blackboard.ws.client.GradeExtractApp               | Loading courses...
+2016-07-13 15:12:23 | INFO  | 159:blackboard.ws.client.GradeExtractApp               | Total number of courses: 2
+2016-07-13 15:12:23 | INFO  | 224:blackboard.ws.client.GradeExtractApp               | Course 1: COM114-1-2016-1-ONL-WS
+2016-07-13 15:12:24 | INFO  | 256:blackboard.ws.client.GradeExtractApp               |  Total student enrollments for course: 1
+2016-07-13 15:12:24 | INFO  | 293:blackboard.ws.client.GradeExtractApp               |  Total columns to extract for course: 3
+2016-07-13 15:12:25 | INFO  | 319:blackboard.ws.client.GradeExtractApp               |  Total users for course: 2
+2016-07-13 15:12:25 | INFO  | 329:blackboard.ws.client.GradeExtractApp               |  Loading grades...
+2016-07-13 15:12:26 | INFO  | 331:blackboard.ws.client.GradeExtractApp               |  Total grades for course: 3
+2016-07-13 15:12:26 | ERROR | 231:blackboard.ws.client.GradeExtractApp               | Error processing course [COM114-1-2016-1-ONL-WS]: [Gradebook.WS012]Failed to load attempts
+org.apache.axis2.AxisFault: [Gradebook.WS012]Failed to load attempts
+	at org.apache.axis2.util.Utils.getInboundFaultFromMessageContext(Utils.java:531)
+	at org.apache.axis2.description.OutInAxisOperationClient.handleResponse(OutInAxisOperation.java:375)
+	at org.apache.axis2.description.OutInAxisOperationClient.send(OutInAxisOperation.java:421)
+	at org.apache.axis2.description.OutInAxisOperationClient.executeImpl(OutInAxisOperation.java:229)
+	at org.apache.axis2.client.OperationClient.execute(OperationClient.java:165)
+	at blackboard.ws.gradebook.GradebookWSStub.getAttempts(GradebookWSStub.java:2475)
+	at blackboard.ws.client.WebServiceClient.getAttemptById(WebServiceClient.java:469)
+	at blackboard.ws.client.GradeExtractApp.doCourse(GradeExtractApp.java:348)
+	at blackboard.ws.client.GradeExtractApp.doMain(GradeExtractApp.java:226)
+	at blackboard.ws.client.GradeExtractApp.main(GradeExtractApp.java:122)
+2016-07-13 15:12:26 | INFO  | 224:blackboard.ws.client.GradeExtractApp               | Course 2: COM114-1015-2016-1-ONL
+2016-07-13 15:12:27 | INFO  | 256:blackboard.ws.client.GradeExtractApp               |  Total student enrollments for course: 1
+2016-07-13 15:12:27 | INFO  | 293:blackboard.ws.client.GradeExtractApp               |  Total columns to extract for course: 23
+2016-07-13 15:12:35 | INFO  | 319:blackboard.ws.client.GradeExtractApp               |  Total users for course: 2
+2016-07-13 15:12:35 | INFO  | 329:blackboard.ws.client.GradeExtractApp               |  Loading grades...
+2016-07-13 15:12:35 | INFO  | 331:blackboard.ws.client.GradeExtractApp               |  Total grades for course: 3
+2016-07-13 15:12:36 | ERROR | 231:blackboard.ws.client.GradeExtractApp               | Error processing course [COM114-1015-2016-1-ONL]: [Gradebook.WS012]Failed to load attempts
+org.apache.axis2.AxisFault: [Gradebook.WS012]Failed to load attempts
+	at org.apache.axis2.util.Utils.getInboundFaultFromMessageContext(Utils.java:531)
+	at org.apache.axis2.description.OutInAxisOperationClient.handleResponse(OutInAxisOperation.java:375)
+	at org.apache.axis2.description.OutInAxisOperationClient.send(OutInAxisOperation.java:421)
+	at org.apache.axis2.description.OutInAxisOperationClient.executeImpl(OutInAxisOperation.java:229)
+	at org.apache.axis2.client.OperationClient.execute(OperationClient.java:165)
+	at blackboard.ws.gradebook.GradebookWSStub.getAttempts(GradebookWSStub.java:2475)
+	at blackboard.ws.client.WebServiceClient.getAttemptById(WebServiceClient.java:469)
+	at blackboard.ws.client.GradeExtractApp.doCourse(GradeExtractApp.java:348)
+	at blackboard.ws.client.GradeExtractApp.doMain(GradeExtractApp.java:226)
+	at blackboard.ws.client.GradeExtractApp.main(GradeExtractApp.java:122)
+2016-07-13 15:12:36 | INFO  | 237:blackboard.ws.client.GradeExtractApp               | Closing report file stream.
+2016-07-13 15:12:36 | INFO  | 129:blackboard.ws.client.GradeExtractApp               | EXTRACT START TIME: Wed Jul 13 15:12:17 CST 2016
+2016-07-13 15:12:36 | INFO  | 130:blackboard.ws.client.GradeExtractApp               | EXTRACT COMPLETED : Wed Jul 13 15:12:36 CST 2016
+2016-07-13 15:12:36 | ERROR | 132:blackboard.ws.client.GradeExtractApp               | ERRORS(2):
+2016-07-13 15:12:36 | ERROR | 134:blackboard.ws.client.GradeExtractApp               |  - Error processing course [COM114-1-2016-1-ONL-WS]: [Gradebook.WS012]Failed to load attempts
+2016-07-13 15:12:36 | ERROR | 134:blackboard.ws.client.GradeExtractApp               |  - Error processing course [COM114-1015-2016-1-ONL]: [Gradebook.WS012]Failed to load attempts
+2016-07-13 15:16:39 | INFO  | 118:blackboard.ws.client.GradeExtractApp               | EXTRACT STARTED : Wed Jul 13 15:16:39 CST 2016
+2016-07-13 15:16:39 | INFO  | 166:blackboard.ws.client.WebServiceClient              | Initializing...
+2016-07-13 15:16:39 | INFO  |  63:org.apache.axis2.deployment.ClusterBuilder         | Clustering has been disabled
+2016-07-13 15:16:39 | INFO  |1098:org.apache.axis2.deployment.DeploymentEngine       | No services directory was found under C:\Users\cbonilla\Documents\GitHub\AIEP-GradeExtract\lib\axis2-1.6.2\lib.
+2016-07-13 15:16:39 | INFO  |1109:org.apache.axis2.deployment.DeploymentEngine       | No modules directory was found under C:\Users\cbonilla\Documents\GitHub\AIEP-GradeExtract\lib\axis2-1.6.2\lib.
+2016-07-13 15:16:39 | INFO  |  82:org.apache.axis2.deployment.ModuleDeployer         | Deploying module: addressing-1.6.2 - file:/C:/Users/cbonilla/Documents/GitHub/AIEP-GradeExtract/lib/axis2-1.6.2/lib/addressing-1.6.2.mar
+2016-07-13 15:16:39 | INFO  |  82:org.apache.axis2.deployment.ModuleDeployer         | Deploying module: rampart-1.6.2 - file:/C:/Users/cbonilla/Documents/GitHub/AIEP-GradeExtract/lib/axis2-1.6.2/lib/rampart-1.6.2.mar
+2016-07-13 15:16:39 | INFO  | 210:blackboard.ws.client.WebServiceClient              | Checking versions...
+2016-07-13 15:16:40 | INFO  | 214:blackboard.ws.client.WebServiceClient              | Context server version: 2
+2016-07-13 15:16:41 | INFO  | 218:blackboard.ws.client.WebServiceClient              | User server version: 1
+2016-07-13 15:16:41 | INFO  | 222:blackboard.ws.client.WebServiceClient              | Util server version: 2
+2016-07-13 15:16:41 | INFO  | 228:blackboard.ws.client.WebServiceClient              | Initializing the session...
+2016-07-13 15:16:41 | INFO  | 231:blackboard.ws.client.WebServiceClient              | Session Id: 88898f2b75ac4aa5ba2464e0f628606a
+2016-07-13 15:16:41 | INFO  | 233:blackboard.ws.client.WebServiceClient              | Initializing Util Context...
+2016-07-13 15:16:42 | INFO  | 240:blackboard.ws.client.WebServiceClient              | Initializing User Context...
+2016-07-13 15:16:42 | INFO  | 247:blackboard.ws.client.WebServiceClient              | Initializing Course Context...
+2016-07-13 15:16:43 | INFO  | 254:blackboard.ws.client.WebServiceClient              | Initializing Course Membership Context...
+2016-07-13 15:16:43 | INFO  | 261:blackboard.ws.client.WebServiceClient              | Initializing Gradebook Context...
+2016-07-13 15:16:44 | INFO  | 269:blackboard.ws.client.WebServiceClient              | Registering Tool...
+2016-07-13 15:16:44 | INFO  | 290:blackboard.ws.client.WebServiceClient              | Initialization complete.
+2016-07-13 15:16:45 | INFO  | 146:blackboard.ws.client.GradeExtractApp               | Loading courses...
+2016-07-13 15:16:45 | INFO  | 159:blackboard.ws.client.GradeExtractApp               | Total number of courses: 2
+2016-07-13 15:16:45 | INFO  | 224:blackboard.ws.client.GradeExtractApp               | Course 1: COM114-1-2016-1-ONL-WS
+2016-07-13 15:16:46 | INFO  | 256:blackboard.ws.client.GradeExtractApp               |  Total student enrollments for course: 1
+2016-07-13 15:16:46 | INFO  | 293:blackboard.ws.client.GradeExtractApp               |  Total columns to extract for course: 3
+2016-07-13 15:16:48 | INFO  | 319:blackboard.ws.client.GradeExtractApp               |  Total users for course: 2
+2016-07-13 15:16:48 | INFO  | 329:blackboard.ws.client.GradeExtractApp               |  Loading grades...
+2016-07-13 15:16:48 | INFO  | 331:blackboard.ws.client.GradeExtractApp               |  Total grades for course: 3
+2016-07-13 15:16:48 | ERROR | 231:blackboard.ws.client.GradeExtractApp               | Error processing course [COM114-1-2016-1-ONL-WS]: [Gradebook.WS012]Failed to load attempts
+org.apache.axis2.AxisFault: [Gradebook.WS012]Failed to load attempts
+	at org.apache.axis2.util.Utils.getInboundFaultFromMessageContext(Utils.java:531)
+	at org.apache.axis2.description.OutInAxisOperationClient.handleResponse(OutInAxisOperation.java:375)
+	at org.apache.axis2.description.OutInAxisOperationClient.send(OutInAxisOperation.java:421)
+	at org.apache.axis2.description.OutInAxisOperationClient.executeImpl(OutInAxisOperation.java:229)
+	at org.apache.axis2.client.OperationClient.execute(OperationClient.java:165)
+	at blackboard.ws.gradebook.GradebookWSStub.getAttempts(GradebookWSStub.java:2475)
+	at blackboard.ws.client.WebServiceClient.getAttemptById(WebServiceClient.java:470)
+	at blackboard.ws.client.GradeExtractApp.doCourse(GradeExtractApp.java:348)
+	at blackboard.ws.client.GradeExtractApp.doMain(GradeExtractApp.java:226)
+	at blackboard.ws.client.GradeExtractApp.main(GradeExtractApp.java:122)
+2016-07-13 15:16:48 | INFO  | 224:blackboard.ws.client.GradeExtractApp               | Course 2: COM114-1015-2016-1-ONL
+2016-07-13 15:16:49 | INFO  | 256:blackboard.ws.client.GradeExtractApp               |  Total student enrollments for course: 1
+2016-07-13 15:16:49 | INFO  | 293:blackboard.ws.client.GradeExtractApp               |  Total columns to extract for course: 23
+2016-07-13 15:16:57 | INFO  | 319:blackboard.ws.client.GradeExtractApp               |  Total users for course: 2
+2016-07-13 15:16:57 | INFO  | 329:blackboard.ws.client.GradeExtractApp               |  Loading grades...
+2016-07-13 15:16:58 | INFO  | 331:blackboard.ws.client.GradeExtractApp               |  Total grades for course: 3
+2016-07-13 15:16:58 | ERROR | 231:blackboard.ws.client.GradeExtractApp               | Error processing course [COM114-1015-2016-1-ONL]: [Gradebook.WS012]Failed to load attempts
+org.apache.axis2.AxisFault: [Gradebook.WS012]Failed to load attempts
+	at org.apache.axis2.util.Utils.getInboundFaultFromMessageContext(Utils.java:531)
+	at org.apache.axis2.description.OutInAxisOperationClient.handleResponse(OutInAxisOperation.java:375)
+	at org.apache.axis2.description.OutInAxisOperationClient.send(OutInAxisOperation.java:421)
+	at org.apache.axis2.description.OutInAxisOperationClient.executeImpl(OutInAxisOperation.java:229)
+	at org.apache.axis2.client.OperationClient.execute(OperationClient.java:165)
+	at blackboard.ws.gradebook.GradebookWSStub.getAttempts(GradebookWSStub.java:2475)
+	at blackboard.ws.client.WebServiceClient.getAttemptById(WebServiceClient.java:470)
+	at blackboard.ws.client.GradeExtractApp.doCourse(GradeExtractApp.java:348)
+	at blackboard.ws.client.GradeExtractApp.doMain(GradeExtractApp.java:226)
+	at blackboard.ws.client.GradeExtractApp.main(GradeExtractApp.java:122)
+2016-07-13 15:16:58 | INFO  | 237:blackboard.ws.client.GradeExtractApp               | Closing report file stream.
+2016-07-13 15:16:58 | INFO  | 129:blackboard.ws.client.GradeExtractApp               | EXTRACT START TIME: Wed Jul 13 15:16:39 CST 2016
+2016-07-13 15:16:58 | INFO  | 130:blackboard.ws.client.GradeExtractApp               | EXTRACT COMPLETED : Wed Jul 13 15:16:58 CST 2016
+2016-07-13 15:16:58 | ERROR | 132:blackboard.ws.client.GradeExtractApp               | ERRORS(2):
+2016-07-13 15:16:58 | ERROR | 134:blackboard.ws.client.GradeExtractApp               |  - Error processing course [COM114-1-2016-1-ONL-WS]: [Gradebook.WS012]Failed to load attempts
+2016-07-13 15:16:58 | ERROR | 134:blackboard.ws.client.GradeExtractApp               |  - Error processing course [COM114-1015-2016-1-ONL]: [Gradebook.WS012]Failed to load attempts
+2016-07-13 15:18:26 | INFO  | 118:blackboard.ws.client.GradeExtractApp               | EXTRACT STARTED : Wed Jul 13 15:18:26 CST 2016
+2016-07-13 15:18:26 | INFO  | 166:blackboard.ws.client.WebServiceClient              | Initializing...
+2016-07-13 15:18:27 | INFO  |  63:org.apache.axis2.deployment.ClusterBuilder         | Clustering has been disabled
+2016-07-13 15:18:27 | INFO  |1098:org.apache.axis2.deployment.DeploymentEngine       | No services directory was found under C:\Users\cbonilla\Documents\GitHub\AIEP-GradeExtract\lib\axis2-1.6.2\lib.
+2016-07-13 15:18:27 | INFO  |1109:org.apache.axis2.deployment.DeploymentEngine       | No modules directory was found under C:\Users\cbonilla\Documents\GitHub\AIEP-GradeExtract\lib\axis2-1.6.2\lib.
+2016-07-13 15:18:27 | INFO  |  82:org.apache.axis2.deployment.ModuleDeployer         | Deploying module: addressing-1.6.2 - file:/C:/Users/cbonilla/Documents/GitHub/AIEP-GradeExtract/lib/axis2-1.6.2/lib/addressing-1.6.2.mar
+2016-07-13 15:18:27 | INFO  |  82:org.apache.axis2.deployment.ModuleDeployer         | Deploying module: rampart-1.6.2 - file:/C:/Users/cbonilla/Documents/GitHub/AIEP-GradeExtract/lib/axis2-1.6.2/lib/rampart-1.6.2.mar
+2016-07-13 15:18:27 | INFO  | 210:blackboard.ws.client.WebServiceClient              | Checking versions...
+2016-07-13 15:18:28 | INFO  | 214:blackboard.ws.client.WebServiceClient              | Context server version: 2
+2016-07-13 15:18:28 | INFO  | 218:blackboard.ws.client.WebServiceClient              | User server version: 1
+2016-07-13 15:18:29 | INFO  | 222:blackboard.ws.client.WebServiceClient              | Util server version: 2
+2016-07-13 15:18:29 | INFO  | 228:blackboard.ws.client.WebServiceClient              | Initializing the session...
+2016-07-13 15:18:29 | INFO  | 231:blackboard.ws.client.WebServiceClient              | Session Id: 9b005099de3a47ce95a660856541297e
+2016-07-13 15:18:29 | INFO  | 233:blackboard.ws.client.WebServiceClient              | Initializing Util Context...
+2016-07-13 15:18:29 | INFO  | 240:blackboard.ws.client.WebServiceClient              | Initializing User Context...
+2016-07-13 15:18:30 | INFO  | 247:blackboard.ws.client.WebServiceClient              | Initializing Course Context...
+2016-07-13 15:18:30 | INFO  | 254:blackboard.ws.client.WebServiceClient              | Initializing Course Membership Context...
+2016-07-13 15:18:31 | INFO  | 261:blackboard.ws.client.WebServiceClient              | Initializing Gradebook Context...
+2016-07-13 15:18:31 | INFO  | 269:blackboard.ws.client.WebServiceClient              | Registering Tool...
+2016-07-13 15:18:32 | INFO  | 290:blackboard.ws.client.WebServiceClient              | Initialization complete.
+2016-07-13 15:18:33 | INFO  | 146:blackboard.ws.client.GradeExtractApp               | Loading courses...
+2016-07-13 15:18:33 | INFO  | 159:blackboard.ws.client.GradeExtractApp               | Total number of courses: 2
+2016-07-13 15:18:33 | INFO  | 224:blackboard.ws.client.GradeExtractApp               | Course 1: COM114-1-2016-1-ONL-WS
+2016-07-13 15:18:33 | INFO  | 256:blackboard.ws.client.GradeExtractApp               |  Total student enrollments for course: 1
+2016-07-13 15:18:34 | INFO  | 293:blackboard.ws.client.GradeExtractApp               |  Total columns to extract for course: 3
+2016-07-13 15:18:35 | INFO  | 319:blackboard.ws.client.GradeExtractApp               |  Total users for course: 2
+2016-07-13 15:18:35 | INFO  | 329:blackboard.ws.client.GradeExtractApp               |  Loading grades...
+2016-07-13 15:18:36 | INFO  | 331:blackboard.ws.client.GradeExtractApp               |  Total grades for course: 3
+2016-07-13 15:18:37 | INFO  | 224:blackboard.ws.client.GradeExtractApp               | Course 2: COM114-1015-2016-1-ONL
+2016-07-13 15:18:37 | INFO  | 256:blackboard.ws.client.GradeExtractApp               |  Total student enrollments for course: 1
+2016-07-13 15:18:38 | INFO  | 293:blackboard.ws.client.GradeExtractApp               |  Total columns to extract for course: 23
+2016-07-13 15:18:39 | INFO  | 439:org.apache.commons.httpclient.HttpMethodDirector   | I/O exception (org.apache.commons.httpclient.NoHttpResponseException) caught when processing request: The server qa04-04.blackboard.laureate.net failed to respond
+2016-07-13 15:18:39 | INFO  | 445:org.apache.commons.httpclient.HttpMethodDirector   | Retrying request
+2016-07-13 15:18:46 | INFO  | 319:blackboard.ws.client.GradeExtractApp               |  Total users for course: 2
+2016-07-13 15:18:46 | INFO  | 329:blackboard.ws.client.GradeExtractApp               |  Loading grades...
+2016-07-13 15:18:46 | INFO  | 331:blackboard.ws.client.GradeExtractApp               |  Total grades for course: 3
+2016-07-13 15:18:47 | ERROR | 231:blackboard.ws.client.GradeExtractApp               | Error processing course [COM114-1015-2016-1-ONL]: null
+java.lang.NullPointerException
+	at blackboard.ws.client.GradeExtractApp.doCourse(GradeExtractApp.java:348)
+	at blackboard.ws.client.GradeExtractApp.doMain(GradeExtractApp.java:226)
+	at blackboard.ws.client.GradeExtractApp.main(GradeExtractApp.java:122)
+2016-07-13 15:18:47 | INFO  | 237:blackboard.ws.client.GradeExtractApp               | Closing report file stream.
+2016-07-13 15:18:47 | INFO  | 129:blackboard.ws.client.GradeExtractApp               | EXTRACT START TIME: Wed Jul 13 15:18:26 CST 2016
+2016-07-13 15:18:47 | INFO  | 130:blackboard.ws.client.GradeExtractApp               | EXTRACT COMPLETED : Wed Jul 13 15:18:47 CST 2016
+2016-07-13 15:18:47 | ERROR | 132:blackboard.ws.client.GradeExtractApp               | ERRORS(1):
+2016-07-13 15:18:47 | ERROR | 134:blackboard.ws.client.GradeExtractApp               |  - Error processing course [COM114-1015-2016-1-ONL]: null
+2016-07-13 15:24:57 | INFO  | 118:blackboard.ws.client.GradeExtractApp               | EXTRACT STARTED : Wed Jul 13 15:24:57 CST 2016
+2016-07-13 15:24:57 | INFO  | 166:blackboard.ws.client.WebServiceClient              | Initializing...
+2016-07-13 15:24:57 | INFO  |  63:org.apache.axis2.deployment.ClusterBuilder         | Clustering has been disabled
+2016-07-13 15:24:57 | INFO  |1098:org.apache.axis2.deployment.DeploymentEngine       | No services directory was found under C:\Users\cbonilla\Documents\GitHub\AIEP-GradeExtract\lib\axis2-1.6.2\lib.
+2016-07-13 15:24:57 | INFO  |1109:org.apache.axis2.deployment.DeploymentEngine       | No modules directory was found under C:\Users\cbonilla\Documents\GitHub\AIEP-GradeExtract\lib\axis2-1.6.2\lib.
+2016-07-13 15:24:57 | INFO  |  82:org.apache.axis2.deployment.ModuleDeployer         | Deploying module: addressing-1.6.2 - file:/C:/Users/cbonilla/Documents/GitHub/AIEP-GradeExtract/lib/axis2-1.6.2/lib/addressing-1.6.2.mar
+2016-07-13 15:24:57 | INFO  |  82:org.apache.axis2.deployment.ModuleDeployer         | Deploying module: rampart-1.6.2 - file:/C:/Users/cbonilla/Documents/GitHub/AIEP-GradeExtract/lib/axis2-1.6.2/lib/rampart-1.6.2.mar
+2016-07-13 15:24:58 | INFO  | 210:blackboard.ws.client.WebServiceClient              | Checking versions...
+2016-07-13 15:24:59 | INFO  | 214:blackboard.ws.client.WebServiceClient              | Context server version: 2
+2016-07-13 15:24:59 | INFO  | 218:blackboard.ws.client.WebServiceClient              | User server version: 1
+2016-07-13 15:24:59 | INFO  | 222:blackboard.ws.client.WebServiceClient              | Util server version: 2
+2016-07-13 15:24:59 | INFO  | 228:blackboard.ws.client.WebServiceClient              | Initializing the session...
+2016-07-13 15:25:00 | INFO  | 231:blackboard.ws.client.WebServiceClient              | Session Id: 548fb68d10064e8c94053c2fbf3cb5de
+2016-07-13 15:25:00 | INFO  | 233:blackboard.ws.client.WebServiceClient              | Initializing Util Context...
+2016-07-13 15:25:00 | INFO  | 240:blackboard.ws.client.WebServiceClient              | Initializing User Context...
+2016-07-13 15:25:01 | INFO  | 247:blackboard.ws.client.WebServiceClient              | Initializing Course Context...
+2016-07-13 15:25:01 | INFO  | 254:blackboard.ws.client.WebServiceClient              | Initializing Course Membership Context...
+2016-07-13 15:25:02 | INFO  | 261:blackboard.ws.client.WebServiceClient              | Initializing Gradebook Context...
+2016-07-13 15:25:02 | INFO  | 269:blackboard.ws.client.WebServiceClient              | Registering Tool...
+2016-07-13 15:25:03 | INFO  | 290:blackboard.ws.client.WebServiceClient              | Initialization complete.
+2016-07-13 15:25:03 | INFO  | 146:blackboard.ws.client.GradeExtractApp               | Loading courses...
+2016-07-13 15:25:04 | INFO  | 159:blackboard.ws.client.GradeExtractApp               | Total number of courses: 2
+2016-07-13 15:25:04 | INFO  | 224:blackboard.ws.client.GradeExtractApp               | Course 1: COM114-1-2016-1-ONL-WS
+2016-07-13 15:25:04 | INFO  | 256:blackboard.ws.client.GradeExtractApp               |  Total student enrollments for course: 1
+2016-07-13 15:25:05 | INFO  | 293:blackboard.ws.client.GradeExtractApp               |  Total columns to extract for course: 3
+2016-07-13 15:25:06 | INFO  | 319:blackboard.ws.client.GradeExtractApp               |  Total users for course: 2
+2016-07-13 15:25:06 | INFO  | 329:blackboard.ws.client.GradeExtractApp               |  Loading grades...
+2016-07-13 15:25:06 | INFO  | 331:blackboard.ws.client.GradeExtractApp               |  Total grades for course: 3
+2016-07-13 15:25:06 | INFO  | 224:blackboard.ws.client.GradeExtractApp               | Course 2: COM114-1015-2016-1-ONL
+2016-07-13 15:25:07 | INFO  | 256:blackboard.ws.client.GradeExtractApp               |  Total student enrollments for course: 1
+2016-07-13 15:25:07 | INFO  | 293:blackboard.ws.client.GradeExtractApp               |  Total columns to extract for course: 23
+2016-07-13 15:25:15 | INFO  | 319:blackboard.ws.client.GradeExtractApp               |  Total users for course: 2
+2016-07-13 15:25:15 | INFO  | 329:blackboard.ws.client.GradeExtractApp               |  Loading grades...
+2016-07-13 15:25:16 | INFO  | 331:blackboard.ws.client.GradeExtractApp               |  Total grades for course: 3
+2016-07-13 15:25:16 | INFO  | 237:blackboard.ws.client.GradeExtractApp               | Closing report file stream.
+2016-07-13 15:25:16 | INFO  | 129:blackboard.ws.client.GradeExtractApp               | EXTRACT START TIME: Wed Jul 13 15:24:57 CST 2016
+2016-07-13 15:25:16 | INFO  | 130:blackboard.ws.client.GradeExtractApp               | EXTRACT COMPLETED : Wed Jul 13 15:25:16 CST 2016

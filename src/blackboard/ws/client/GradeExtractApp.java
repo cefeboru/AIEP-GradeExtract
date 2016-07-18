@@ -1,4 +1,3 @@
-
 package blackboard.ws.client;
 
 import java.io.*;
@@ -8,7 +7,9 @@ import java.util.*;
 
 import blackboard.ws.course.CourseWSStub.CourseVO;
 import blackboard.ws.coursemembership.CourseMembershipWSStub.CourseMembershipVO;
+import blackboard.ws.gradebook.GradebookWSStub.AttemptVO;
 import blackboard.ws.gradebook.GradebookWSStub.ColumnVO;
+import blackboard.ws.gradebook.GradebookWSStub.GradebookTypeVO;
 import blackboard.ws.gradebook.GradebookWSStub.ScoreVO;
 import blackboard.ws.user.UserWSStub.UserVO;
 
@@ -19,6 +20,7 @@ public class GradeExtractApp
 
   private final Properties _appConfig;
   
+  private WebServiceClient wsClient;
   private final String _delimiter;
   private final String _courseIdContains;
   private final int _maxCourses;
@@ -61,7 +63,7 @@ public class GradeExtractApp
   }
 
   private String getOutputLocation() {
-    return _appConfig.getProperty( "app.outputFile", "STDOUT" );
+    return _appConfig.getProperty( "app.outputFolder", "STDOUT" );
   }
 
   private boolean isStdOut() {
@@ -137,7 +139,7 @@ public class GradeExtractApp
   private void doMain() throws IOException, RemoteException
   {
     // Get a new instance of a web service client and initialize it.
-    WebServiceClient wsClient = newWebServiceClient( null );
+    wsClient = newWebServiceClient( null );
 
     // Load the courses
     final CourseVO[] courses;
@@ -175,7 +177,11 @@ public class GradeExtractApp
         // Create a temporary file based on the target file.  We will write to
         // temporary file during execution then rename to the target file when
         // the process is complete.
-        outFile = new File( getOutputLocation() );
+
+        Date today = new Date();
+        SimpleDateFormat dateFormat = new SimpleDateFormat("dd.MM.yyyy");
+        String FileName = getOutputLocation() + "report_" + dateFormat.format(today) + ".csv";
+        outFile = new File( FileName );
         outFile.delete(); // DELETE EXISTING (OLD) REPORT
         File outLocFileParent = outFile.getParentFile();
         outLocFileParent.mkdirs();
@@ -246,6 +252,7 @@ public class GradeExtractApp
   {
     // Get the course memberships and map them to their userPkId for quick lookup
     Map<String, CourseMembershipVO> membersByUserIdMap = new HashMap<String, CourseMembershipVO>();
+    Map<String, GradebookTypeVO> gradebookTypeByIdMap = new HashMap<String, GradebookTypeVO>();
     try {
       // Load the course memberships by Student role. This should probably be
       // made an externally configured property.
@@ -257,7 +264,10 @@ public class GradeExtractApp
       }
       // Do the mapping
       for ( CourseMembershipVO member : members ) {
-        membersByUserIdMap.put( member.getUserId(), member );
+        if(member.getAvailable()) {
+          membersByUserIdMap.put( member.getUserId(), member );
+        }
+        
       }
     }
     catch( Exception e ) {
@@ -293,7 +303,28 @@ public class GradeExtractApp
 //        return o1.getColumnDisplayName().compareTo( o2.getColumnDisplayName() );
       }
     } );
-
+    
+    ArrayList<ColumnVO> columnsArray = new ArrayList<ColumnVO>();
+    for(int i=0; i< columns.length; i++) {
+      ColumnVO currentCol = columns[i];
+      if(currentCol.getVisible() && currentCol.getVisibleInBook()) {
+        columnsArray.add(currentCol);
+        
+      }
+    }
+    
+    columns = columnsArray.toArray(new ColumnVO[columnsArray.size()]);
+    
+    GradebookTypeVO[] gradebookTypes = wsClient.getColumnGradebookType(columns[0].getId(), course.getId());
+    System.out.println("GradeTypeVO Size: " + gradebookTypes.length);
+    
+    for(int i=0; i < gradebookTypes.length; i++) {
+      GradebookTypeVO current = gradebookTypes[i];
+      gradebookTypeByIdMap.put(current.getId(), current);
+    }
+    
+    
+    
     // Load the users for the course.  Note that this number could differ
     // from the number of course memberships as we are NOT filtering by
     // course role here (i.e. instructors are included in this load).
@@ -326,12 +357,12 @@ public class GradeExtractApp
 
         // Lookup the score for this membership and column.
         ScoreVO score = lookupScore( column, member, scores );
-
-        printRow( course, column, user, member, score, dataOut );
+        GradebookTypeVO gradebookType = gradebookTypeByIdMap.get(column.getGradebookTypeId());
+        printRow( course, column, user, member, score,gradebookType, dataOut );
 
       }// end for users
     } // end for columns
-  } // end doMain()
+  } // end doCourse()
   
   /* Convenience method to find a score for a column/membership in a list of scores. */
   private ScoreVO lookupScore( ColumnVO column, CourseMembershipVO member, ScoreVO[] scores )
@@ -385,84 +416,45 @@ public class GradeExtractApp
     }
   }
 
-  private void printHeader( PrintStream out ) {
-    printRow( true, null, null, null, null, null, out );
+  private void printHeader( PrintStream out ) throws RemoteException {
+    printRow( true, null, null, null, null, null,null, out );
   }
 
-  private void printRow( CourseVO course, ColumnVO column, UserVO user, CourseMembershipVO member, ScoreVO score, PrintStream out ) {
-    printRow( false, course, column, user, member, score, out );
+  private void printRow( CourseVO course, ColumnVO column, UserVO user, CourseMembershipVO member, ScoreVO score, GradebookTypeVO gradebookType, PrintStream out ) throws RemoteException {
+    printRow( false, course, column, user, member, score, gradebookType, out );
   }
 
-  private void printRow( boolean header, CourseVO course, ColumnVO column, UserVO user, CourseMembershipVO member, ScoreVO score, PrintStream out )
+  private void printRow( boolean header, CourseVO course, ColumnVO column, UserVO user, CourseMembershipVO member, ScoreVO score, GradebookTypeVO gradebookType, PrintStream out ) throws RemoteException
   {
     out.print( header ? "COURSE_ID"        : course.getCourseId() );
     out.print( _delimiter );
-    out.print( header ? "COURSE_BATCHUID"  : course.getBatchUid() );
-    out.print( _delimiter );
-    out.print( header ? "COURSE_PKID"      : course.getId() );
-    out.print( _delimiter );
-    out.print( header ? "COURSE_TITLE"     : course.getName() );
-    out.print( _delimiter );
-    out.print( header ? "COURSE_TYPE"      : course.getCourseServiceLevel() );
-    out.print( _delimiter );
-    out.print( header ? "COURSE_AVAILABLE" : course.getAvailable() );
-    out.print( _delimiter );
-
     out.print( header ? "COLUMN_NAME"            : column.getColumnDisplayName() );
     out.print( _delimiter );
     out.print( header ? "COLUMN_PKID"            : column.getId() );
     out.print( _delimiter );
-    out.print( header ? "IS_EXTERNAL_GRADE"      : (column.getExternalGrade() ? "Y" : "N") );
+    out.print( header ? "NOMBRE_CATEGORIA"     : gradebookType.getTitle() );
     out.print( _delimiter );
-    out.print( header ? "COLUMN_IS_DELETED"      : (column.getDeleted() ? "Y" : "N") );
-    out.print( _delimiter );
-    out.print( header ? "COLUMN_PKID"            : column.getPosition() );
-    out.print( _delimiter );
-    out.print( header ? "COLUMN_MODEL"           : column.getAggregationModel() );
-    out.print( _delimiter );
-    out.print( header ? "COLUMN_CALC_TYPE"       : column.getCalculationType() );
-    out.print( _delimiter );
-    out.print( header ? "COLUMN_DUE_DATE"        : column.getDueDate() );
-    out.print( _delimiter );
-    out.print( header ? "COLUMN_MULTI_ATTEMPTS"  : column.getMultipleAttempts() );
-    out.print( _delimiter );
-    out.print( header ? "COLUMN_POINTS_POSSIBLE" : column.getPossible() );
-    out.print( _delimiter );
-    out.print( header ? "COLUMN_IS_SCORABLE"     : (column.getScorable() ? "Y" : "N") );
-    out.print( _delimiter );
-    out.print( header ? "COLUMN_IS_VISIBLE"      : (column.getVisible() ? "Y" : "N") );
-    out.print( _delimiter );
-
-    out.print( header ? "USER_ID"           : user.getName() );
+    out.print( header ? "COLUMN_CATEGORY"     : column.getGradebookTypeId() );
     out.print( _delimiter );
     out.print( header ? "USER_BATCHUID"     : user.getUserBatchUid() );
-    out.print( _delimiter );
-    out.print( header ? "USER_PKID"         : user.getId() );
-    out.print( _delimiter );
-    out.print( header ? "USER_IS_AVAILABLE" : (user.getIsAvailable() ? "Y" : "N") );
     out.print( _delimiter );
     out.print( header ? "USER_STUDENT_ID"   : user.getStudentId() );
     out.print( _delimiter );
 
-    out.print( header ? "ENR_PKID"         : member.getId() );
+    String gradeDisplayed = "";
+    if(null != score) {
+      gradeDisplayed =   score.getSchemaGradeValue();
+      if(null != gradeDisplayed) {
+        gradeDisplayed = gradeDisplayed.replace(",",".");  
+      } else {
+        gradeDisplayed = "";
+      }
+      
+    }
+    
+    out.print( header ? "GRADE_DISPLAYED" : gradeDisplayed );
     out.print( _delimiter );
-    out.print( header ? "ENR_IS_AVAILABLE" : (member.getAvailable() ? "Y" : "N") );
-    out.print( _delimiter );
-    out.print( header ? "ENR_DATE"         : toDate(member.getEnrollmentDate()) );
-    out.print( _delimiter );
-
-    out.print( header ? "GRADE_DISPLAYED"    : (null == score ? "" : score.getSchemaGradeValue()) );
-    out.print( _delimiter );
-    out.print( header ? "GRADE"              : (null == score ? "" : score.getGrade()) );
-    out.print( _delimiter );
-    out.print( header ? "GRADE_ID"           : (null == score ? "" : score.getId()) );
-    out.print( _delimiter );
-    out.print( header ? "GRADE_MANUAL"       : (null == score ? "" : score.getManualGrade()) );
-    out.print( _delimiter );
-    out.print( header ? "GRADE_SCORE_MANUAL" : (null == score ? "" : score.getManualScore()) );
-    out.print( _delimiter );
-    out.print( header ? "GRADE_STATUS"       : (null == score ? "" : score.getStatus()) );
-
+    out.print( header ? "GRADE"              : (null == score ? "" : score.getGrade()) ); 
     out.println();
   }
 

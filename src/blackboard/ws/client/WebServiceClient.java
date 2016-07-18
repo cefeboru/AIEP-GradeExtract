@@ -29,10 +29,14 @@ import blackboard.ws.coursemembership.CourseMembershipWSStub.GetCourseMembership
 import blackboard.ws.coursemembership.CourseMembershipWSStub.InitializeCourseMembershipWS;
 import blackboard.ws.coursemembership.CourseMembershipWSStub.MembershipFilter;
 import blackboard.ws.gradebook.GradebookWSStub;
+import blackboard.ws.gradebook.GradebookWSStub.AttemptFilter;
+import blackboard.ws.gradebook.GradebookWSStub.AttemptVO;
 import blackboard.ws.gradebook.GradebookWSStub.ColumnFilter;
 import blackboard.ws.gradebook.GradebookWSStub.ColumnVO;
+import blackboard.ws.gradebook.GradebookWSStub.GetAttempts;
 import blackboard.ws.gradebook.GradebookWSStub.GradebookTypeVO;
 import blackboard.ws.gradebook.GradebookWSStub.GetGradebookTypes;
+import blackboard.ws.gradebook.GradebookWSStub.GradebookTypeFilter;
 import blackboard.ws.gradebook.GradebookWSStub.GetGradebookColumns;
 import blackboard.ws.gradebook.GradebookWSStub.GetGrades;
 import blackboard.ws.gradebook.GradebookWSStub.InitializeGradebookWS;
@@ -161,7 +165,8 @@ public class WebServiceClient {
 
         _LOG.info("Initializing...");
 
-        final String wsBaseURL = _protocol + "://" + _hostname + "/" + "/webapps/ws/services/";
+        final String wsBaseURL = _protocol + "://" + _hostname + "/webapps/ws/services/";
+        //final String wsBaseURL = _hostname + "/" + "/webapps/ws/services/";
 
         ConfigurationContext cfgCtx = ConfigurationContextFactory
           .createConfigurationContextFromFileSystem(_pathToAxisLib, _pathToAxisConf);
@@ -442,6 +447,28 @@ public class WebServiceClient {
       }
 
       return (null == courses) ? null : courses[ 0 ];
+    }
+
+    public GradebookTypeVO[] getColumnGradebookType(String columnId, String courseId) throws RemoteException {
+      GetGradebookTypes gradeTypes = new GetGradebookTypes();
+      GradebookTypeFilter filter = new GradebookTypeFilter();
+      filter.setFilterType(1);
+      filter.setIds(new String[] {columnId});
+      gradeTypes.setFilter(filter);
+      gradeTypes.setCourseId(courseId);
+      GradebookTypeVO[] temp = _gradebookWS.getGradebookTypes(gradeTypes).get_return();
+      return temp;
+    }
+    
+    public AttemptVO getAttemptById(String gradeId, String courseId) throws RemoteException {
+      GetAttempts param = new GetAttempts();
+      param.setCourseId(courseId);
+      AttemptFilter filter = new AttemptFilter();
+      filter.setFilterType(2);
+      filter.setGradeId(gradeId);
+      param.setFilter(filter);
+      AttemptVO attemp = (_gradebookWS.getAttempts(param).get_return())[0];
+      return attemp;
     }
 
     /*

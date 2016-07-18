@@ -1,0 +1,56 @@
+2016-07-12 13:53:18 | INFO  | 116:blackboard.ws.client.GradeExtractApp               | EXTRACT STARTED : Tue Jul 12 13:53:18 CST 2016
+2016-07-12 13:53:18 | INFO  | 162:blackboard.ws.client.WebServiceClient              | Initializing...
+2016-07-12 13:53:18 | INFO  |  63:org.apache.axis2.deployment.ClusterBuilder         | Clustering has been disabled
+2016-07-12 13:53:18 | INFO  |1098:org.apache.axis2.deployment.DeploymentEngine       | No services directory was found under C:\Users\cbonilla\Documents\GitHub\AIEP-GradeExtract\lib\axis2-1.6.2\lib.
+2016-07-12 13:53:18 | INFO  |1109:org.apache.axis2.deployment.DeploymentEngine       | No modules directory was found under C:\Users\cbonilla\Documents\GitHub\AIEP-GradeExtract\lib\axis2-1.6.2\lib.
+2016-07-12 13:53:18 | INFO  |  82:org.apache.axis2.deployment.ModuleDeployer         | Deploying module: addressing-1.6.2 - file:/C:/Users/cbonilla/Documents/GitHub/AIEP-GradeExtract/lib/axis2-1.6.2/lib/addressing-1.6.2.mar
+2016-07-12 13:53:19 | INFO  |  82:org.apache.axis2.deployment.ModuleDeployer         | Deploying module: rampart-1.6.2 - file:/C:/Users/cbonilla/Documents/GitHub/AIEP-GradeExtract/lib/axis2-1.6.2/lib/rampart-1.6.2.mar
+2016-07-12 13:53:19 | INFO  | 206:blackboard.ws.client.WebServiceClient              | Checking versions...
+2016-07-12 13:53:20 | ERROR | 124:blackboard.ws.client.GradeExtractApp               | The server did not recognise the action which it received: 
+org.apache.axis2.AxisFault: The server did not recognise the action which it received: 
+	at org.apache.axis2.handlers.addressing.AddressingInFaultHandler.invoke(AddressingInFaultHandler.java:115)
+	at org.apache.axis2.engine.Phase.invokeHandler(Phase.java:340)
+	at org.apache.axis2.engine.Phase.invoke(Phase.java:313)
+	at org.apache.axis2.engine.AxisEngine.invoke(AxisEngine.java:262)
+	at org.apache.axis2.engine.AxisEngine.receive(AxisEngine.java:168)
+	at org.apache.axis2.description.OutInAxisOperationClient.handleResponse(OutInAxisOperation.java:364)
+	at org.apache.axis2.description.OutInAxisOperationClient.send(OutInAxisOperation.java:421)
+	at org.apache.axis2.description.OutInAxisOperationClient.executeImpl(OutInAxisOperation.java:229)
+	at org.apache.axis2.client.OperationClient.execute(OperationClient.java:165)
+	at blackboard.ws.context.ContextWSStub.getServerVersion(ContextWSStub.java:1679)
+	at blackboard.ws.client.WebServiceClient.initialize(WebServiceClient.java:209)
+	at blackboard.ws.client.GradeExtractApp.newWebServiceClient(GradeExtractApp.java:372)
+	at blackboard.ws.client.GradeExtractApp.doMain(GradeExtractApp.java:140)
+	at blackboard.ws.client.GradeExtractApp.main(GradeExtractApp.java:120)
+2016-07-12 13:53:20 | INFO  | 127:blackboard.ws.client.GradeExtractApp               | EXTRACT START TIME: Tue Jul 12 13:53:18 CST 2016
+2016-07-12 13:53:20 | INFO  | 128:blackboard.ws.client.GradeExtractApp               | EXTRACT COMPLETED : Tue Jul 12 13:53:20 CST 2016
+2016-07-12 13:53:20 | ERROR | 130:blackboard.ws.client.GradeExtractApp               | ERRORS(1):
+2016-07-12 13:53:20 | ERROR | 132:blackboard.ws.client.GradeExtractApp               |  - The server did not recognise the action which it received: 
+2016-07-12 16:31:33 | INFO  | 116:blackboard.ws.client.GradeExtractApp               | EXTRACT STARTED : Tue Jul 12 16:31:33 CST 2016
+2016-07-12 16:31:33 | INFO  | 162:blackboard.ws.client.WebServiceClient              | Initializing...
+2016-07-12 16:31:33 | INFO  |  63:org.apache.axis2.deployment.ClusterBuilder         | Clustering has been disabled
+2016-07-12 16:31:33 | INFO  |1098:org.apache.axis2.deployment.DeploymentEngine       | No services directory was found under C:\Users\cbonilla\Documents\GitHub\AIEP-GradeExtract\lib\axis2-1.6.2\lib.
+2016-07-12 16:31:33 | INFO  |1109:org.apache.axis2.deployment.DeploymentEngine       | No modules directory was found under C:\Users\cbonilla\Documents\GitHub\AIEP-GradeExtract\lib\axis2-1.6.2\lib.
+2016-07-12 16:31:33 | INFO  |  82:org.apache.axis2.deployment.ModuleDeployer         | Deploying module: addressing-1.6.2 - file:/C:/Users/cbonilla/Documents/GitHub/AIEP-GradeExtract/lib/axis2-1.6.2/lib/addressing-1.6.2.mar
+2016-07-12 16:31:34 | INFO  |  82:org.apache.axis2.deployment.ModuleDeployer         | Deploying module: rampart-1.6.2 - file:/C:/Users/cbonilla/Documents/GitHub/AIEP-GradeExtract/lib/axis2-1.6.2/lib/rampart-1.6.2.mar
+2016-07-12 16:31:34 | INFO  | 206:blackboard.ws.client.WebServiceClient              | Checking versions...
+2016-07-12 16:31:38 | ERROR | 124:blackboard.ws.client.GradeExtractApp               | The server did not recognise the action which it received: 
+org.apache.axis2.AxisFault: The server did not recognise the action which it received: 
+	at org.apache.axis2.handlers.addressing.AddressingInFaultHandler.invoke(AddressingInFaultHandler.java:115)
+	at org.apache.axis2.engine.Phase.invokeHandler(Phase.java:340)
+	at org.apache.axis2.engine.Phase.invoke(Phase.java:313)
+	at org.apache.axis2.engine.AxisEngine.invoke(AxisEngine.java:262)
+	at org.apache.axis2.engine.AxisEngine.receive(AxisEngine.java:168)
+	at org.apache.axis2.description.OutInAxisOperationClient.handleResponse(OutInAxisOperation.java:364)
+	at org.apache.axis2.description.OutInAxisOperationClient.send(OutInAxisOperation.java:421)
+	at org.apache.axis2.description.OutInAxisOperationClient.executeImpl(OutInAxisOperation.java:229)
+	at org.apache.axis2.client.OperationClient.execute(OperationClient.java:165)
+	at blackboard.ws.context.ContextWSStub.getServerVersion(ContextWSStub.java:1679)
+	at blackboard.ws.client.WebServiceClient.initialize(WebServiceClient.java:209)
+	at blackboard.ws.client.GradeExtractApp.newWebServiceClient(GradeExtractApp.java:372)
+	at blackboard.ws.client.GradeExtractApp.doMain(GradeExtractApp.java:140)
+	at blackboard.ws.client.GradeExtractApp.main(GradeExtractApp.java:120)
+2016-07-12 16:31:38 | INFO  | 127:blackboard.ws.client.GradeExtractApp               | EXTRACT START TIME: Tue Jul 12 16:31:33 CST 2016
+2016-07-12 16:31:38 | INFO  | 128:blackboard.ws.client.GradeExtractApp               | EXTRACT COMPLETED : Tue Jul 12 16:31:38 CST 2016
+2016-07-12 16:31:38 | ERROR | 130:blackboard.ws.client.GradeExtractApp               | ERRORS(1):
+2016-07-12 16:31:38 | ERROR | 132:blackboard.ws.client.GradeExtractApp               |  - The server did not recognise the action which it received: 
